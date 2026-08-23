@@ -195,11 +195,20 @@ const CATEGORIES = ['All', 'Granite', 'Quartzite', 'Marble', 'Sandstone'];
 
 export default function StoneCollection() {
   const [activeCategory, setActiveCategory] = useState('All');
+  const [visibleCount, setVisibleCount] = useState(4);
   const [selectedProduct, setSelectedProduct] = useState<StoneProduct | null>(null);
+
+  const handleCategoryChange = (cat: string) => {
+    setActiveCategory(cat);
+    setVisibleCount(4);
+  };
 
   const filtered = activeCategory === 'All'
     ? PRODUCTS
     : PRODUCTS.filter((p) => p.category === activeCategory);
+
+  const displayedProducts = filtered.slice(0, visibleCount);
+  const hasMore = visibleCount < filtered.length;
 
   return (
     <section id="collection" className="py-28 sm:py-36 bg-[#eae7e0] relative border-t border-[#dcd8cd] overflow-hidden">
@@ -238,7 +247,7 @@ export default function StoneCollection() {
               return (
                 <button
                   key={cat}
-                  onClick={() => setActiveCategory(cat)}
+                  onClick={() => handleCategoryChange(cat)}
                   className={`relative px-4 py-2 rounded-sm text-xs uppercase tracking-wider font-semibold transition-colors duration-200 z-10 ${
                     isActive ? 'text-white' : 'text-stone-600 hover:text-stone-900'
                   }`}
@@ -260,7 +269,7 @@ export default function StoneCollection() {
         {/* Product Cards Grid */}
         <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <AnimatePresence>
-            {filtered.map((product) => (
+            {displayedProducts.map((product) => (
               <motion.div
                 layout
                 key={product.id}
@@ -318,6 +327,18 @@ export default function StoneCollection() {
             ))}
           </AnimatePresence>
         </motion.div>
+
+        {/* Load More Action Button */}
+        {hasMore && (
+          <div className="mt-14 text-center">
+            <button
+              onClick={() => setVisibleCount((prev) => prev + 4)}
+              className="inline-flex items-center gap-2 bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.2em] px-8 py-4 rounded-sm transition-all shadow-md border border-amber-500/30"
+            >
+              <span>Load More Stone Varieties (+{filtered.length - visibleCount} More)</span>
+            </button>
+          </div>
+        )}
 
       </div>
 

@@ -12,10 +12,10 @@ const PROCESS_STEPS = [
     subtitle: 'Selective Bayana Ore Extraction',
     description: 'Diamond wire saws and heavy excavators extract monolithic red sandstone boulders from 420m stratum beds in Bayana, Rajasthan (ML No. 13/2022).',
     images: [
-      '/row_photos/IMG-20260823-WA0007.jpg',
-      '/row_photos/IMG-20260823-WA0009.jpg',
-      '/row_photos/IMG-20260823-WA0010.jpg',
-      '/row_photos/IMG-20260823-WA0011.jpg',
+      '/gallery/IMG-20260823-WA0149.jpg',
+      '/gallery/IMG-20260823-WA0064.jpg',
+      '/gallery/IMG-20260823-WA0177.jpg',
+      '/craft/craft_09.jpeg',
     ],
   },
   {
@@ -24,10 +24,10 @@ const PROCESS_STEPS = [
     subtitle: 'High-Precision Slab Milling',
     description: 'Automated multi-blade diamond gang saws slice massive quarry monoliths into uniform 20mm to 150mm architectural slabs with zero micro-cracks.',
     images: [
-      '/row_photos/IMG-20260823-WA0012.jpg',
-      '/row_photos/IMG-20260823-WA0013.jpg',
-      '/row_photos/IMG-20260823-WA0014.jpg',
-      '/row_photos/IMG-20260823-WA0015.jpg',
+      '/craft/craft_22.jpeg',
+      '/gallery/IMG-20260823-WA0079.jpg',
+      '/row_photos/IMG-20260823-WA0007.jpg',
+      '/row_photos/IMG-20260823-WA0010.jpg',
     ],
   },
   {
@@ -36,10 +36,10 @@ const PROCESS_STEPS = [
     subtitle: 'Jali, Relief & Temple Sculpting',
     description: 'Master craftsmen combine generational hand chiseling with high-speed multi-axis 3D CNC routers to carve delicate Jalis, idols, and friezes.',
     images: [
-      '/row_photos/IMG-20260823-WA0016.jpg',
-      '/row_photos/IMG-20260823-WA0017.jpg',
       '/row_photos/IMG-20260823-WA0041.jpg',
-      '/row_photos/IMG-20260823-WA0061.jpg',
+      '/row_photos/IMG-20260823-WA0014.jpg',
+      '/bg/hero_carving.jpg',
+      '/bg/about_mandir.jpg',
     ],
   },
   {
@@ -48,10 +48,10 @@ const PROCESS_STEPS = [
     subtitle: 'Maritime Logistics & Safety',
     description: 'Finished slabs and intricate carvings are packed into climate-sealed, heavy-duty ISPM-15 wooden crates for damage-free ocean delivery.',
     images: [
-      '/row_photos/IMG-20260823-WA0081.jpg',
-      '/row_photos/IMG-20260823-WA0104.jpg',
-      '/row_photos/IMG-20260823-WA0234.jpg',
-      '/row_photos/IMG-20260823-WA0241.jpg',
+      '/craft/craft_27.jpeg',
+      '/gallery/IMG-20260823-WA0252.jpg',
+      '/gallery/IMG-20260823-WA0225.jpg',
+      '/gallery/IMG-20260823-WA0111.jpg',
     ],
   },
 ];
