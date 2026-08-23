@@ -4,21 +4,21 @@ import { motion } from 'framer-motion';
 import { Anchor } from 'lucide-react';
 
 const SHIPMENTS = [
-  { vessel: 'RUBICUND CARRIER V', dest: 'Port of Jebel Ali, Dubai', payload: '420T Ruby Red Granite Slabs', status: 'IN TRANSIT' },
-  { vessel: 'PACIFIC MONOLITH', dest: 'Port of Genoa, Italy', payload: '180T Imperial Red Blocks', status: 'CUSTOMS CLEARED' },
-  { vessel: 'NORDIC STRATUM', dest: 'Port of Rotterdam, Netherlands', payload: '310T Honed Quartzite Tiles', status: 'DISPATCHED' },
-  { vessel: 'ATLANTIC VEIN', dest: 'Port of Newark, New York', payload: '520T Raw Quarry Monoliths', status: 'UNLOADING' },
-  { vessel: 'ORIENT TITANIUM', dest: 'Port of Yokohama, Japan', payload: '150T Thermal Flamed Pavers', status: 'IN TRANSIT' },
+  { vessel: 'BAYANA QUARRY DESPATCH', dest: 'Ayodhya Mandir Complex', payload: 'Bansi Paharpur Red Stone Pillars & Domes', status: 'DELIVERED' },
+  { vessel: 'MM EXPORT EXPRESS', dest: 'Dubai International Port', payload: 'Hand-Carved Sandstone Jali Screens', status: 'IN TRANSIT' },
+  { vessel: 'RAJASTHAN CARGO', dest: 'Genoa Port, Italy', payload: '180T Dholpur Red Sandstone Slabs', status: 'CUSTOMS CLEARED' },
+  { vessel: 'BHARATPUR FREIGHT', dest: 'Singapore Port', payload: '3D CNC Carved Temple Relief Panels', status: 'DISPATCHED' },
+  { vessel: 'MONUMENTAL LOGISTICS', dest: 'London, UK', payload: 'Heritage Sandstone Gates & Columns', status: 'IN TRANSIT' },
 ];
 
 export default function LiveTicker() {
   return (
-    <div className="w-full bg-[#f5f4f0] border-y border-stone-200 py-3.5 overflow-hidden flex items-center select-none relative z-20 shadow-inner">
+    <div className="w-full bg-[#5c1818] border-y border-amber-500/30 py-3 overflow-hidden flex items-center select-none relative z-20 shadow-md text-amber-100">
       {/* Live Badge */}
-      <div className="shrink-0 px-5 sm:px-8 flex items-center gap-2.5 border-r border-stone-300 bg-[#f5f4f0] z-10 text-stone-700">
-        <span className="w-2 h-2 rounded-full bg-emerald-600 animate-ping" />
-        <span className="font-sans text-[10px] uppercase tracking-[0.25em] font-semibold text-stone-800">
-          Live Quarry Dispatches:
+      <div className="shrink-0 px-5 sm:px-8 flex items-center gap-2.5 border-r border-amber-500/30 bg-[#5c1818] z-10">
+        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+        <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-amber-200">
+          Direct Quarry Dispatches (ML 13/2022):
         </span>
       </div>
 
@@ -27,15 +27,15 @@ export default function LiveTicker() {
         <motion.div
           animate={{ x: ['0%', '-50%'] }}
           transition={{ duration: 32, ease: 'linear', repeat: Infinity }}
-          className="flex shrink-0 gap-12 whitespace-nowrap text-xs text-stone-600 font-mono items-center"
+          className="flex shrink-0 gap-12 whitespace-nowrap text-xs font-mono items-center"
         >
           {SHIPMENTS.concat(SHIPMENTS).map((s, i) => (
             <div key={i} className="inline-flex items-center gap-3">
-              <Anchor className="w-3.5 h-3.5 text-stone-400" />
-              <span className="text-stone-900 font-semibold">{s.vessel}</span>
-              <span className="text-stone-500">→ {s.dest}</span>
-              <span className="text-stone-700 font-medium">[{s.payload}]</span>
-              <span className="px-2 py-0.5 rounded-sm bg-white border border-stone-300 text-[9px] uppercase tracking-wider text-emerald-700 font-semibold shadow-xs">
+              <Anchor className="w-3.5 h-3.5 text-amber-300" />
+              <span className="text-white font-bold">{s.vessel}</span>
+              <span className="text-amber-200/80">→ {s.dest}</span>
+              <span className="text-amber-100 font-medium">[{s.payload}]</span>
+              <span className="px-2 py-0.5 rounded-sm bg-stone-900 border border-amber-500/40 text-[9px] uppercase tracking-wider text-emerald-400 font-semibold shadow-sm">
                 {s.status}
               </span>
             </div>
@@ -45,3 +45,4 @@ export default function LiveTicker() {
     </div>
   );
 }
+
