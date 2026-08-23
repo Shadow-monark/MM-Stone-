@@ -29,22 +29,23 @@ const FEATURES = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-28 sm:py-36 bg-[#eae7e0] relative overflow-hidden text-stone-900 border-t border-stone-300">
+    <section className="py-28 sm:py-36 bg-[#f4f1e8] relative overflow-hidden text-stone-900 border-t border-stone-300">
       
-      {/* Background Carving Relief Image Behind Text (Light Warm Overlay) */}
-      <div className="absolute inset-0 z-0 overflow-hidden opacity-10 pointer-events-none">
+      {/* Background Carving Relief Image Behind Text (Rich & Clearly Visible Overlay) */}
+      <div className="absolute inset-0 z-0 overflow-hidden opacity-35 pointer-events-none">
         <img
           src="/bg/om_temple.jpg"
           alt="Sacred OM & Deity Temple Facade Sandstone Relief"
           className="w-full h-full object-cover filter contrast-125 scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#eae7e0] via-transparent to-[#eae7e0]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#f4f1e8] via-[#f4f1e8]/50 to-[#f4f1e8]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f4f1e8] via-transparent to-[#f4f1e8]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header with Animated Text */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16 bg-white/80 p-6 sm:p-8 rounded-sm border border-stone-300 backdrop-blur-md shadow-sm">
           <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#705432] block mb-3">
             Why Choose M.M. STONE INDUSTRIES
           </span>
@@ -70,10 +71,10 @@ export default function WhyChooseUs() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.12 }}
               whileHover={{ y: -5 }}
-              className="bg-[#faf9f5] border border-stone-300 p-8 sm:p-9 rounded-sm hover:border-[#5c1818] transition-colors duration-300 flex flex-col justify-between group shadow-sm hover:shadow-xl"
+              className="bg-white/95 border border-stone-300 p-8 sm:p-9 rounded-sm hover:border-[#5c1818] transition-colors duration-300 flex flex-col justify-between group shadow-md hover:shadow-2xl backdrop-blur-md"
             >
               <div>
-                <div className="w-11 h-11 rounded-sm bg-white border border-stone-300 text-stone-900 flex items-center justify-center mb-6 group-hover:bg-[#5c1818] group-hover:text-white transition-all duration-300">
+                <div className="w-11 h-11 rounded-sm bg-[#faf9f5] border border-stone-300 text-stone-900 flex items-center justify-center mb-6 group-hover:bg-[#5c1818] group-hover:text-white transition-all duration-300">
                   <feature.icon className="w-5 h-5 text-[#5c1818] group-hover:text-amber-200" />
                 </div>
                 <h3 className="text-lg font-bold text-stone-900 mb-3 group-hover:text-[#5c1818] transition-colors leading-snug">
@@ -91,5 +92,6 @@ export default function WhyChooseUs() {
     </section>
   );
 }
+
 
 

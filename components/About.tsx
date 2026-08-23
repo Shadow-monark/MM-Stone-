@@ -6,17 +6,17 @@ import { AnimatedHeading, AnimatedParagraph } from './AnimatedText';
 
 export default function About() {
   return (
-    <section id="about" className="py-28 sm:py-36 bg-[#faf9f5] relative overflow-hidden text-stone-900 border-t border-stone-200">
+    <section id="about" className="py-28 sm:py-36 bg-[#f7f5ed] relative overflow-hidden text-stone-900 border-t border-stone-300">
       
-      {/* Authentic Master Relief Background Photo Behind Text */}
-      <div className="absolute inset-0 z-0 overflow-hidden opacity-20 pointer-events-none">
+      {/* Authentic Master Relief Background Photo Behind Text — Rich & Highly Visible */}
+      <div className="absolute inset-0 z-0 overflow-hidden opacity-45 pointer-events-none">
         <img
           src="/bg/about_mandir.jpg"
           alt="Mahatma Phule & Savitribai Phule Red Sandstone Relief"
           className="w-full h-full object-cover filter contrast-125 scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#faf9f5] via-transparent to-[#faf9f5]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#faf9f5] via-transparent to-[#faf9f5]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#f7f5ed] via-[#f7f5ed]/40 to-[#f7f5ed]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f7f5ed] via-transparent to-[#f7f5ed]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,7 +56,7 @@ export default function About() {
           </motion.div>
 
           {/* Right: Editorial Narrative Layered On Top of Photo */}
-          <div className="lg:col-span-6 space-y-8 bg-white/70 p-6 sm:p-8 rounded-sm border border-stone-200/80 shadow-sm backdrop-blur-sm">
+          <div className="lg:col-span-6 space-y-8 bg-white/85 p-7 sm:p-9 rounded-sm border border-stone-300 shadow-lg backdrop-blur-md">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -123,25 +123,25 @@ export default function About() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-16 border-t border-stone-300"
         >
-          <div className="p-7 sm:p-8 bg-white/90 border border-stone-300 rounded-sm shadow-md space-y-2 backdrop-blur-md">
+          <div className="p-7 sm:p-8 bg-white/95 border border-stone-300 rounded-sm shadow-md space-y-2 backdrop-blur-md">
             <span className="text-[10px] uppercase tracking-[0.25em] text-[#705432] block font-bold">Mine License</span>
             <span className="text-2xl sm:text-3xl text-stone-900 font-bold block leading-tight">ML 13/2022</span>
             <span className="text-xs text-stone-500 block font-light">Village Murrki, Bayana</span>
           </div>
 
-          <div className="p-7 sm:p-8 bg-white/90 border border-stone-300 rounded-sm shadow-md space-y-2 backdrop-blur-md">
+          <div className="p-7 sm:p-8 bg-white/95 border border-stone-300 rounded-sm shadow-md space-y-2 backdrop-blur-md">
             <span className="text-[10px] uppercase tracking-[0.25em] text-[#705432] block font-bold">Specialty Products</span>
             <span className="text-2xl sm:text-3xl text-stone-900 font-bold block leading-tight">Jali & CNC</span>
             <span className="text-xs text-stone-500 block font-light">Temple fittings, Domes & Pillars</span>
           </div>
 
-          <div className="p-7 sm:p-8 bg-white/90 border border-stone-300 rounded-sm shadow-md space-y-2 backdrop-blur-md">
+          <div className="p-7 sm:p-8 bg-white/95 border border-stone-300 rounded-sm shadow-md space-y-2 backdrop-blur-md">
             <span className="text-[10px] uppercase tracking-[0.25em] text-[#705432] block font-bold">Geological Grade</span>
             <span className="text-2xl sm:text-3xl text-stone-900 font-bold block leading-tight">Red Sandstone</span>
             <span className="text-xs text-stone-500 block font-light">Weather resistant & durable</span>
           </div>
 
-          <div className="p-7 sm:p-8 bg-white/90 border border-stone-300 rounded-sm shadow-md space-y-2 backdrop-blur-md">
+          <div className="p-7 sm:p-8 bg-white/95 border border-stone-300 rounded-sm shadow-md space-y-2 backdrop-blur-md">
             <span className="text-[10px] uppercase tracking-[0.25em] text-[#705432] block font-bold">Direct Desk</span>
             <span className="text-2xl sm:text-3xl text-stone-900 font-bold block leading-tight">3 Directors</span>
             <span className="text-xs text-stone-500 block font-light">Vijay, Kapil & Neeraj Agrawal</span>
@@ -152,5 +152,6 @@ export default function About() {
     </section>
   );
 }
+
 
 
