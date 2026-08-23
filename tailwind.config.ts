@@ -35,8 +35,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"],
-        serif: ["var(--font-playfair)", "serif"],
+        sans: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+        serif: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+        helvetica: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
       },
     },
   },
@@ -44,3 +45,4 @@ const config: Config = {
 };
 
 export default config;
+

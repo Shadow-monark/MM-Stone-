@@ -4,13 +4,20 @@
 
 @layer base {
   html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
   }
 
   body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     @apply bg-[#f4f2ec] text-[#1c1917] antialiased selection:bg-[#e2ded4] selection:text-[#1c1917];
   }
+
+  h1, h2, h3, h4, h5, h6, p, button, input, textarea, a, span {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
 }
+
 
 /* Custom Scrollbar in Warm Stone Tone */
 ::-webkit-scrollbar {
