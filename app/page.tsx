@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import LiveTicker from '@/components/LiveTicker';
+import MasterCarvingsBanner from '@/components/MasterCarvingsBanner';
 import About from '@/components/About';
 import CraftGallery from '@/components/CraftGallery';
 import SpatialStudio from '@/components/SpatialStudio';
@@ -21,6 +22,7 @@ export default function HomePage() {
       <main className="flex-1 relative z-10">
         <Hero />
         <LiveTicker />
+        <MasterCarvingsBanner />
         <About />
         <CraftGallery />
         <SpatialStudio />
@@ -35,3 +37,4 @@ export default function HomePage() {
     </>
   );
 }
+
