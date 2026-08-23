@@ -24,7 +24,7 @@ export default function About() {
         {/* Top Grid: Story & Visual */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-20">
           
-          {/* Left: Image with Layered Card */}
+          {/* Left: 4-Photo Raw Mining & Workshop Collage Grid */}
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -32,25 +32,70 @@ export default function About() {
             transition={{ duration: 0.7 }}
             className="lg:col-span-6 relative"
           >
-            <div className="relative rounded-sm overflow-hidden border border-stone-300 shadow-xl aspect-[4/3] sm:aspect-[16/11] bg-stone-100">
-              <img
-                src="/bg/about_mandir.jpg"
-                alt="Mahatma Phule & Savitribai Phule Red Sandstone Relief"
-                className="w-full h-full object-cover filter brightness-100 contrast-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 text-xs text-white font-semibold uppercase tracking-wider bg-stone-900/85 p-3.5 rounded-sm border border-stone-700 backdrop-blur-md">
-                3D High-Relief Red Sandstone Carving • Monolithic Monograph
+            {/* 4-Image Collage Grid */}
+            <div className="grid grid-cols-2 gap-3.5 relative rounded-sm overflow-hidden p-2.5 bg-stone-200/80 border border-stone-300 shadow-2xl">
+              
+              {/* Photo 1: Raw Quarry Mining Bed */}
+              <div className="relative aspect-[4/3] rounded-sm overflow-hidden border border-stone-300 shadow-md group">
+                <img
+                  src="/gallery/IMG-20260823-WA0149.jpg"
+                  alt="Bayana Primary Mine Reserve"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent" />
+                <span className="absolute bottom-2 left-2 text-[10px] uppercase font-bold text-amber-200 tracking-wider bg-stone-900/90 px-2 py-0.5 rounded-sm border border-stone-700">
+                  01. Primary Mining Bed
+                </span>
               </div>
+
+              {/* Photo 2: Gangsaw Slab Slicing */}
+              <div className="relative aspect-[4/3] rounded-sm overflow-hidden border border-stone-300 shadow-md group">
+                <img
+                  src="/craft/craft_22.jpeg"
+                  alt="Gangsaw Slab Milling"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent" />
+                <span className="absolute bottom-2 left-2 text-[10px] uppercase font-bold text-amber-200 tracking-wider bg-stone-900/90 px-2 py-0.5 rounded-sm border border-stone-700">
+                  02. Gangsaw Slicing
+                </span>
+              </div>
+
+              {/* Photo 3: Workshop Hand Carving */}
+              <div className="relative aspect-[4/3] rounded-sm overflow-hidden border border-stone-300 shadow-md group">
+                <img
+                  src="/gallery/IMG-20260823-WA0079.jpg"
+                  alt="Artisan Workshop Carving"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent" />
+                <span className="absolute bottom-2 left-2 text-[10px] uppercase font-bold text-amber-200 tracking-wider bg-stone-900/90 px-2 py-0.5 rounded-sm border border-stone-700">
+                  03. Hand Jali Carving
+                </span>
+              </div>
+
+              {/* Photo 4: Finished 3D Sandstone Relief Monolith */}
+              <div className="relative aspect-[4/3] rounded-sm overflow-hidden border border-stone-300 shadow-md group">
+                <img
+                  src="/bg/about_mandir.jpg"
+                  alt="Finished 3D Sandstone Relief Monolith"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent" />
+                <span className="absolute bottom-2 left-2 text-[10px] uppercase font-bold text-amber-200 tracking-wider bg-stone-900/90 px-2 py-0.5 rounded-sm border border-stone-700">
+                  04. 3D Relief Monolith
+                </span>
+              </div>
+
             </div>
 
-            {/* Floating Legacy Card */}
-            <div className="absolute -bottom-6 -right-2 sm:-bottom-8 sm:right-6 bg-white border border-stone-300 p-6 sm:p-7 rounded-sm shadow-2xl max-w-[260px]">
-              <span className="text-[#5c1818] font-serif text-3xl sm:text-4xl font-bold block leading-none mb-1.5">
+            {/* Floating License Stamp Badge Overlay */}
+            <div className="absolute -bottom-5 -right-2 sm:-bottom-7 sm:right-4 bg-white border border-stone-300 p-5 sm:p-6 rounded-sm shadow-2xl max-w-[240px] z-20">
+              <span className="text-[#5c1818] font-serif text-2xl sm:text-3xl font-bold block leading-none mb-1">
                 ML 13/2022
               </span>
-              <span className="text-[11px] uppercase tracking-wider text-stone-700 font-bold block leading-relaxed">
-                Mines Owner & Master Architectural Fabricators
+              <span className="text-[10px] uppercase tracking-wider text-stone-700 font-bold block leading-snug">
+                Bayana Mines Owner & Master Fabricators
               </span>
             </div>
           </motion.div>
