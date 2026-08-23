@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#f4f2ec] text-[#1c1917] antialiased selection:bg-[#e2ded4] selection:text-[#1c1917];
+  }
+}
+
+/* Custom Scrollbar in Warm Stone Tone */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f2ec;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4cfc3;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8b1a2;
+}
