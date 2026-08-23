@@ -10,7 +10,6 @@ const NAV_ITEMS = [
   { name: 'Collection', href: '#collection' },
   { name: 'Finishes', href: '#finishes' },
   { name: 'Process', href: '#process' },
-  { name: 'Calculator', href: '#calculator' },
   { name: 'Contact', href: '#contact' },
 ];
 

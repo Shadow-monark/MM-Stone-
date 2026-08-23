@@ -6,7 +6,6 @@ import CraftGallery from '@/components/CraftGallery';
 import StoneCollection from '@/components/StoneCollection';
 import FinishSelector from '@/components/FinishSelector';
 import Process from '@/components/Process';
-import ProjectCalculator from '@/components/ProjectCalculator';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -25,7 +24,6 @@ export default function HomePage() {
         <StoneCollection />
         <FinishSelector />
         <Process />
-        <ProjectCalculator />
         <WhyChooseUs />
         <Contact />
       </main>
@@ -33,6 +31,7 @@ export default function HomePage() {
     </>
   );
 }
+
 
 
 
