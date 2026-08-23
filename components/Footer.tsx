@@ -9,48 +9,53 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-sm bg-stone-900 border border-stone-800 flex items-center justify-center">
-                <span className="font-serif text-xs font-bold text-white">MM</span>
+              <div className="w-8 h-8 rounded-sm bg-[#5c1818] border border-amber-500/40 flex items-center justify-center">
+                <span className="font-bold text-xs text-amber-100">MM</span>
               </div>
-              <span className="font-serif text-lg font-semibold tracking-wider text-stone-900">
-                MM STONES
+              <span className="text-base font-bold tracking-wider text-stone-900">
+                M.M. STONE INDUSTRIES
               </span>
             </Link>
             <p className="text-stone-500 text-xs leading-relaxed max-w-sm font-light">
-              Premier natural stone mining, cutting, and maritime export corporation. Supplying the international architectural community since 1988.
+              Mines Owner (ML No. 13/2022). Exporter of Red Sandstone blocks, slabs, tiles, Jali screens, temple fittings, pillars, CNC carvings, domes, chhatris & cladding.
             </p>
+            <div className="pt-1 text-[11px] text-[#705432] font-semibold uppercase tracking-wider">
+              Quality • Trust • Heritage Craftsmanship
+            </div>
           </div>
 
           {/* Quick Navigation */}
           <div>
             <h4 className="text-stone-900 font-semibold uppercase tracking-wider text-xs mb-4">Navigation</h4>
             <ul className="space-y-2 text-stone-600">
-              <li><Link href="#about" className="hover:text-stone-900 transition-colors">About Us</Link></li>
-              <li><Link href="#applications" className="hover:text-stone-900 transition-colors">Applications</Link></li>
-              <li><Link href="#collection" className="hover:text-stone-900 transition-colors">Collection</Link></li>
-              <li><Link href="#finishes" className="hover:text-stone-900 transition-colors">Surface Finishes</Link></li>
-              <li><Link href="#calculator" className="hover:text-stone-900 transition-colors">Tonnage Calculator</Link></li>
+              <li><Link href="#about" className="hover:text-stone-900 transition-colors">About Studio</Link></li>
+              <li><Link href="#craftsmanship" className="hover:text-stone-900 transition-colors">Works Gallery</Link></li>
+              <li><Link href="#collection" className="hover:text-stone-900 transition-colors">Stone Varieties</Link></li>
+              <li><Link href="#finishes" className="hover:text-stone-900 transition-colors">Surface Calibration</Link></li>
+              <li><Link href="#calculator" className="hover:text-stone-900 transition-colors">Calculator</Link></li>
             </ul>
           </div>
 
-          {/* Materials */}
+          {/* Directors */}
           <div>
-            <h4 className="text-stone-900 font-semibold uppercase tracking-wider text-xs mb-4">Materials</h4>
-            <ul className="space-y-2 text-stone-600">
-              <li><Link href="#collection" className="hover:text-stone-900 transition-colors">Ruby Red Granite</Link></li>
-              <li><Link href="#collection" className="hover:text-stone-900 transition-colors">Titanium Quartzite</Link></li>
-              <li><Link href="#collection" className="hover:text-stone-900 transition-colors">Imperial Red Marble</Link></li>
-              <li><Link href="#collection" className="hover:text-stone-900 transition-colors">Desert Gold Sandstone</Link></li>
+            <h4 className="text-stone-900 font-semibold uppercase tracking-wider text-xs mb-4">Leadership</h4>
+            <ul className="space-y-2 text-stone-600 text-xs font-medium">
+              <li>Vijay Kumar Agrawal</li>
+              <li>Kapil Agrawal</li>
+              <li>Neeraj Sharma</li>
             </ul>
           </div>
 
-          {/* Quarry Contact */}
+          {/* Quarry & Contact */}
           <div>
-            <h4 className="text-stone-900 font-semibold uppercase tracking-wider text-xs mb-4">Quarry Operations</h4>
-            <div className="space-y-2 text-stone-600 text-xs">
-              <p className="text-stone-900 font-medium">+1 (800) 555-7866</p>
-              <p>commissions@mmstones.com</p>
-              <p className="text-stone-500 pt-1">Mon – Fri: 08:00 – 18:00</p>
+            <h4 className="text-stone-900 font-semibold uppercase tracking-wider text-xs mb-4">Factory & Mines</h4>
+            <div className="space-y-2 text-stone-600 text-xs font-light">
+              <p className="text-stone-900 font-semibold">Bayana, Bharatpur (Raj.)</p>
+              <p className="text-stone-500">Village Murrki, Bharatpur Road</p>
+              <a href="mailto:mmstone@rediffmail.com" className="text-amber-900 font-semibold block hover:underline pt-1">
+                mmstone@rediffmail.com
+              </a>
+              <p className="text-stone-700 font-medium pt-1">+91 9001100731 / +91 9899063866</p>
             </div>
           </div>
 
@@ -58,14 +63,14 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-stone-500 text-[11px]">
-          <p>© {new Date().getFullYear()} MM STONES MINING CORP. ALL RIGHTS RESERVED.</p>
+          <p>© {new Date().getFullYear()} M.M. STONE INDUSTRIES (ML No. 13/2022). ALL RIGHTS RESERVED.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-stone-800 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-stone-800 transition-colors">Terms of Supply</a>
-            <a href="#" className="hover:text-stone-800 transition-colors">ASTM Reports</a>
+            <a href="#contact" className="hover:text-stone-800 transition-colors">Submit Specification</a>
+            <a href="#contact" className="hover:text-stone-800 transition-colors">Quarry Inspection</a>
           </div>
         </div>
       </div>
     </footer>
   );
 }
+
