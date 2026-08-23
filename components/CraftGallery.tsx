@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Eye, ArrowUpRight, X, Sparkles, MessageSquare, CheckCircle2, Layers, ChevronDown, ChevronUp, Grid } from 'lucide-react';
 import { AnimatedHeading, AnimatedParagraph } from './AnimatedText';
@@ -12,6 +12,14 @@ export default function CraftGallery() {
   const [activeCategory, setActiveCategory] = useState<string>('All Works');
   const [selectedItem, setSelectedItem] = useState<CraftItem | null>(null);
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (selectedItem) {
+      document.body.setAttribute('data-modal-open', 'true');
+    } else {
+      document.body.removeAttribute('data-modal-open');
+    }
+  }, [selectedItem]);
 
   const handleCategoryChange = (cat: string) => {
     setActiveCategory(cat);

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUpRight, X } from 'lucide-react';
 import { AnimatedHeading } from './AnimatedText';
@@ -197,6 +197,14 @@ export default function StoneCollection() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [visibleCount, setVisibleCount] = useState(4);
   const [selectedProduct, setSelectedProduct] = useState<StoneProduct | null>(null);
+
+  useEffect(() => {
+    if (selectedProduct) {
+      document.body.setAttribute('data-modal-open', 'true');
+    } else {
+      document.body.removeAttribute('data-modal-open');
+    }
+  }, [selectedProduct]);
 
   const handleCategoryChange = (cat: string) => {
     setActiveCategory(cat);
