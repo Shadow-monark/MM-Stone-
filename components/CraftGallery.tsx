@@ -11,7 +11,7 @@ const INITIAL_LIMIT = 6;
 export default function CraftGallery() {
   const [activeCategory, setActiveCategory] = useState<string>('All Works');
   const [selectedItem, setSelectedItem] = useState<CraftItem | null>(null);
-  const [isExpanded, setIsExpanded] = useState<boolean>(false);
+  const [visibleLimit, setVisibleLimit] = useState<number>(6);
 
   useEffect(() => {
     if (selectedItem) {
@@ -29,15 +29,15 @@ export default function CraftGallery() {
 
   const handleCategoryChange = (cat: string) => {
     setActiveCategory(cat);
-    setIsExpanded(false);
+    setVisibleLimit(6);
   };
 
   const filteredItems = activeCategory === 'All Works'
     ? CRAFT_ITEMS
     : CRAFT_ITEMS.filter((item) => item.category === activeCategory);
 
-  const visibleItems = isExpanded ? filteredItems : filteredItems.slice(0, INITIAL_LIMIT);
-  const remainingCount = filteredItems.length - INITIAL_LIMIT;
+  const visibleItems = filteredItems.slice(0, visibleLimit);
+  const remainingCount = filteredItems.length - visibleLimit;
 
   return (
     <section id="craftsmanship" className="py-24 sm:py-32 bg-[#eae7e0] relative border-t border-[#dcd8cd] overflow-hidden">
@@ -173,23 +173,23 @@ export default function CraftGallery() {
         </div>
 
         {/* View More / View Less Toggle Section */}
-        {filteredItems.length > INITIAL_LIMIT && (
+        {filteredItems.length > 6 && (
           <div className="mt-14 flex flex-col items-center justify-center text-center">
-            {!isExpanded ? (
+            {visibleLimit < filteredItems.length ? (
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 className="flex flex-col items-center gap-3"
               >
                 <button
-                  onClick={() => setIsExpanded(true)}
+                  onClick={() => setVisibleLimit((prev) => prev + 12)}
                   className="group relative inline-flex items-center gap-3 bg-stone-900 hover:bg-stone-800 text-white text-xs uppercase tracking-[0.2em] font-semibold px-8 py-4 rounded-sm shadow-md hover:shadow-xl transition-all duration-300 border border-stone-800"
                 >
-                  <span>Explore Full Portfolio ({remainingCount} More Works)</span>
+                  <span>Explore More Works (+{Math.min(12, remainingCount)} of {remainingCount} Remaining)</span>
                   <ChevronDown className="w-4 h-4 text-amber-400 group-hover:translate-y-1 transition-transform" />
                 </button>
                 <p className="text-stone-500 text-xs font-light">
-                  Click to expand additional architectural lattice screens, temple mandir reliefs, and bollard lanterns.
+                  Showing {visibleItems.length} of {filteredItems.length} works. Click to load additional heritage reliefs and Jalis smoothly.
                 </p>
               </motion.div>
             ) : (
@@ -200,13 +200,13 @@ export default function CraftGallery() {
               >
                 <button
                   onClick={() => {
-                    setIsExpanded(false);
+                    setVisibleLimit(6);
                     const el = document.getElementById('craftsmanship');
                     if (el) el.scrollIntoView({ behavior: 'smooth' });
                   }}
                   className="group inline-flex items-center gap-3 bg-white hover:bg-stone-100 text-stone-900 text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3.5 rounded-sm shadow-xs border border-stone-300 transition-all duration-300"
                 >
-                  <span>Show Less Works</span>
+                  <span>Collapse Portfolio (Show Initial 6)</span>
                   <ChevronUp className="w-4 h-4 text-stone-600 group-hover:-translate-y-1 transition-transform" />
                 </button>
               </motion.div>

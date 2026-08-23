@@ -25,10 +25,18 @@ export default function Navbar() {
     }
     window.scrollTo(0, 0);
 
+    let ticking = false;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 30);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
-    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -42,12 +50,10 @@ export default function Navbar() {
     };
 
     checkModal();
-    const interval = setInterval(checkModal, 50);
     const observer = new MutationObserver(checkModal);
     observer.observe(document.body, { attributes: true, attributeFilter: ['data-modal-open', 'class', 'style'] });
 
     return () => {
-      clearInterval(interval);
       observer.disconnect();
     };
   }, []);

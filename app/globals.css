@@ -5,6 +5,7 @@
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -13,10 +14,22 @@ body {
   color: #1c1917;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p, button, input, textarea, a, span {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* GPU Hardware Acceleration for Buttery Smooth Scroll */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.transform-gpu {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 /* Custom Scrollbar in Warm Stone Tone */
