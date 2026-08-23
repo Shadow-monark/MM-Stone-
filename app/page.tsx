@@ -3,7 +3,6 @@ import Hero from '@/components/Hero';
 import LiveTicker from '@/components/LiveTicker';
 import About from '@/components/About';
 import CraftGallery from '@/components/CraftGallery';
-import SpatialStudio from '@/components/SpatialStudio';
 import StoneCollection from '@/components/StoneCollection';
 import FinishSelector from '@/components/FinishSelector';
 import Process from '@/components/Process';
@@ -23,7 +22,6 @@ export default function HomePage() {
         <LiveTicker />
         <About />
         <CraftGallery />
-        <SpatialStudio />
         <StoneCollection />
         <FinishSelector />
         <Process />
@@ -35,5 +33,6 @@ export default function HomePage() {
     </>
   );
 }
+
 
 

@@ -31,7 +31,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-[#faf9f5]/95 backdrop-blur-md border-b border-stone-300 py-3.5 shadow-md'
-          : 'bg-[#faf9f5]/90 backdrop-blur-md border-b border-stone-200/80 py-4 shadow-sm'
+          : 'bg-gradient-to-b from-stone-950/85 via-stone-950/30 to-transparent py-5'
       }`}
     >
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 flex items-center justify-between">
@@ -41,7 +41,7 @@ export default function Navbar() {
           <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-sm bg-[#5c1818] border border-amber-500/40 flex items-center justify-center shadow-md group-hover:bg-[#7a1f1f] transition-colors shrink-0">
             <span className="font-bold text-xs tracking-widest text-amber-100">MM</span>
           </div>
-          <span className="text-base sm:text-lg font-bold tracking-[0.16em] text-[#1c1917] transition-colors block leading-none whitespace-nowrap">
+          <span className={`text-base sm:text-lg font-bold tracking-[0.16em] transition-colors block leading-none whitespace-nowrap ${isScrolled ? 'text-[#1c1917]' : 'text-white'}`}>
             M.M. STONE INDUSTRIES
           </span>
         </Link>
@@ -52,7 +52,11 @@ export default function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-xs uppercase tracking-[0.18em] font-bold text-stone-800 hover:text-[#5c1818] transition-all py-1.5 px-1 whitespace-nowrap"
+              className={`text-xs uppercase tracking-[0.18em] font-bold transition-all py-1.5 px-1 whitespace-nowrap ${
+                isScrolled
+                  ? 'text-stone-800 hover:text-[#5c1818]'
+                  : 'text-white hover:text-amber-300 drop-shadow-md'
+              }`}
             >
               {item.name}
             </Link>
@@ -73,7 +77,7 @@ export default function Navbar() {
         {/* Mobile Menu Toggle Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 text-stone-900 bg-stone-200/80 rounded-sm border border-stone-300 transition-colors"
+          className={`lg:hidden p-2 transition-colors rounded-sm ${isScrolled ? 'text-stone-900 bg-stone-200/80 border border-stone-300' : 'text-white bg-stone-900/80 border border-stone-700'}`}
           aria-label="Toggle Navigation Menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -105,6 +109,7 @@ export default function Navbar() {
     </header>
   );
 }
+
 
 
 
