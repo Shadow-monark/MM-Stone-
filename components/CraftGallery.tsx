@@ -15,10 +15,16 @@ export default function CraftGallery() {
 
   useEffect(() => {
     if (selectedItem) {
-      document.body.setAttribute('data-modal-open', 'true');
+      document.body.classList.add('modal-open');
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.removeAttribute('data-modal-open');
+      document.body.classList.remove('modal-open');
+      document.body.style.overflow = '';
     }
+    return () => {
+      document.body.classList.remove('modal-open');
+      document.body.style.overflow = '';
+    };
   }, [selectedItem]);
 
   const handleCategoryChange = (cat: string) => {
@@ -249,7 +255,7 @@ export default function CraftGallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 sm:pt-20 sm:pb-10 bg-stone-950/85 backdrop-blur-md overflow-y-auto"
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-stone-950/90 backdrop-blur-md overflow-y-auto"
             onClick={() => setSelectedItem(null)}
           >
             <motion.div

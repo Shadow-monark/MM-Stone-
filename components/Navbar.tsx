@@ -29,15 +29,22 @@ export default function Navbar() {
 
   useEffect(() => {
     const checkModal = () => {
-      const modalActive = document.body.getAttribute('data-modal-open') === 'true' || document.body.classList.contains('modal-open');
+      const modalActive =
+        document.body.getAttribute('data-modal-open') === 'true' ||
+        document.body.classList.contains('modal-open') ||
+        document.body.style.overflow === 'hidden';
       setIsModalOpen(modalActive);
     };
 
     checkModal();
+    const interval = setInterval(checkModal, 50);
     const observer = new MutationObserver(checkModal);
-    observer.observe(document.body, { attributes: true, attributeFilter: ['data-modal-open', 'class'] });
+    observer.observe(document.body, { attributes: true, attributeFilter: ['data-modal-open', 'class', 'style'] });
 
-    return () => observer.disconnect();
+    return () => {
+      clearInterval(interval);
+      observer.disconnect();
+    };
   }, []);
 
   return (
