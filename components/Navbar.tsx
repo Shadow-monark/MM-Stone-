@@ -20,6 +20,11 @@ export default function Navbar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && 'scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 30);
     };
