@@ -1,102 +1,205 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Pickaxe, ChevronLeft, ChevronRight, Layers } from 'lucide-react';
 import { AnimatedHeading, AnimatedParagraph } from './AnimatedText';
 
 const PROCESS_STEPS = [
   {
     step: '01',
-    title: 'Primary Quarrying',
-    subtitle: 'Selective Extraction',
-    description: 'Diamond wire sawing extracts monolithic blocks at 420m depth while preventing internal micro-fractures.',
-    image: '/craft/craft_09.jpeg',
+    title: 'Primary Mining & Quarry Extraction',
+    subtitle: 'Selective Bayana Ore Extraction',
+    description: 'Diamond wire saws and heavy excavators extract monolithic red sandstone boulders from 420m stratum beds in Bayana, Rajasthan (ML No. 13/2022).',
+    images: [
+      '/gallery/IMG-20260823-WA0149.jpg',
+      '/craft/craft_09.jpeg',
+      '/gallery/IMG-20260823-WA0064.jpg',
+      '/gallery/IMG-20260823-WA0177.jpg',
+    ],
   },
   {
     step: '02',
-    title: 'Artisan & Gangsaw Slicing',
-    subtitle: 'Dimensional Sizing',
-    description: 'Master artisans and automated multi-blade gang saws slice raw boulders into uniform architectural slabs.',
-    image: '/craft/craft_22.jpeg',
+    title: 'Gangsaw & Dimensional Slicing',
+    subtitle: 'High-Precision Slab Milling',
+    description: 'Automated multi-blade diamond gang saws slice massive quarry monoliths into uniform 20mm to 150mm architectural slabs with zero micro-cracks.',
+    images: [
+      '/craft/craft_22.jpeg',
+      '/gallery/IMG-20260823-WA0079.jpg',
+      '/gallery/IMG-20260823-WA0223.jpg',
+      '/gallery/IMG-20260823-WA0109.jpg',
+    ],
   },
   {
     step: '03',
-    title: 'Hand Carving & Finishing',
-    subtitle: 'Surface & Jali Carving',
-    description: 'Multi-stage hand chiseling and abrasive polishing lines treat slabs to Jali, Relief, or Mirror finishes.',
-    image: '/craft/craft_26.jpeg',
+    title: '3D CNC & Artisan Hand Carving',
+    subtitle: 'Jali, Relief & Temple Sculpting',
+    description: 'Master craftsmen combine generational hand chiseling with high-speed multi-axis 3D CNC routers to carve delicate Jalis, idols, and friezes.',
+    images: [
+      '/bg/hero_carving.jpg',
+      '/bg/about_mandir.jpg',
+      '/bg/om_temple.jpg',
+      '/bg/deity_relief.jpg',
+    ],
   },
   {
     step: '04',
-    title: 'Export Logistics',
-    subtitle: 'Global Maritime Dispatch',
-    description: 'Finished stone products are custom-crated in reinforced wooden frames and dispatched via international shipping routes.',
-    image: '/craft/craft_27.jpeg',
+    title: 'Heavy Crating & Global Export',
+    subtitle: 'Maritime Logistics & Safety',
+    description: 'Finished slabs and intricate carvings are packed into climate-sealed, heavy-duty ISPM-15 wooden crates for damage-free ocean delivery.',
+    images: [
+      '/craft/craft_27.jpeg',
+      '/gallery/IMG-20260823-WA0252.jpg',
+      '/gallery/IMG-20260823-WA0225.jpg',
+      '/gallery/IMG-20260823-WA0111.jpg',
+    ],
   },
 ];
 
 export default function Process() {
+  const [activeImageIndices, setActiveImageIndices] = useState<number[]>([0, 0, 0, 0]);
+
+  // Auto-advance photos every 3.5 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveImageIndices((prev) =>
+        prev.map((curr, idx) => (curr + 1) % PROCESS_STEPS[idx].images.length)
+      );
+    }, 3500);
+    return () => clearInterval(timer);
+  }, []);
+
+  const handleNext = (stepIdx: number) => {
+    setActiveImageIndices((prev) => {
+      const next = [...prev];
+      next[stepIdx] = (next[stepIdx] + 1) % PROCESS_STEPS[stepIdx].images.length;
+      return next;
+    });
+  };
+
+  const handlePrev = (stepIdx: number) => {
+    setActiveImageIndices((prev) => {
+      const next = [...prev];
+      next[stepIdx] = (next[stepIdx] - 1 + PROCESS_STEPS[stepIdx].images.length) % PROCESS_STEPS[stepIdx].images.length;
+      return next;
+    });
+  };
+
   return (
-    <section id="process" className="py-28 sm:py-36 bg-[#eae7e0] relative border-t border-[#dcd8cd]">
+    <section id="process" className="py-28 sm:py-36 bg-[#faf9f5] relative border-t border-stone-200 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header with Animated Text */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-stone-500 block mb-3">
-            The Journey
-          </span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-[#5c1818] text-amber-200 text-xs uppercase tracking-[0.25em] font-semibold mb-3 shadow-sm">
+            <Pickaxe className="w-4 h-4 text-amber-300" />
+            <span>Mines Operations & Milling Sequence</span>
+          </div>
           <div className="flex justify-center">
             <AnimatedHeading
-              text="From Deep Earth to Master Slabs"
-              italicWord="Slabs"
-              className="font-serif text-3xl sm:text-5xl font-normal text-stone-900 leading-tight mb-4 justify-center"
+              text="How Our Quarries & Craft Workshops Operate"
+              italicWord="Operate"
+              className="text-3xl sm:text-5xl font-normal text-stone-900 leading-tight mb-4 justify-center text-center"
             />
           </div>
           <AnimatedParagraph delay={0.2} className="text-stone-600 text-sm sm:text-base font-light">
-            A calibrated 4-stage lifecycle ensuring structural durability, dimensional precision, and export safety.
+            Watch our step-by-step mining lifecycle — from deep quarry bed extraction to high-precision 3D carving and seaworthy export packing.
           </AnimatedParagraph>
         </div>
 
-        {/* 4 Steps Grid */}
+        {/* 4 Steps Grid with Live Photo Carousel Stack */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {PROCESS_STEPS.map((step, idx) => (
-            <motion.div
-              key={step.step}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: idx * 0.12 }}
-              whileHover={{ y: -5 }}
-              className="bg-[#faf9f5] rounded-sm overflow-hidden border border-[#dcd8cd] hover:border-[#a8a29e] transition-colors duration-300 flex flex-col group shadow-2xs hover:shadow-md"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
-                <img
-                  src={step.image}
-                  alt={step.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95"
-                />
-                <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-sm text-[#1c1917] font-serif font-semibold text-xs border border-[#dcd8cd] shadow-2xs">
-                  STAGE {step.step}
-                </div>
-              </div>
+          {PROCESS_STEPS.map((step, idx) => {
+            const currentImgIdx = activeImageIndices[idx] || 0;
+            const currentImage = step.images[currentImgIdx];
 
-              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-3">
-                <div>
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#9a7b4f] block mb-2">
-                    {step.subtitle}
-                  </span>
-                  <h3 className="font-serif text-lg font-semibold text-[#1c1917] mb-2 group-hover:text-[#9a7b4f] transition-colors leading-snug">
-                    {step.title}
-                  </h3>
-                  <p className="text-[#57534e] text-xs leading-[1.75] font-light">
-                    {step.description}
-                  </p>
+            return (
+              <motion.div
+                key={step.step}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.1 }}
+                className="bg-white rounded-sm overflow-hidden border border-stone-300 hover:border-amber-700/50 transition-all duration-300 flex flex-col group shadow-md hover:shadow-xl relative"
+              >
+                {/* Image Stack with Dynamic Carousel */}
+                <div className="relative aspect-[4/3] overflow-hidden bg-stone-900">
+                  <AnimatePresence mode="wait">
+                    <motion.img
+                      key={currentImage}
+                      src={currentImage}
+                      alt={`${step.title} Photo ${currentImgIdx + 1}`}
+                      initial={{ opacity: 0, scale: 1.05 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.5 }}
+                      className="w-full h-full object-cover filter brightness-95"
+                    />
+                  </AnimatePresence>
+
+                  {/* Top Badge */}
+                  <div className="absolute top-3 left-3 bg-stone-950/90 text-amber-200 px-3 py-1 rounded-sm text-[11px] font-bold uppercase tracking-wider border border-amber-500/30 backdrop-blur-md shadow-md">
+                    STAGE {step.step}
+                  </div>
+
+                  {/* Live Photo Counter Indicator */}
+                  <div className="absolute top-3 right-3 bg-stone-950/80 text-white px-2 py-0.5 rounded-sm text-[10px] font-mono tracking-wider backdrop-blur-md flex items-center gap-1 border border-stone-700">
+                    <Layers className="w-3 h-3 text-amber-400" />
+                    <span>{currentImgIdx + 1}/{step.images.length}</span>
+                  </div>
+
+                  {/* Manual Carousel Controls */}
+                  <div className="absolute inset-y-0 inset-x-0 flex items-center justify-between px-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <button
+                      onClick={() => handlePrev(idx)}
+                      className="p-1.5 rounded-full bg-stone-950/80 text-white hover:bg-stone-900 transition-colors border border-stone-700"
+                      aria-label="Previous Mining Photo"
+                    >
+                      <ChevronLeft className="w-4 h-4" />
+                    </button>
+                    <button
+                      onClick={() => handleNext(idx)}
+                      className="p-1.5 rounded-full bg-stone-950/80 text-white hover:bg-stone-900 transition-colors border border-stone-700"
+                      aria-label="Next Mining Photo"
+                    >
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+                  </div>
+
+                  {/* Bottom Dot Bar */}
+                  <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5">
+                    {step.images.map((_, imgIdx) => (
+                      <span
+                        key={imgIdx}
+                        className={`h-1.5 rounded-full transition-all duration-300 ${
+                          imgIdx === currentImgIdx ? 'w-5 bg-amber-400' : 'w-1.5 bg-white/50'
+                        }`}
+                      />
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+
+                {/* Text Content */}
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-3 bg-white">
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#705432] block mb-1.5">
+                      {step.subtitle}
+                    </span>
+                    <h3 className="text-base font-bold text-stone-900 mb-2 leading-snug group-hover:text-amber-900 transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-stone-600 text-xs leading-[1.75] font-light">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
 
       </div>
     </section>
   );
 }
+
