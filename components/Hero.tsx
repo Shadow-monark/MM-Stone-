@@ -1,29 +1,43 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Layers, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { AnimatedHeading, AnimatedParagraph } from './AnimatedText';
 
 export default function Hero() {
-  const [bgMode, setBgMode] = useState<'carving' | 'sanctum'>('carving');
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+      videoRef.current.play().catch((err) => {
+        console.warn('Hero video autoplay deferred:', err);
+      });
+    }
+  }, []);
 
   return (
     <section className="relative min-h-[88vh] sm:min-h-[92vh] flex items-center justify-center overflow-hidden pt-16 sm:pt-20 bg-stone-950">
       
-      {/* Background Master Relief Carving Layer */}
+      {/* Background Video — Fully Playing */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <img
-          src={bgMode === 'carving' ? '/bg/hero_carving.jpg' : '/bg/sanctum_interior.jpg'}
-          alt="M.M. STONE Master Carving Relief"
-          className="absolute inset-0 w-full h-full object-cover scale-105 filter brightness-[0.7] contrast-110 transition-all duration-700"
-        />
+        <video
+          ref={videoRef}
+          className="absolute inset-0 w-full h-full object-cover scale-105 filter brightness-100 contrast-105"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/craft/craft_09.jpeg"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
 
-        {/* Sophisticated Vignette Overlays for Maximum Legibility & Warm Red Sandstone Atmosphere */}
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/65 to-stone-950/75" />
-        <div className="absolute inset-0 bg-gradient-to-r from-stone-950/85 via-stone-950/40 to-stone-950/85" />
-        <div className="absolute inset-0 bg-[#5c1818]/25 mix-blend-color-burn" />
+        {/* Minimal Vignette Overlay for High Contrast & Crisp Video */}
+        <div className="absolute inset-0 bg-gradient-to-t from-stone-950/85 via-stone-950/35 to-stone-950/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-stone-950/60 via-stone-950/20 to-stone-950/60" />
       </div>
 
       {/* Hero Content Overlay */}
@@ -43,8 +57,8 @@ export default function Hero() {
         {/* Staggered Animated Headline */}
         <div className="flex justify-center w-full max-w-5xl">
           <AnimatedHeading
-            text="Architectural Red Sandstone & Master Relief Carvings"
-            italicWord="Relief"
+            text="Architectural Red Sandstone & Master Carvings"
+            italicWord="Carvings"
             className="text-4xl sm:text-6xl lg:text-7xl font-normal text-white leading-[1.12] mb-5 tracking-tight drop-shadow-lg justify-center text-center"
           />
         </div>
@@ -78,16 +92,6 @@ export default function Hero() {
           >
             Submit Specification
           </Link>
-
-          {/* Toggle Background Relief View */}
-          <button
-            onClick={() => setBgMode(bgMode === 'carving' ? 'sanctum' : 'carving')}
-            className="p-3.5 rounded-sm bg-stone-900/80 hover:bg-stone-900 border border-amber-500/30 text-amber-200 text-xs uppercase font-medium tracking-wider backdrop-blur-md transition-all shadow-md flex items-center gap-2"
-            title="Switch Background Carving Art"
-          >
-            <Layers className="w-4 h-4 text-amber-400" />
-            <span className="hidden sm:inline">Switch Relief View</span>
-          </button>
         </motion.div>
 
         {/* Technical Highlights Bar */}
@@ -119,6 +123,7 @@ export default function Hero() {
     </section>
   );
 }
+
 
 
 
