@@ -38,7 +38,7 @@ export default function About() {
               {/* Photo 1: Raw Quarry Mining Bed */}
               <div className="relative aspect-[4/3] rounded-sm overflow-hidden border border-stone-300 shadow-md group">
                 <img
-                  src="/gallery/IMG-20260823-WA0149.jpg"
+                  src="/row_photos/IMG-20260823-WA0007.jpg"
                   alt="Bayana Primary Mine Reserve"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -51,20 +51,20 @@ export default function About() {
               {/* Photo 2: Gangsaw Slab Slicing */}
               <div className="relative aspect-[4/3] rounded-sm overflow-hidden border border-stone-300 shadow-md group">
                 <img
-                  src="/craft/craft_22.jpeg"
+                  src="/row_photos/IMG-20260823-WA0010.jpg"
                   alt="Gangsaw Slab Milling"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent" />
                 <span className="absolute bottom-2 left-2 text-[10px] uppercase font-bold text-amber-200 tracking-wider bg-stone-900/90 px-2 py-0.5 rounded-sm border border-stone-700">
-                  02. Gangsaw Slicing
+                  02. Raw Block Slicing
                 </span>
               </div>
 
               {/* Photo 3: Workshop Hand Carving */}
               <div className="relative aspect-[4/3] rounded-sm overflow-hidden border border-stone-300 shadow-md group">
                 <img
-                  src="/gallery/IMG-20260823-WA0079.jpg"
+                  src="/row_photos/IMG-20260823-WA0014.jpg"
                   alt="Artisan Workshop Carving"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -77,7 +77,7 @@ export default function About() {
               {/* Photo 4: Finished 3D Sandstone Relief Monolith */}
               <div className="relative aspect-[4/3] rounded-sm overflow-hidden border border-stone-300 shadow-md group">
                 <img
-                  src="/bg/about_mandir.jpg"
+                  src="/row_photos/IMG-20260823-WA0041.jpg"
                   alt="Finished 3D Sandstone Relief Monolith"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
