@@ -37,8 +37,21 @@ export default function ProjectCalculator() {
   }, [area, unit, stoneIndex, thickness]);
 
   return (
-    <section id="calculator" className="py-28 sm:py-36 bg-[#f4f2ec] relative border-t border-[#dcd8cd]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="calculator" className="py-28 sm:py-36 bg-[#f4f2ec] relative border-t border-[#dcd8cd] overflow-hidden">
+      
+      {/* Background Carving Relief Image Behind Text */}
+      <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">
+        <img
+          src="/bg/deity_relief.jpg"
+          alt="Lord Murugan High-Relief Sandstone Statue Background"
+          className="w-full h-full object-cover filter contrast-125 scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#f4f2ec] via-transparent to-[#f4f2ec]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f4f2ec] via-transparent to-[#f4f2ec]" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
         
         {/* Header with Animated Text */}
         <div className="text-center max-w-3xl mx-auto mb-16">

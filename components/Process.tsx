@@ -87,7 +87,20 @@ export default function Process() {
 
   return (
     <section id="process" className="py-28 sm:py-36 bg-[#faf9f5] relative border-t border-stone-200 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      {/* Background Carving Relief Image Behind Text */}
+      <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">
+        <img
+          src="/bg/hero_carving.jpg"
+          alt="Shri Ram & Kevat Samvad Relief Background"
+          className="w-full h-full object-cover filter contrast-125 scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#faf9f5] via-transparent to-[#faf9f5]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#faf9f5] via-transparent to-[#faf9f5]" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
         
         {/* Header with Animated Text */}
         <div className="text-center max-w-3xl mx-auto mb-16">

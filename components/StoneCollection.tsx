@@ -90,8 +90,21 @@ export default function StoneCollection() {
     : PRODUCTS.filter((p) => p.category === activeCategory);
 
   return (
-    <section id="collection" className="py-28 sm:py-36 bg-[#eae7e0] relative border-t border-[#dcd8cd]">
+    <section id="collection" className="py-28 sm:py-36 bg-[#eae7e0] relative border-t border-[#dcd8cd] overflow-hidden">
+      
+      {/* Background Carving Relief Image Behind Text */}
+      <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">
+        <img
+          src="/bg/sanctum_interior.jpg"
+          alt="Imperial Sanctum Mandir Architecture Background"
+          className="w-full h-full object-cover filter contrast-125 scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#eae7e0] via-transparent to-[#eae7e0]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#eae7e0] via-transparent to-[#eae7e0]" />
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
         
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">

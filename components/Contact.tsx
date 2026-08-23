@@ -22,8 +22,21 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 sm:py-32 bg-[#faf9f6] relative border-t border-stone-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24 sm:py-32 bg-[#faf9f6] relative border-t border-stone-200 overflow-hidden">
+      
+      {/* Background Carving Relief Image Behind Text */}
+      <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">
+        <img
+          src="/bg/about_mandir.jpg"
+          alt="Mahatma Phule & Savitribai Phule Red Sandstone Relief Background"
+          className="w-full h-full object-cover filter contrast-125 scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#faf9f6] via-transparent to-[#faf9f6]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#faf9f6] via-transparent to-[#faf9f6]" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
         
         {/* Header Tag */}
         <div className="text-center max-w-3xl mx-auto mb-16">
