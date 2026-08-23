@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, ShieldCheck } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ShieldCheck } from 'lucide-react';
 
 const NAV_ITEMS = [
   { name: 'About', href: '#about' },
@@ -73,41 +74,83 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile Menu Toggle Button */}
+        {/* Animated Hamburger-to-Cross Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className={`lg:hidden p-2 transition-colors rounded-sm ${isScrolled ? 'text-stone-900 bg-stone-200/80 border border-stone-300' : 'text-white bg-stone-900/80 border border-stone-700'}`}
+          className={`lg:hidden relative p-2.5 transition-all rounded-sm flex items-center justify-center ${
+            isScrolled ? 'bg-stone-200/80 border border-stone-300' : 'bg-stone-900/80 border border-stone-700'
+          }`}
           aria-label="Toggle Navigation Menu"
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          <div className="w-6 h-5 relative flex flex-col justify-between items-center">
+            {/* Top Bar */}
+            <motion.span
+              animate={mobileMenuOpen ? { rotate: 45, y: 9 } : { rotate: 0, y: 0 }}
+              transition={{ duration: 0.3, ease: 'easeInOut' }}
+              className={`w-6 h-0.5 rounded-full block origin-center ${isScrolled ? 'bg-stone-900' : 'bg-white'}`}
+            />
+            {/* Middle Bar */}
+            <motion.span
+              animate={mobileMenuOpen ? { opacity: 0, scale: 0 } : { opacity: 1, scale: 1 }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              className={`w-6 h-0.5 rounded-full block ${isScrolled ? 'bg-stone-900' : 'bg-white'}`}
+            />
+            {/* Bottom Bar */}
+            <motion.span
+              animate={mobileMenuOpen ? { rotate: -45, y: -9 } : { rotate: 0, y: 0 }}
+              transition={{ duration: 0.3, ease: 'easeInOut' }}
+              className={`w-6 h-0.5 rounded-full block origin-center ${isScrolled ? 'bg-stone-900' : 'bg-white'}`}
+            />
+          </div>
         </button>
       </div>
 
-      {/* Mobile Drawer Menu */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#faf9f5] border-b border-stone-300 px-6 py-6 space-y-3 shadow-2xl">
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-xs uppercase tracking-[0.18em] font-bold text-stone-800 hover:text-[#5c1818] py-3 border-b border-stone-200"
-            >
-              {item.name}
-            </Link>
-          ))}
-          <Link
-            href="#contact"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-center bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.18em] py-3.5 rounded-sm mt-4 border border-amber-500/40 shadow-md"
+      {/* Animated Mobile Drawer Menu */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:hidden bg-[#faf9f5] border-b border-stone-300 px-6 py-6 space-y-3 shadow-2xl overflow-hidden"
           >
-            Connect With Directors Direct
-          </Link>
-        </div>
-      )}
+            {NAV_ITEMS.map((item, idx) => (
+              <motion.div
+                key={item.name}
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.25, delay: idx * 0.05 }}
+              >
+                <Link
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block text-xs uppercase tracking-[0.18em] font-bold text-stone-800 hover:text-[#5c1818] py-3 border-b border-stone-200"
+                >
+                  {item.name}
+                </Link>
+              </motion.div>
+            ))}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: NAV_ITEMS.length * 0.05 }}
+            >
+              <Link
+                href="#contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-center bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.18em] py-3.5 rounded-sm mt-4 border border-amber-500/40 shadow-md"
+              >
+                Connect With Directors Direct
+              </Link>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
+
 
 
 
