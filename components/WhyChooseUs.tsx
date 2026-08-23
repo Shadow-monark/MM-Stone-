@@ -29,34 +29,34 @@ const FEATURES = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-28 sm:py-36 bg-stone-950 relative overflow-hidden text-white border-t border-stone-800">
+    <section className="py-28 sm:py-36 bg-[#eae7e0] relative overflow-hidden text-stone-900 border-t border-stone-300">
       
-      {/* 100% VISIBLE Background Carving Relief Image Behind Text */}
-      <div className="absolute inset-0 z-0 overflow-hidden opacity-65 pointer-events-none">
+      {/* Background Carving Relief Image Behind Text (Subtle Light Warm Overlay) */}
+      <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">
         <img
           src="/bg/om_temple.jpg"
           alt="Sacred OM & Deity Temple Facade Sandstone Relief"
-          className="w-full h-full object-cover filter brightness-90 contrast-115 scale-105"
+          className="w-full h-full object-cover filter contrast-125 scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-stone-950/70" />
-        <div className="absolute inset-0 bg-gradient-to-r from-stone-950/80 via-transparent to-stone-950/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#eae7e0] via-transparent to-[#eae7e0]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#eae7e0] via-transparent to-[#eae7e0]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header with Animated Text */}
-        <div className="text-center max-w-3xl mx-auto mb-16 bg-stone-900/85 p-6 sm:p-8 rounded-sm border border-stone-800 backdrop-blur-md shadow-xl">
-          <span className="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-3">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#705432] block mb-3">
             Why Choose M.M. STONE INDUSTRIES
           </span>
           <div className="flex justify-center">
             <AnimatedHeading
               text="Direct Mine Ownership, Heritage Master Carvings"
               italicWord="Carvings"
-              className="text-3xl sm:text-5xl font-normal text-white leading-tight mb-4 justify-center text-center"
+              className="text-3xl sm:text-5xl font-normal text-stone-900 leading-tight mb-4 justify-center text-center"
             />
           </div>
-          <AnimatedParagraph delay={0.2} className="text-stone-300 text-sm sm:text-base font-light">
+          <AnimatedParagraph delay={0.2} className="text-stone-700 text-sm sm:text-base font-light">
             Bridging heavy quarry extraction and master 3D relief craftsmanship for landmark architectural and temple projects.
           </AnimatedParagraph>
         </div>
@@ -71,16 +71,16 @@ export default function WhyChooseUs() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.12 }}
               whileHover={{ y: -5 }}
-              className="bg-stone-900/90 border border-stone-800 p-8 sm:p-9 rounded-sm hover:border-amber-500/50 transition-colors duration-300 flex flex-col justify-between group shadow-xl hover:shadow-2xl backdrop-blur-md"
+              className="bg-[#faf9f5] border border-stone-300 p-8 sm:p-9 rounded-sm hover:border-[#5c1818] transition-colors duration-300 flex flex-col justify-between group shadow-sm hover:shadow-xl"
             >
               <div>
-                <div className="w-11 h-11 rounded-sm bg-stone-950 border border-amber-500/30 text-amber-300 flex items-center justify-center mb-6 group-hover:bg-[#5c1818] group-hover:text-amber-100 transition-all duration-300">
-                  <feature.icon className="w-5 h-5 text-amber-400 group-hover:text-amber-200" />
+                <div className="w-11 h-11 rounded-sm bg-white border border-stone-300 text-stone-900 flex items-center justify-center mb-6 group-hover:bg-[#5c1818] group-hover:text-white transition-all duration-300">
+                  <feature.icon className="w-5 h-5 text-[#5c1818] group-hover:text-amber-200" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-3 group-hover:text-amber-300 transition-colors leading-snug">
+                <h3 className="text-lg font-bold text-stone-900 mb-3 group-hover:text-[#5c1818] transition-colors leading-snug">
                   {feature.title}
                 </h3>
-                <p className="text-stone-300 text-xs leading-[1.75] font-light">
+                <p className="text-stone-600 text-xs leading-[1.75] font-light">
                   {feature.description}
                 </p>
               </div>
@@ -92,6 +92,7 @@ export default function WhyChooseUs() {
     </section>
   );
 }
+
 
 
 

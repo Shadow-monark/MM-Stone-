@@ -6,18 +6,17 @@ import { AnimatedHeading, AnimatedParagraph } from './AnimatedText';
 
 export default function About() {
   return (
-    <section id="about" className="py-28 sm:py-36 bg-stone-950 relative overflow-hidden text-white border-t border-stone-800">
+    <section id="about" className="py-28 sm:py-36 bg-[#faf9f5] relative overflow-hidden text-stone-900 border-t border-stone-200">
       
-      {/* 100% VISIBLE Authentic Master Relief Background Photo Behind Text */}
-      <div className="absolute inset-0 z-0 overflow-hidden opacity-70 pointer-events-none">
+      {/* Light Warm Sandstone Background Photo Overlay */}
+      <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">
         <img
           src="/bg/about_mandir.jpg"
           alt="Mahatma Phule & Savitribai Phule Red Sandstone Relief"
-          className="w-full h-full object-cover filter brightness-90 contrast-115 scale-105"
+          className="w-full h-full object-cover filter contrast-125 scale-105"
         />
-        {/* Soft dark vignette so image is sharp and clear while text pops */}
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-stone-950/70" />
-        <div className="absolute inset-0 bg-gradient-to-r from-stone-950/80 via-transparent to-stone-950/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#faf9f5] via-transparent to-[#faf9f5]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#faf9f5] via-transparent to-[#faf9f5]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,36 +32,36 @@ export default function About() {
             transition={{ duration: 0.7 }}
             className="lg:col-span-6 relative"
           >
-            <div className="relative rounded-sm overflow-hidden border border-amber-500/30 shadow-2xl aspect-[4/3] sm:aspect-[16/11] bg-stone-900">
+            <div className="relative rounded-sm overflow-hidden border border-stone-300 shadow-xl aspect-[4/3] sm:aspect-[16/11] bg-stone-100">
               <img
                 src="/bg/about_mandir.jpg"
                 alt="Mahatma Phule & Savitribai Phule Red Sandstone Relief"
-                className="w-full h-full object-cover filter brightness-100 contrast-110"
+                className="w-full h-full object-cover filter brightness-100 contrast-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 text-xs text-amber-200 font-semibold uppercase tracking-wider bg-stone-950/90 p-3.5 rounded-sm border border-stone-700 backdrop-blur-md">
+              <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 text-xs text-white font-semibold uppercase tracking-wider bg-stone-900/85 p-3.5 rounded-sm border border-stone-700 backdrop-blur-md">
                 3D High-Relief Red Sandstone Carving • Monolithic Monograph
               </div>
             </div>
 
             {/* Floating Legacy Card */}
-            <div className="absolute -bottom-6 -right-2 sm:-bottom-8 sm:right-6 bg-stone-900/95 border border-amber-500/40 p-6 sm:p-7 rounded-sm shadow-2xl max-w-[260px] backdrop-blur-md">
-              <span className="text-amber-400 font-serif text-3xl sm:text-4xl font-bold block leading-none mb-1.5">
+            <div className="absolute -bottom-6 -right-2 sm:-bottom-8 sm:right-6 bg-white border border-stone-300 p-6 sm:p-7 rounded-sm shadow-2xl max-w-[260px]">
+              <span className="text-[#5c1818] font-serif text-3xl sm:text-4xl font-bold block leading-none mb-1.5">
                 ML 13/2022
               </span>
-              <span className="text-[11px] uppercase tracking-wider text-stone-300 font-bold block leading-relaxed">
+              <span className="text-[11px] uppercase tracking-wider text-stone-700 font-bold block leading-relaxed">
                 Mines Owner & Master Architectural Fabricators
               </span>
             </div>
           </motion.div>
 
-          {/* Right: Editorial Narrative Layered On Top of Photo */}
-          <div className="lg:col-span-6 space-y-8 bg-stone-900/85 p-7 sm:p-9 rounded-sm border border-stone-800 shadow-2xl backdrop-blur-md">
+          {/* Right: Editorial Narrative Layered On Top */}
+          <div className="lg:col-span-6 space-y-8 bg-white/90 p-7 sm:p-9 rounded-sm border border-stone-300 shadow-md backdrop-blur-md">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-[#5c1818] text-amber-100 text-xs uppercase tracking-[0.25em] shadow-sm font-semibold border border-amber-500/30"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-[#5c1818] text-amber-100 text-xs uppercase tracking-[0.25em] shadow-sm font-semibold"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-amber-300" />
               M.M. STONE INDUSTRIES • Bayana Quarries
@@ -72,14 +71,14 @@ export default function About() {
             <AnimatedHeading
               text="Mastery in Sandstone Reliefs & Heritage Stone Architecture"
               italicWord="Reliefs"
-              className="text-3xl sm:text-4xl lg:text-5xl font-normal text-white leading-[1.25]"
+              className="text-3xl sm:text-4xl lg:text-5xl font-normal text-stone-900 leading-[1.25]"
             />
 
-            <AnimatedParagraph delay={0.2} className="text-stone-200 text-base sm:text-lg leading-[1.8] font-light">
+            <AnimatedParagraph delay={0.2} className="text-stone-800 text-base sm:text-lg leading-[1.8] font-light">
               M.M. STONE INDUSTRIES operates primary mine reserves in Bayana, District Bharatpur, Rajasthan under ML No. 13/2022. We specialize in Bansi Paharpur Red Sandstone, Dholpur Sandstone, and bespoke architectural carvings.
             </AnimatedParagraph>
 
-            <AnimatedParagraph delay={0.3} className="text-stone-300 text-sm sm:text-base leading-[1.8] font-light">
+            <AnimatedParagraph delay={0.3} className="text-stone-700 text-sm sm:text-base leading-[1.8] font-light">
               From monumental temple facades, 3D relief panels, and perforated Jali screens to turned pillars, domes, chhatris, and stone gates, our quarry craftsmen combine heritage hand-carving with high-precision 3D CNC carving.
             </AnimatedParagraph>
 
@@ -89,25 +88,25 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.35 }}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-stone-800"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-stone-300"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-sm bg-stone-950 border border-amber-500/30 text-amber-300 shrink-0 shadow-sm">
-                  <ShieldCheck className="w-5 h-5 text-amber-400" />
+                <div className="p-3 rounded-sm bg-white border border-stone-300 text-stone-900 shrink-0 shadow-xs">
+                  <ShieldCheck className="w-5 h-5 text-[#5c1818]" />
                 </div>
                 <div>
-                  <h4 className="text-white text-sm font-bold mb-1">Direct Mines Ownership</h4>
-                  <p className="text-stone-300 text-xs leading-relaxed font-light">Single-vein color consistency for large architectural contracts.</p>
+                  <h4 className="text-stone-900 text-sm font-bold mb-1">Direct Mines Ownership</h4>
+                  <p className="text-stone-600 text-xs leading-relaxed font-light">Single-vein color consistency for large architectural contracts.</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-sm bg-stone-950 border border-amber-500/30 text-amber-300 shrink-0 shadow-sm">
-                  <Award className="w-5 h-5 text-amber-400" />
+                <div className="p-3 rounded-sm bg-white border border-stone-300 text-stone-900 shrink-0 shadow-xs">
+                  <Award className="w-5 h-5 text-[#5c1818]" />
                 </div>
                 <div>
-                  <h4 className="text-white text-sm font-bold mb-1">Master Artisans & CNC</h4>
-                  <p className="text-stone-300 text-xs leading-relaxed font-light">Deep-undercut carving and micro-calibrated slab tolerances.</p>
+                  <h4 className="text-stone-900 text-sm font-bold mb-1">Master Artisans & CNC</h4>
+                  <p className="text-stone-600 text-xs leading-relaxed font-light">Deep-undercut carving and micro-calibrated slab tolerances.</p>
                 </div>
               </div>
             </motion.div>
@@ -116,36 +115,36 @@ export default function About() {
 
         </div>
 
-        {/* Bottom Key Metrics Cards Layered On Top of Background */}
+        {/* Bottom Key Metrics Cards */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-16 border-t border-stone-800"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-16 border-t border-stone-300"
         >
-          <div className="p-7 sm:p-8 bg-stone-900/90 border border-stone-800 rounded-sm shadow-xl space-y-2 backdrop-blur-md">
-            <span className="text-[10px] uppercase tracking-[0.25em] text-amber-400 block font-bold">Mine License</span>
-            <span className="text-2xl sm:text-3xl text-white font-bold block leading-tight">ML 13/2022</span>
-            <span className="text-xs text-stone-400 block font-light">Village Murrki, Bayana</span>
+          <div className="p-7 sm:p-8 bg-white border border-stone-300 rounded-sm shadow-sm space-y-2">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#705432] block font-bold">Mine License</span>
+            <span className="text-2xl sm:text-3xl text-stone-900 font-bold block leading-tight">ML 13/2022</span>
+            <span className="text-xs text-stone-500 block font-light">Village Murrki, Bayana</span>
           </div>
 
-          <div className="p-7 sm:p-8 bg-stone-900/90 border border-stone-800 rounded-sm shadow-xl space-y-2 backdrop-blur-md">
-            <span className="text-[10px] uppercase tracking-[0.25em] text-amber-400 block font-bold">Specialty Products</span>
-            <span className="text-2xl sm:text-3xl text-white font-bold block leading-tight">Jali & CNC</span>
-            <span className="text-xs text-stone-400 block font-light">Temple fittings, Domes & Pillars</span>
+          <div className="p-7 sm:p-8 bg-white border border-stone-300 rounded-sm shadow-sm space-y-2">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#705432] block font-bold">Specialty Products</span>
+            <span className="text-2xl sm:text-3xl text-stone-900 font-bold block leading-tight">Jali & CNC</span>
+            <span className="text-xs text-stone-500 block font-light">Temple fittings, Domes & Pillars</span>
           </div>
 
-          <div className="p-7 sm:p-8 bg-stone-900/90 border border-stone-800 rounded-sm shadow-xl space-y-2 backdrop-blur-md">
-            <span className="text-[10px] uppercase tracking-[0.25em] text-amber-400 block font-bold">Geological Grade</span>
-            <span className="text-2xl sm:text-3xl text-white font-bold block leading-tight">Red Sandstone</span>
-            <span className="text-xs text-stone-400 block font-light">Weather resistant & durable</span>
+          <div className="p-7 sm:p-8 bg-white border border-stone-300 rounded-sm shadow-sm space-y-2">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#705432] block font-bold">Geological Grade</span>
+            <span className="text-2xl sm:text-3xl text-stone-900 font-bold block leading-tight">Red Sandstone</span>
+            <span className="text-xs text-stone-500 block font-light">Weather resistant & durable</span>
           </div>
 
-          <div className="p-7 sm:p-8 bg-stone-900/90 border border-stone-800 rounded-sm shadow-xl space-y-2 backdrop-blur-md">
-            <span className="text-[10px] uppercase tracking-[0.25em] text-amber-400 block font-bold">Direct Desk</span>
-            <span className="text-2xl sm:text-3xl text-white font-bold block leading-tight">3 Directors</span>
-            <span className="text-xs text-stone-400 block font-light">Vijay, Kapil & Neeraj Agrawal</span>
+          <div className="p-7 sm:p-8 bg-white border border-stone-300 rounded-sm shadow-sm space-y-2">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-[#705432] block font-bold">Direct Desk</span>
+            <span className="text-2xl sm:text-3xl text-stone-900 font-bold block leading-tight">3 Directors</span>
+            <span className="text-xs text-stone-500 block font-light">Vijay, Kapil & Neeraj Agrawal</span>
           </div>
         </motion.div>
 
@@ -153,6 +152,7 @@ export default function About() {
     </section>
   );
 }
+
 
 
 
