@@ -41,7 +41,7 @@ export default function Hero() {
       </div>
 
       {/* Hero Content Overlay */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 sm:pt-28 sm:pb-16 flex flex-col items-center text-center">
+      <div className="relative z-10 w-full max-w-[90%] mx-auto px-0 pt-20 pb-12 sm:pt-28 sm:pb-16 flex flex-col items-center text-center">
         
         {/* Active Quarry & License Tag */}
         <motion.div

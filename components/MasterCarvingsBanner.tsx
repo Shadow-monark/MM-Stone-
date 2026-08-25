@@ -88,7 +88,7 @@ export default function MasterCarvingsBanner() {
       </AnimatePresence>
 
       {/* TEXT LAYERED DIRECTLY ON TOP OF PHOTO */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full flex flex-col justify-between min-h-[75vh] sm:min-h-[85vh]">
+      <div className="relative z-10 w-full max-w-[90%] mx-auto px-0 py-20 flex flex-col justify-between min-h-[75vh] sm:min-h-[85vh]">
         
         {/* Top Header Tag */}
         <div className="flex flex-wrap items-center justify-between gap-4">

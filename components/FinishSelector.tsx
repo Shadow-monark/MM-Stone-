@@ -71,7 +71,7 @@ export default function FinishSelector() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#f4f2ec] via-transparent to-[#f4f2ec]" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="w-full max-w-[90%] mx-auto px-0 relative z-10">
 
         
         {/* Section Header */}

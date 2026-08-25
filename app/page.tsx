@@ -1,6 +1,5 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import LiveTicker from '@/components/LiveTicker';
 import About from '@/components/About';
 import CraftGallery from '@/components/CraftGallery';
 import StoneCollection from '@/components/StoneCollection';
@@ -18,7 +17,6 @@ export default function HomePage() {
       <Navbar />
       <main className="flex-1 relative z-10">
         <Hero />
-        <LiveTicker />
         <About />
         <CraftGallery />
         <StoneCollection />

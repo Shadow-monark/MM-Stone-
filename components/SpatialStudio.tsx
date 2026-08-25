@@ -86,7 +86,7 @@ export default function SpatialStudio() {
 
   return (
     <section id="applications" className="py-28 sm:py-36 bg-[#f4f2ec] relative overflow-hidden border-t border-[#dcd8cd]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="w-full max-w-[90%] mx-auto px-0 relative z-10">
         
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">

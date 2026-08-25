@@ -68,7 +68,7 @@ export default function Navbar() {
           : 'bg-gradient-to-b from-stone-950/85 via-stone-950/30 to-transparent py-5'
       }`}
     >
-      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 flex items-center justify-between">
+      <div className="w-full max-w-[90%] mx-auto px-0 flex items-center justify-between">
         
         {/* Clean Brand Logo Without Subtitle */}
         <Link href="/" className="flex items-center gap-3 group shrink-0">

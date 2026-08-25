@@ -19,7 +19,7 @@ export default function About() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#faf9f5] via-transparent to-[#faf9f5]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 w-full max-w-[90%] mx-auto px-0">
         
         {/* Top Grid: Story & Visual — Perfectly Symmetrically Aligned */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch mb-20">
