@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'MM STONES — Architectural Stone Studio & Quarry Monographs',
+  title: 'M.M. STONE — Architectural Stone Studio & Quarry Monographs',
   description:
-    'MM STONES is an international architectural stone studio and quarrying corporation specializing in Red Sandstone, Ruby Red Granite, Heritage Jalis, and Architectural Monographs.',
-  keywords: ['MM Stones', 'architectural stone', 'quarry', 'granite', 'marble', 'jali', 'sandstone', 'architectural monographs'],
+    'M.M. STONE is an international architectural stone studio and quarrying corporation specializing in Red Sandstone, Ruby Red Granite, Heritage Jalis, and Architectural Monographs.',
+  keywords: ['M.M. Stone', 'architectural stone', 'quarry', 'granite', 'marble', 'jali', 'sandstone', 'architectural monographs'],
 };
 
 export default function RootLayout({

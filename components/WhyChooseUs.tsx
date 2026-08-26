@@ -29,7 +29,7 @@ const FEATURES = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-28 sm:py-36 bg-[#eae7e0] relative overflow-hidden text-stone-900 border-t border-stone-300">
+    <section className="py-12 sm:py-16 bg-[#eae7e0] relative overflow-hidden text-stone-900 border-t border-stone-300">
       
       {/* Background Carving Relief Image Behind Text (Subtle Light Warm Overlay) */}
       <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">

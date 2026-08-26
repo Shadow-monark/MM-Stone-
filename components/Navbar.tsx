@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShieldCheck } from 'lucide-react';
+import { Phone, MessageCircle, X } from 'lucide-react';
 
 const NAV_ITEMS = [
   { name: 'About', href: '#about' },
@@ -18,6 +18,7 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showCallMenu, setShowCallMenu] = useState(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined' && 'scrollRestoration' in window.history) {
@@ -68,7 +69,7 @@ export default function Navbar() {
           : 'bg-gradient-to-b from-stone-950/85 via-stone-950/30 to-transparent py-5'
       }`}
     >
-      <div className="w-full max-w-[90%] mx-auto px-0 flex items-center justify-between">
+      <div className="w-full max-w-[95%] xl:max-w-[96%] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
         {/* Clean Brand Logo Without Subtitle */}
         <Link href="/" className="flex items-center gap-3 group shrink-0">
@@ -80,10 +81,10 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Single-Line Spacious Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-6 lg:gap-8 xl:gap-10">
+        {/* Single-Line Compact Desktop Navigation */}
+        <nav className="hidden lg:flex items-center gap-2.5 lg:gap-4 xl:gap-5">
           {NAV_ITEMS.map((item) => (
-            <Link
+            <a
               key={item.name}
               href={item.href}
               className={`text-xs uppercase tracking-[0.18em] font-bold transition-all py-1.5 px-1 whitespace-nowrap ${
@@ -93,19 +94,19 @@ export default function Navbar() {
               }`}
             >
               {item.name}
-            </Link>
+            </a>
           ))}
         </nav>
 
-        {/* Direct Connect Action Button */}
+        {/* Direct Call Action Button - Triggers Animated Call List Modal */}
         <div className="hidden sm:flex items-center gap-3 shrink-0">
-          <Link
-            href="#contact"
-            className="inline-flex items-center gap-2 bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.18em] px-5 py-2.5 rounded-sm transition-all shadow-md border border-amber-500/40 shrink-0 whitespace-nowrap"
+          <button
+            onClick={() => setShowCallMenu(!showCallMenu)}
+            className="inline-flex items-center gap-2 bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.18em] px-5 py-2.5 rounded-full transition-all shadow-md border border-amber-500/40 shrink-0 whitespace-nowrap cursor-pointer group"
           >
-            <ShieldCheck className="w-4 h-4 text-amber-300" />
-            <span>Connect Direct</span>
-          </Link>
+            <Phone className="w-4 h-4 text-amber-300 group-hover:scale-110 transition-transform" />
+            <span>Call</span>
+          </button>
         </div>
 
         {/* Animated Hamburger-to-Cross Mobile Menu Button */}
@@ -156,13 +157,13 @@ export default function Navbar() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.25, delay: idx * 0.05 }}
               >
-                <Link
+                <a
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className="block text-xs uppercase tracking-[0.18em] font-bold text-stone-800 hover:text-[#5c1818] py-3 border-b border-stone-200"
                 >
                   {item.name}
-                </Link>
+                </a>
               </motion.div>
             ))}
             <motion.div
@@ -170,15 +171,153 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: NAV_ITEMS.length * 0.05 }}
             >
-              <Link
-                href="#contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block text-center bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.18em] py-3.5 rounded-sm mt-4 border border-amber-500/40 shadow-md"
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  setShowCallMenu(true);
+                }}
+                className="w-full flex items-center justify-center gap-2 text-center bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.18em] py-3.5 rounded-full mt-4 border border-amber-500/40 shadow-md cursor-pointer"
               >
-                Connect With Directors Direct
-              </Link>
+                <Phone className="w-4 h-4 text-amber-300" />
+                <span>Call Directors & Desk</span>
+              </button>
             </motion.div>
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Animated Direct Call & WhatsApp Dropdown Popover (Top-Right under Navbar) */}
+      <AnimatePresence>
+        {showCallMenu && (
+          <>
+            {/* Click Outside Transparent Overlay */}
+            <div
+              className="fixed inset-0 z-40"
+              onClick={() => setShowCallMenu(false)}
+            />
+
+            {/* Top-Right Positioned Popover Dropdown */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: -10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: -10 }}
+              transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+              className="absolute top-full right-4 sm:right-8 mt-2 max-w-sm w-[calc(100vw-2rem)] sm:w-96 bg-white rounded-xl shadow-2xl border border-stone-300 overflow-hidden text-stone-900 z-50"
+            >
+              {/* Popover Header */}
+              <div className="bg-[#5c1818] text-white p-4 flex items-center justify-between border-b border-amber-500/30">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-full bg-amber-500/20 border border-amber-400/40 flex items-center justify-center shrink-0">
+                    <Phone className="w-3.5 h-3.5 text-amber-300" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xs uppercase tracking-wider text-amber-100">
+                      Direct Call & WhatsApp
+                    </h3>
+                    <p className="text-[10px] text-amber-200/80">M.M. STONE • Bayana Desk</p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setShowCallMenu(false)}
+                  className="p-1 rounded-full bg-stone-900/40 hover:bg-stone-900 text-amber-200 hover:text-white transition-colors cursor-pointer"
+                  aria-label="Close call menu"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </div>
+
+              {/* Directors Phone List */}
+              <div className="p-4 space-y-3 max-h-[70vh] overflow-y-auto">
+                
+                {/* Director 1 */}
+                <div className="p-3 bg-[#faf9f5] border border-stone-200 rounded-lg space-y-2 shadow-2xs">
+                  <div>
+                    <span className="text-[9px] uppercase font-bold tracking-wider text-amber-800 block">Managing Director • Operations</span>
+                    <h4 className="font-bold text-stone-900 text-xs">Vijay Kumar Agrawal</h4>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <a
+                      href="tel:+919414024097"
+                      className="flex items-center justify-center gap-1.5 bg-stone-900 hover:bg-stone-800 text-white font-semibold text-[11px] py-1.5 px-2 rounded-md transition-colors shadow-2xs"
+                    >
+                      <Phone className="w-3 h-3 text-amber-300" />
+                      <span>9414024097</span>
+                    </a>
+                    <a
+                      href="https://wa.me/919001100731"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-1.5 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-[11px] py-1.5 px-2 rounded-md transition-colors shadow-2xs"
+                    >
+                      <MessageCircle className="w-3 h-3" />
+                      <span>WhatsApp</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Director 2 */}
+                <div className="p-3 bg-[#faf9f5] border border-stone-200 rounded-lg space-y-2 shadow-2xs">
+                  <div>
+                    <span className="text-[9px] uppercase font-bold tracking-wider text-amber-800 block">Quarry & Export Management</span>
+                    <h4 className="font-bold text-stone-900 text-xs">Kapil Agrawal</h4>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <a
+                      href="tel:+919899063866"
+                      className="flex items-center justify-center gap-1.5 bg-stone-900 hover:bg-stone-800 text-white font-semibold text-[11px] py-1.5 px-2 rounded-md transition-colors shadow-2xs"
+                    >
+                      <Phone className="w-3 h-3 text-amber-300" />
+                      <span>9899063866</span>
+                    </a>
+                    <a
+                      href="https://wa.me/919899063866"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-1.5 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-[11px] py-1.5 px-2 rounded-md transition-colors shadow-2xs"
+                    >
+                      <MessageCircle className="w-3 h-3" />
+                      <span>WhatsApp</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Director 3 */}
+                <div className="p-3 bg-[#faf9f5] border border-stone-200 rounded-lg space-y-2 shadow-2xs">
+                  <div>
+                    <span className="text-[9px] uppercase font-bold tracking-wider text-amber-800 block">Architectural Specifications</span>
+                    <h4 className="font-bold text-stone-900 text-xs">Neeraj Sharma</h4>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <a
+                      href="tel:+917906123660"
+                      className="flex items-center justify-center gap-1.5 bg-stone-900 hover:bg-stone-800 text-white font-semibold text-[11px] py-1.5 px-2 rounded-md transition-colors shadow-2xs"
+                    >
+                      <Phone className="w-3 h-3 text-amber-300" />
+                      <span>7906123660</span>
+                    </a>
+                    <a
+                      href="https://wa.me/917906123660"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-1.5 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-[11px] py-1.5 px-2 rounded-md transition-colors shadow-2xs"
+                    >
+                      <MessageCircle className="w-3 h-3" />
+                      <span>WhatsApp</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+              {/* Modal Footer Note */}
+              <div className="bg-stone-100 p-2.5 text-center border-t border-stone-200">
+                <p className="text-[10px] text-stone-600">
+                  Email: <a href="mailto:mmstone@rediffmail.com" className="text-amber-900 font-bold hover:underline">mmstone@rediffmail.com</a>
+                </p>
+              </div>
+
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>

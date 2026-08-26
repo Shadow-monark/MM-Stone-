@@ -58,7 +58,7 @@ export default function FinishSelector() {
   const [selectedFinish, setSelectedFinish] = useState<FinishOption>(FINISH_OPTIONS[0]);
 
   return (
-    <section id="finishes" className="py-28 sm:py-36 bg-[#f4f2ec] relative border-t border-[#dcd8cd] overflow-hidden">
+    <section id="finishes" className="py-12 sm:py-16 bg-[#f4f2ec] relative border-t border-[#dcd8cd] overflow-hidden">
       
       {/* Background Carving Relief Image Behind Text */}
       <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">
@@ -71,7 +71,7 @@ export default function FinishSelector() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#f4f2ec] via-transparent to-[#f4f2ec]" />
       </div>
 
-      <div className="w-full max-w-[90%] mx-auto px-0 relative z-10">
+      <div className="w-full max-w-[95%] xl:max-w-[96%] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         
         {/* Section Header */}
@@ -97,13 +97,13 @@ export default function FinishSelector() {
           {/* Left: Preview Canvas */}
           <div className="lg:col-span-7">
             <div className="relative aspect-[16/10] rounded-sm overflow-hidden border border-stone-300 shadow-xl bg-stone-100 group">
-              <AnimatePresence mode="wait">
+              <AnimatePresence initial={false}>
                 <motion.div
                   key={selectedFinish.id}
-                  initial={{ opacity: 0, scale: 1.03 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ duration: 0.4 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2, ease: 'easeOut' }}
                   className="absolute inset-0"
                 >
                   <img
@@ -144,6 +144,7 @@ export default function FinishSelector() {
                   key={finish.id}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => setSelectedFinish(finish)}
+                  onMouseEnter={() => setSelectedFinish(finish)}
                   className={`w-full text-left p-5 rounded-sm border transition-colors duration-200 flex items-start justify-between gap-4 relative overflow-hidden ${
                     isSelected
                       ? 'bg-white border-stone-900 shadow-md'

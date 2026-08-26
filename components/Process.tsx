@@ -86,7 +86,7 @@ export default function Process() {
   };
 
   return (
-    <section id="process" className="py-28 sm:py-36 bg-[#faf9f5] relative border-t border-stone-200 overflow-hidden">
+    <section id="process" className="py-12 sm:py-16 bg-[#eae7e0] relative border-t border-[#dcd8cd] overflow-hidden">
       
       {/* Background Carving Relief Image Behind Text */}
       <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">

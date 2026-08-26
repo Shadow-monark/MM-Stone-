@@ -6,7 +6,7 @@ import { AnimatedHeading, AnimatedParagraph } from './AnimatedText';
 
 export default function About() {
   return (
-    <section id="about" className="py-28 sm:py-36 bg-[#faf9f5] relative overflow-hidden text-stone-900 border-t border-stone-200">
+    <section id="about" className="py-14 sm:py-18 bg-[#faf9f5] relative overflow-hidden text-stone-900 border-t border-stone-200">
       
       {/* Light Warm Sandstone Background Photo Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">
@@ -19,7 +19,7 @@ export default function About() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#faf9f5] via-transparent to-[#faf9f5]" />
       </div>
 
-      <div className="relative z-10 w-full max-w-[90%] mx-auto px-0">
+      <div className="relative z-10 w-full max-w-[95%] xl:max-w-[96%] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Grid: Story & Visual — Perfectly Symmetrically Aligned */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch mb-20">

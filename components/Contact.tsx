@@ -1,28 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle2, MessageCircle, ExternalLink, ShieldCheck, Image as ImageIcon, X } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageCircle, ShieldCheck, Image as ImageIcon, X, ArrowUpRight } from 'lucide-react';
 import { AnimatedHeading, AnimatedParagraph } from './AnimatedText';
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
   const [showCardModal, setShowCardModal] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    stoneType: 'Bansi Paharpur Red Stone',
-    finish: 'Hand Carved Jali / CNC Relief',
-    message: '',
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
 
   return (
-    <section id="contact" className="py-24 sm:py-32 bg-[#faf9f6] relative border-t border-stone-200 overflow-hidden">
+    <section id="contact" className="py-12 sm:py-16 bg-[#faf9f6] relative border-t border-stone-200 overflow-hidden">
       
       {/* Background Carving Relief Image Behind Text */}
       <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">
@@ -35,12 +21,11 @@ export default function Contact() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#faf9f6] via-transparent to-[#faf9f6]" />
       </div>
 
-      <div className="w-full max-w-[90%] mx-auto px-0 relative z-10">
-
+      <div className="w-full max-w-[95%] xl:max-w-[96%] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header Tag */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-[#5c1818] text-amber-200 text-xs uppercase tracking-[0.25em] font-semibold mb-3 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#5c1818] text-amber-200 text-xs uppercase tracking-[0.25em] font-semibold mb-3 shadow-sm">
             <ShieldCheck className="w-4 h-4 text-amber-300" />
             <span>Mines Owner (ML No. 13/2022) • Direct Studio Access</span>
           </div>
@@ -54,232 +39,182 @@ export default function Contact() {
           </AnimatedParagraph>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-          
-          {/* Left Column: Authentic Directors & Contact Cards */}
-          <div className="lg:col-span-5 space-y-8">
-            
-            {/* Directors Contact Card */}
-            <div className="bg-white border border-stone-300 p-6 sm:p-7 rounded-sm shadow-md space-y-5">
-              <span className="text-[10px] uppercase font-bold tracking-[0.25em] text-[#705432] block">
-                Executive Leadership & Technical Desk
-              </span>
+        {/* 3 Executive Directors Cards Row */}
+        <div className="mb-12">
+          <span className="text-[11px] uppercase font-bold tracking-[0.25em] text-[#705432] block text-center mb-6">
+            Executive Leadership & Technical Desk
+          </span>
 
-              <div className="space-y-4 text-xs">
-                {/* Director 1 */}
-                <div className="p-3.5 bg-[#f5f3eb] rounded-sm border border-stone-200 flex items-center justify-between">
-                  <div>
-                    <h4 className="font-bold text-stone-900 text-sm">Vijay Kumar Agrawal</h4>
-                    <span className="text-stone-500 text-[11px]">Managing Director • Operations</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <a
-                      href="https://wa.me/919001100731"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-sm bg-emerald-700 hover:bg-emerald-800 text-white transition-colors"
-                      title="WhatsApp Vijay Agrawal (+91 9001100731)"
-                    >
-                      <MessageCircle className="w-4 h-4" />
-                    </a>
-                    <a
-                      href="tel:+919414024097"
-                      className="p-2 rounded-sm bg-stone-900 hover:bg-stone-800 text-white transition-colors"
-                      title="Call +91 9414024097"
-                    >
-                      <Phone className="w-4 h-4" />
-                    </a>
-                  </div>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Director 1 */}
+            <div className="bg-white border border-stone-300 p-6 rounded-sm shadow-md flex flex-col justify-between space-y-4 hover:border-stone-400 transition-all">
+              <div>
+                <span className="text-[10px] uppercase tracking-widest text-amber-800 font-semibold block mb-1">Managing Director • Operations</span>
+                <h4 className="font-bold text-stone-900 text-lg">Vijay Kumar Agrawal</h4>
+                <p className="text-stone-500 text-xs mt-1 font-light">Quarry operations, direct mine licensing, and custom stone fabrication.</p>
+              </div>
 
-                {/* Director 2 */}
-                <div className="p-3.5 bg-[#f5f3eb] rounded-sm border border-stone-200 flex items-center justify-between">
-                  <div>
-                    <h4 className="font-bold text-stone-900 text-sm">Kapil Agrawal</h4>
-                    <span className="text-stone-500 text-[11px]">Quarry & Export Management</span>
-                  </div>
-                  <a
-                    href="https://wa.me/919899063866"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-sm bg-emerald-700 hover:bg-emerald-800 text-white transition-colors flex items-center gap-1 font-semibold text-[11px]"
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                    <span>WhatsApp</span>
-                  </a>
-                </div>
-
-                {/* Director 3 */}
-                <div className="p-3.5 bg-[#f5f3eb] rounded-sm border border-stone-200 flex items-center justify-between">
-                  <div>
-                    <h4 className="font-bold text-stone-900 text-sm">Neeraj Sharma</h4>
-                    <span className="text-stone-500 text-[11px]">Architectural & Site Specifications</span>
-                  </div>
-                  <a
-                    href="https://wa.me/917906123660"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-sm bg-emerald-700 hover:bg-emerald-800 text-white transition-colors flex items-center gap-1 font-semibold text-[11px]"
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                    <span>WhatsApp</span>
-                  </a>
-                </div>
+              <div className="pt-3 border-t border-stone-100 flex items-center gap-2">
+                <a
+                  href="https://wa.me/919001100731"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-2.5 rounded-sm bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs transition-colors shadow-sm"
+                  title="WhatsApp Vijay Agrawal (+91 9001100731)"
+                >
+                  <MessageCircle className="w-4 h-4 shrink-0" />
+                  <span>WhatsApp</span>
+                </a>
+                <a
+                  href="tel:+919414024097"
+                  className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-2.5 rounded-sm bg-stone-900 hover:bg-stone-800 text-white font-semibold text-xs transition-colors shadow-sm"
+                  title="Call +91 9414024097"
+                >
+                  <Phone className="w-4 h-4 shrink-0" />
+                  <span>Call: 9414024097</span>
+                </a>
               </div>
             </div>
 
-            {/* Address & Email Card */}
-            <div className="bg-white border border-stone-300 p-6 sm:p-7 rounded-sm shadow-md space-y-5">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-[#5c1818] text-white rounded-sm shrink-0 shadow-xs">
-                  <MapPin className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-stone-900 font-semibold text-xs uppercase tracking-wider">Mines & Factory Address</h4>
-                  <p className="text-stone-600 text-xs mt-1 leading-relaxed font-light">
-                    Village Murrki, Bharatpur Road, Bayana,<br />
-                    Distt. Bharatpur-321401, Rajasthan, India
-                  </p>
-                </div>
+            {/* Director 2 */}
+            <div className="bg-white border border-stone-300 p-6 rounded-sm shadow-md flex flex-col justify-between space-y-4 hover:border-stone-400 transition-all">
+              <div>
+                <span className="text-[10px] uppercase tracking-widest text-amber-800 font-semibold block mb-1">Quarry & Export Management</span>
+                <h4 className="font-bold text-stone-900 text-lg">Kapil Agrawal</h4>
+                <p className="text-stone-500 text-xs mt-1 font-light">International exports, block logistics, and bulk slab dispatch.</p>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-[#5c1818] text-white rounded-sm shrink-0 shadow-xs">
-                  <Mail className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-stone-900 font-semibold text-xs uppercase tracking-wider">Official Email</h4>
-                  <a href="mailto:mmstone@rediffmail.com" className="text-amber-800 font-semibold text-xs mt-1 block hover:underline">
-                    mmstone@rediffmail.com
-                  </a>
-                </div>
+              <div className="pt-3 border-t border-stone-100 flex items-center gap-2">
+                <a
+                  href="https://wa.me/919899063866"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-2.5 rounded-sm bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs transition-colors shadow-sm"
+                >
+                  <MessageCircle className="w-4 h-4 shrink-0" />
+                  <span>WhatsApp</span>
+                </a>
+                <a
+                  href="tel:+919899063866"
+                  className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-2.5 rounded-sm bg-stone-900 hover:bg-stone-800 text-white font-semibold text-xs transition-colors shadow-sm"
+                >
+                  <Phone className="w-4 h-4 shrink-0" />
+                  <span>Call: 9899063866</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Director 3 */}
+            <div className="bg-white border border-stone-300 p-6 rounded-sm shadow-md flex flex-col justify-between space-y-4 hover:border-stone-400 transition-all">
+              <div>
+                <span className="text-[10px] uppercase tracking-widest text-amber-800 font-semibold block mb-1">Architectural & Site Specifications</span>
+                <h4 className="font-bold text-stone-900 text-lg">Neeraj Sharma</h4>
+                <p className="text-stone-500 text-xs mt-1 font-light">Site blueprints, 3D CNC carving designs, and mandir architecture support.</p>
               </div>
 
-              {/* View Official Business Card Button */}
-              <button
-                onClick={() => setShowCardModal(true)}
-                className="w-full inline-flex items-center justify-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs uppercase tracking-wider py-3 rounded-sm font-semibold transition-colors shadow-sm"
-              >
+              <div className="pt-3 border-t border-stone-100 flex items-center gap-2">
+                <a
+                  href="https://wa.me/917906123660"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-2.5 rounded-sm bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs transition-colors shadow-sm"
+                >
+                  <MessageCircle className="w-4 h-4 shrink-0" />
+                  <span>WhatsApp</span>
+                </a>
+                <a
+                  href="tel:+917906123660"
+                  className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-2.5 rounded-sm bg-stone-900 hover:bg-stone-800 text-white font-semibold text-xs transition-colors shadow-sm"
+                >
+                  <Phone className="w-4 h-4 shrink-0" />
+                  <span>Call: 7906123660</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Address, Email & Official Credentials Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {/* Address Card */}
+          <div className="bg-white border border-stone-300 p-6 rounded-sm shadow-md space-y-3">
+            <div className="flex items-center gap-3">
+              <div className="p-2.5 bg-[#5c1818] text-white rounded-sm shrink-0 shadow-xs">
+                <MapPin className="w-4 h-4" />
+              </div>
+              <h4 className="text-stone-900 font-semibold text-xs uppercase tracking-wider">Mines & Factory Address</h4>
+            </div>
+            <p className="text-stone-600 text-xs leading-relaxed font-light pl-11">
+              Village Murrki, Bharatpur Road, Bayana,<br />
+              Distt. Bharatpur-321401, Rajasthan, India
+            </p>
+          </div>
+
+          {/* Email Card */}
+          <div className="bg-white border border-stone-300 p-6 rounded-sm shadow-md space-y-3">
+            <div className="flex items-center gap-3">
+              <div className="p-2.5 bg-[#5c1818] text-white rounded-sm shrink-0 shadow-xs">
+                <Mail className="w-4 h-4" />
+              </div>
+              <h4 className="text-stone-900 font-semibold text-xs uppercase tracking-wider">Official Email</h4>
+            </div>
+            <div className="pl-11">
+              <a href="mailto:mmstone@rediffmail.com" className="text-amber-800 font-semibold text-sm hover:underline block">
+                mmstone@rediffmail.com
+              </a>
+              <span className="text-stone-500 text-[11px] block mt-1">Direct response for architectural inquiries</span>
+            </div>
+          </div>
+
+          {/* Business Card Button */}
+          <div className="bg-white border border-stone-300 p-6 rounded-sm shadow-md flex flex-col justify-between space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="p-2.5 bg-stone-900 text-white rounded-sm shrink-0 shadow-xs">
                 <ImageIcon className="w-4 h-4 text-amber-300" />
-                <span>View Official Business Card & License</span>
-              </button>
+              </div>
+              <div>
+                <h4 className="text-stone-900 font-semibold text-xs uppercase tracking-wider">Official Mine License</h4>
+                <span className="text-stone-500 text-[11px]">ML No. 13/2022 • Bayana Quarries</span>
+              </div>
             </div>
+            
+            <button
+              onClick={() => setShowCardModal(true)}
+              className="w-full inline-flex items-center justify-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs uppercase tracking-wider py-3 rounded-sm font-semibold transition-colors shadow-sm"
+            >
+              <span>View Official Business Card & License</span>
+              <ArrowUpRight className="w-4 h-4 text-amber-300" />
+            </button>
+          </div>
+        </div>
 
+        {/* Full-Width Maroon Direct CTA Banner */}
+        <div className="bg-[#5c1818] border border-amber-500/40 rounded-sm p-8 sm:p-10 text-white shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="space-y-2 text-center lg:text-left">
+            <span className="text-xs uppercase tracking-[0.25em] text-amber-300 font-semibold block">Instant Quarry Support</span>
+            <h3 className="font-serif text-2xl sm:text-3xl text-white font-normal">Have Project Dimensions or Custom Carving Requirements?</h3>
+            <p className="text-amber-100/90 text-sm font-light max-w-2xl">Connect directly with Vijay Kumar Agrawal for quarry pricing, block availability, and custom 3D relief consultations.</p>
           </div>
 
-          {/* Right Column: Technical Inquiry Form */}
-          <div className="lg:col-span-7">
-            <div className="bg-white border border-stone-300 p-8 sm:p-10 rounded-sm shadow-xl">
-              {submitted ? (
-                <div className="text-center py-12">
-                  <CheckCircle2 className="w-10 h-10 text-emerald-600 mx-auto mb-4" />
-                  <h3 className="text-2xl font-semibold text-stone-900 mb-2">
-                    Inquiry Transmitted Directly
-                  </h3>
-                  <p className="text-stone-600 text-sm max-w-sm mx-auto mb-6 font-light">
-                    Thank you. Vijay Agrawal and our dispatch engineers will review your blueprints and revert within 12 hours.
-                  </p>
-                  <button
-                    onClick={() => setSubmitted(false)}
-                    className="text-xs uppercase tracking-wider text-stone-900 hover:underline font-semibold"
-                  >
-                    Submit another architectural inquiry
-                  </button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-xs uppercase tracking-wider text-stone-700 font-medium mb-2">
-                        Full Name / Firm *
-                      </label>
-                      <input
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="e.g. Architect Rajesh Agrawal"
-                        className="w-full bg-[#faf9f6] border border-stone-300 rounded-sm px-4 py-3 text-stone-900 text-sm focus:outline-none focus:border-stone-600 transition-colors"
-                      />
-                    </div>
+          <div className="flex flex-wrap items-center justify-center gap-4 shrink-0">
+            <a
+              href="tel:+919414024097"
+              className="inline-flex items-center gap-2.5 bg-amber-100 hover:bg-white text-stone-950 font-bold text-xs uppercase tracking-[0.18em] px-6 py-3.5 rounded-full shadow-lg transition-all"
+            >
+              <Phone className="w-4 h-4 text-[#5c1818]" />
+              <span>Call +91 9414024097</span>
+            </a>
 
-                    <div>
-                      <label className="block text-xs uppercase tracking-wider text-stone-700 font-medium mb-2">
-                        Email / Contact *
-                      </label>
-                      <input
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="e.g. studio@architecture.in"
-                        className="w-full bg-[#faf9f6] border border-stone-300 rounded-sm px-4 py-3 text-stone-900 text-sm focus:outline-none focus:border-stone-600 transition-colors"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-xs uppercase tracking-wider text-stone-700 font-medium mb-2">
-                        Stone & Article Category
-                      </label>
-                      <select
-                        value={formData.stoneType}
-                        onChange={(e) => setFormData({ ...formData, stoneType: e.target.value })}
-                        className="w-full bg-[#faf9f6] border border-stone-300 rounded-sm px-4 py-3 text-stone-900 text-sm focus:outline-none focus:border-stone-600 transition-colors"
-                      >
-                        <option value="Bansi Paharpur Red Stone">Bansi Paharpur Red Stone</option>
-                        <option value="Dholpur Pink Sandstone">Dholpur Pink Sandstone</option>
-                        <option value="Jali Lattice & Window Screens">Jali Lattice & Window Screens</option>
-                        <option value="Temple Fittings, Domes & Chhatris">Temple Fittings, Domes & Chhatris</option>
-                        <option value="Monolithic Pillars & CNC Carvings">Monolithic Pillars & CNC Carvings</option>
-                        <option value="Stone Cladding & Exterior Slabs">Stone Cladding & Exterior Slabs</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-xs uppercase tracking-wider text-stone-700 font-medium mb-2">
-                        Required Processing / Finish
-                      </label>
-                      <select
-                        value={formData.finish}
-                        onChange={(e) => setFormData({ ...formData, finish: e.target.value })}
-                        className="w-full bg-[#faf9f6] border border-stone-300 rounded-sm px-4 py-3 text-stone-900 text-sm focus:outline-none focus:border-stone-600 transition-colors"
-                      >
-                        <option value="Hand Carved Jali / CNC Relief">Hand Carved Jali / CNC Relief</option>
-                        <option value="Mirror Polished / Satin">Mirror Polished / Satin</option>
-                        <option value="Thermal Flamed Non-Slip">Thermal Flamed Non-Slip</option>
-                        <option value="Natural Cleft / Sawn Slabs">Natural Cleft / Sawn Slabs</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-xs uppercase tracking-wider text-stone-700 font-medium mb-2">
-                      Project Blueprints & Dimension Specs *
-                    </label>
-                    <textarea
-                      rows={4}
-                      required
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Specify required dimensions, thickness (e.g. 50mm, 75mm), total quantity, and project location..."
-                      className="w-full bg-[#faf9f6] border border-stone-300 rounded-sm px-4 py-3 text-stone-900 text-sm focus:outline-none focus:border-stone-600 transition-colors resize-none"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full inline-flex items-center justify-center gap-2 bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-semibold uppercase tracking-wider text-xs py-4 px-6 rounded-sm transition-all shadow-md border border-amber-500/30"
-                  >
-                    <span>Transmit Specification to Directors</span>
-                    <Send className="w-4 h-4 text-amber-300" />
-                  </button>
-                </form>
-              )}
-            </div>
+            <a
+              href="https://wa.me/919001100731"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-[0.18em] px-6 py-3.5 rounded-full shadow-lg transition-all border border-emerald-400/40"
+            >
+              <MessageCircle className="w-4 h-4 text-white" />
+              <span>Chat on WhatsApp</span>
+            </a>
           </div>
-
         </div>
 
       </div>
@@ -329,4 +264,3 @@ export default function Contact() {
     </section>
   );
 }
-

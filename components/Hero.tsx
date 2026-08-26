@@ -19,7 +19,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[88vh] sm:min-h-[92vh] flex items-center justify-center overflow-hidden pt-16 sm:pt-20 bg-stone-950">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24 pb-12 bg-stone-950">
       
       {/* Background Video — Fully Playing */}
       <div className="absolute inset-0 z-0 overflow-hidden">
@@ -41,14 +41,14 @@ export default function Hero() {
       </div>
 
       {/* Hero Content Overlay */}
-      <div className="relative z-10 w-full max-w-[90%] mx-auto px-0 pt-20 pb-12 sm:pt-28 sm:pb-16 flex flex-col items-center text-center">
+      <div className="relative z-10 w-full max-w-[95%] xl:max-w-[96%] mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8 flex flex-col items-center text-center">
         
         {/* Active Quarry & License Tag */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-sm bg-stone-900/90 border border-amber-500/30 text-amber-200 text-xs uppercase tracking-[0.25em] mb-5 backdrop-blur-md shadow-xl"
+          className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-stone-900/90 border border-amber-500/30 text-amber-200 text-xs uppercase tracking-[0.25em] mb-5 backdrop-blur-md shadow-xl"
         >
           <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
           <span>MINES OWNER (ML No. 13/2022) • Bayana, Rajasthan</span>
@@ -99,7 +99,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-8 sm:mt-12 pt-6 border-t border-stone-800/80 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10 w-full max-w-4xl text-center"
+          className="mt-6 sm:mt-8 pt-5 border-t border-stone-800/80 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10 w-full max-w-4xl text-center"
         >
           <div>
             <span className="text-2xl sm:text-3xl font-semibold text-white block">ML 13/2022</span>

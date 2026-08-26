@@ -225,7 +225,7 @@ export default function StoneCollection() {
   const hasMore = visibleCount < filtered.length;
 
   return (
-    <section id="collection" className="py-28 sm:py-36 bg-[#eae7e0] relative border-t border-[#dcd8cd] overflow-hidden">
+    <section id="collection" className="py-12 sm:py-16 bg-[#eae7e0] relative border-t border-[#dcd8cd] overflow-hidden">
       
       {/* Background Carving Relief Image Behind Text */}
       <div className="absolute inset-0 z-0 overflow-hidden opacity-15 pointer-events-none">

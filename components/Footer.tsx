@@ -6,7 +6,7 @@ import { Instagram, Twitter, Linkedin, Youtube, MessageCircle, Mail } from 'luci
 export default function Footer() {
   return (
     <footer className="bg-[#09090b] text-stone-400 border-t border-stone-800/80 relative overflow-hidden">
-      <div className="w-full max-w-[90%] mx-auto px-0 pt-14 pb-10">
+      <div className="w-full max-w-[95%] xl:max-w-[96%] mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
         
         {/* Top Header Row: Logo, Nav Links, Social Icons */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 pb-10 border-b border-stone-800/60">
@@ -17,18 +17,18 @@ export default function Footer() {
               <span className="font-bold text-xs tracking-widest text-amber-100">MM</span>
             </div>
             <span className="text-lg font-bold tracking-[0.18em] text-white transition-colors">
-              MM STONES
+              M.M. STONE
             </span>
           </Link>
 
           {/* Navigation Links */}
           <nav className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-xs font-semibold uppercase tracking-[0.18em]">
-            <Link href="#about" className="hover:text-white transition-colors">About Us</Link>
-            <Link href="#craftsmanship" className="hover:text-white transition-colors">Works Gallery</Link>
-            <Link href="#collection" className="hover:text-white transition-colors">Stone Varieties</Link>
-            <Link href="#finishes" className="hover:text-white transition-colors">Finishes</Link>
-            <Link href="#process" className="hover:text-white transition-colors">Process</Link>
-            <Link href="#contact" className="hover:text-white transition-colors">Contact</Link>
+            <a href="#about" className="hover:text-white transition-colors">About Us</a>
+            <a href="#craftsmanship" className="hover:text-white transition-colors">Works Gallery</a>
+            <a href="#collection" className="hover:text-white transition-colors">Stone Varieties</a>
+            <a href="#finishes" className="hover:text-white transition-colors">Finishes</a>
+            <a href="#process" className="hover:text-white transition-colors">Process</a>
+            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </nav>
 
           {/* Social Icons */}
@@ -74,18 +74,26 @@ export default function Footer() {
 
         </div>
 
-        {/* Watermark Background Text: MM STONES */}
-        <div className="py-8 sm:py-14 flex items-center justify-center select-none overflow-hidden pointer-events-none">
-          <h2 className="text-[clamp(2rem,7vw,7.5rem)] font-black uppercase tracking-wider font-serif text-stone-800/80 leading-none whitespace-nowrap text-center drop-shadow-sm">
-            MM STONES
+        {/* Watermark Background Text: Massive M.M. STONE Fill */}
+        <div className="py-6 sm:py-10 flex items-center justify-center select-none overflow-hidden pointer-events-none w-full">
+          <h2 className="text-[clamp(3.5rem,13vw,17.5rem)] font-black uppercase tracking-tighter font-serif text-stone-800/80 leading-none whitespace-nowrap text-center drop-shadow-sm w-full block">
+            M.M. STONE
           </h2>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-stone-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400 font-mono">
-          <p>© {new Date().getFullYear()} MM STONES – M.M. Stone Industries. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} M.M. STONE – M.M. Stone Industries. All rights reserved.</p>
           <p className="text-stone-400">
-            Made with 🔥 by The Angaar Labs
+            Made with 🔥 by{' '}
+            <a
+              href="https://labs.theangaarbatch.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 font-semibold hover:underline hover:text-amber-300 transition-colors"
+            >
+              The Angaar Labs
+            </a>
           </p>
         </div>
 
