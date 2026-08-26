@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Eye, ArrowUpRight, X, Sparkles, MessageSquare, CheckCircle2, Layers, ChevronDown, ChevronUp, Grid } from 'lucide-react';
 import { AnimatedHeading, AnimatedParagraph } from './AnimatedText';
@@ -172,47 +173,19 @@ export default function CraftGallery() {
           </AnimatePresence>
         </div>
 
-        {/* View More / View Less Toggle Section */}
-        {filteredItems.length > 6 && (
-          <div className="mt-14 flex flex-col items-center justify-center text-center">
-            {visibleLimit < filteredItems.length ? (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="flex flex-col items-center gap-3"
-              >
-                <button
-                  onClick={() => setVisibleLimit((prev) => prev + 12)}
-                  className="group relative inline-flex items-center gap-3 bg-stone-900 hover:bg-stone-800 text-white text-xs uppercase tracking-[0.2em] font-semibold px-8 py-4 rounded-sm shadow-md hover:shadow-xl transition-all duration-300 border border-stone-800"
-                >
-                  <span>Explore More Works (+{Math.min(12, remainingCount)} of {remainingCount} Remaining)</span>
-                  <ChevronDown className="w-4 h-4 text-amber-400 group-hover:translate-y-1 transition-transform" />
-                </button>
-                <p className="text-stone-500 text-xs font-light">
-                  Showing {visibleItems.length} of {filteredItems.length} works. Click to load additional heritage reliefs and Jalis smoothly.
-                </p>
-              </motion.div>
-            ) : (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="flex flex-col items-center gap-3"
-              >
-                <button
-                  onClick={() => {
-                    setVisibleLimit(6);
-                    const el = document.getElementById('craftsmanship');
-                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="group inline-flex items-center gap-3 bg-white hover:bg-stone-100 text-stone-900 text-xs uppercase tracking-[0.2em] font-semibold px-8 py-3.5 rounded-sm shadow-xs border border-stone-300 transition-all duration-300"
-                >
-                  <span>Collapse Portfolio (Show Initial 6)</span>
-                  <ChevronUp className="w-4 h-4 text-stone-600 group-hover:-translate-y-1 transition-transform" />
-                </button>
-              </motion.div>
-            )}
-          </div>
-        )}
+        {/* Dedicated Full Gallery Route Redirect Section */}
+        <div className="mt-12 flex flex-col items-center justify-center text-center">
+          <Link
+            href="/gallery"
+            className="group relative inline-flex items-center gap-3 bg-stone-900 hover:bg-stone-800 text-white text-xs uppercase tracking-[0.2em] font-semibold px-8 py-4 rounded-full shadow-md hover:shadow-xl transition-all duration-300 border border-stone-800"
+          >
+            <span>Explore Full Dedicated Gallery ({CRAFT_ITEMS.length}+ Works)</span>
+            <ArrowUpRight className="w-4 h-4 text-amber-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          </Link>
+          <p className="text-stone-500 text-xs font-light mt-3">
+            Open full-screen animated gallery page with 140+ architectural works, search filters, and high-res inspection.
+          </p>
+        </div>
 
         {/* Bottom Banner for Custom Architectural Orders */}
         <motion.div
