@@ -83,7 +83,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-stone-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400 font-mono">
-          <p>© {new Date().getFullYear()} M.M. STONE – M.M. Stone Industries. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} M.M. STONE INDUSTRIES. All rights reserved.</p>
           <p className="text-stone-400">
             Made with 🔥 by{' '}
             <a
