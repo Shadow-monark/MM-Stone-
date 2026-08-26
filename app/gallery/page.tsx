@@ -3,27 +3,18 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Search, Filter, Sparkles, X, CheckCircle2, MessageSquare, Layers, Phone, Grid, ArrowUpRight } from 'lucide-react';
+import { ArrowLeft, Filter, Sparkles, X, CheckCircle2, MessageSquare, Phone, Grid, ArrowUpRight } from 'lucide-react';
 import { CRAFT_ITEMS, CRAFT_CATEGORIES, CraftItem } from '@/data/craftData';
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState<string>('All Works');
-  const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedItem, setSelectedItem] = useState<CraftItem | null>(null);
 
-  // Filter items based on category and search query
+  // Filter items based on category
   const filteredItems = useMemo(() => {
-    return CRAFT_ITEMS.filter((item) => {
-      const matchesCategory = activeCategory === 'All Works' || item.category === activeCategory;
-      const matchesSearch =
-        searchQuery.trim() === '' ||
-        item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.material.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.application.toLowerCase().includes(searchQuery.toLowerCase());
-      return matchesCategory && matchesSearch;
-    });
-  }, [activeCategory, searchQuery]);
+    if (activeCategory === 'All Works') return CRAFT_ITEMS;
+    return CRAFT_ITEMS.filter((item) => item.category === activeCategory);
+  }, [activeCategory]);
 
   return (
     <div className="min-h-screen bg-[#faf9f5] text-[#1c1917] flex flex-col font-sans">
@@ -87,29 +78,8 @@ export default function GalleryPage() {
             </p>
           </motion.div>
 
-          {/* Controls Bar: Search & Category Filter */}
-          <div className="mb-10 space-y-6">
-            
-            {/* Search Input */}
-            <div className="max-w-xl mx-auto relative">
-              <Search className="w-4 h-4 text-stone-400 absolute left-4 top-1/2 -translate-y-1/2" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search by title, stone material, or application (e.g. Jali, Mandir, Pillar)..."
-                className="w-full bg-white border border-stone-300 rounded-full pl-11 pr-10 py-3 text-stone-900 text-xs sm:text-sm focus:outline-none focus:border-stone-600 shadow-sm transition-colors"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery('')}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-700 p-1"
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              )}
-            </div>
-
+          {/* Controls Bar: Category Filter Pills */}
+          <div className="mb-10 space-y-4">
             {/* Category Filter Pills */}
             <div className="flex items-center justify-center flex-wrap gap-2">
               {CRAFT_CATEGORIES.map((cat) => {
@@ -131,18 +101,12 @@ export default function GalleryPage() {
             </div>
 
             {/* Status Indicator */}
-            <div className="flex items-center justify-between text-xs text-stone-500 font-medium pt-2 border-t border-stone-200">
+            <div className="flex items-center justify-center text-xs text-stone-500 font-medium pt-2 border-t border-stone-200">
               <div className="flex items-center gap-2">
                 <Grid className="w-4 h-4 text-amber-800" />
                 <span>Showing {filteredItems.length} of {CRAFT_ITEMS.length} Architectural Works</span>
               </div>
-              {searchQuery && (
-                <span className="text-amber-900 font-semibold">
-                  Filtered by: &ldquo;{searchQuery}&rdquo;
-                </span>
-              )}
             </div>
-
           </div>
 
           {/* Gallery Items Grid */}
@@ -151,13 +115,10 @@ export default function GalleryPage() {
               <Filter className="w-10 h-10 text-stone-300 mx-auto mb-3" />
               <h3 className="text-lg font-semibold text-stone-900 mb-1">No matching works found</h3>
               <p className="text-stone-500 text-xs font-light max-w-sm mx-auto mb-4">
-                Try searching for a different stone term or select another category filter above.
+                Select another category filter above to explore our stone catalog.
               </p>
               <button
-                onClick={() => {
-                  setActiveCategory('All Works');
-                  setSearchQuery('');
-                }}
+                onClick={() => setActiveCategory('All Works')}
                 className="inline-flex items-center gap-2 bg-stone-900 text-white font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full"
               >
                 <span>Reset Filters</span>
