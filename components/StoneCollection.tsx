@@ -32,7 +32,7 @@ const PRODUCTS: StoneProduct[] = [
     compressiveStrength: '168.4 MPa',
     finish: 'Polished / Flamed / Honed',
     description: 'Deep crimson matrix interlaced with quartz crystals. Engineered under intense subterranean pressures for minimal porosity and exceptional durability.',
-    image: '/craft/craft_21.jpeg',
+    image: '/extra_gallery/IMG-20260823-WA0018.jpg',
     idealFor: 'Monumental Facades, Luxury Islands, Commercial Lobbies',
   },
   {
@@ -74,7 +74,7 @@ const PRODUCTS: StoneProduct[] = [
     compressiveStrength: '98.5 MPa',
     finish: 'Natural Cleft / Sawn',
     description: 'Warm amber and ochre striations offering natural slip resistance for external paving and heritage railings.',
-    image: '/craft/craft_01.jpeg',
+    image: '/craft/craft_41.jpeg',
     idealFor: 'Pool Coping, Exterior Cladding, Landscape Plazas',
   },
   {
@@ -88,7 +88,7 @@ const PRODUCTS: StoneProduct[] = [
     compressiveStrength: '210.5 MPa',
     finish: 'Mirror Polished / Flamed',
     description: 'Ultra-dense crystalline quartzite with exceptional acid and heat resistance, ideal for heavy traffic architectural spaces.',
-    image: '/extra_gallery/IMG-20260823-WA0018.jpg',
+    image: '/row_photos/IMG-20260823-WA0017.jpg',
     idealFor: 'High-Traffic Public Plazas, Executive Wall Slabs',
   },
   {
@@ -102,7 +102,7 @@ const PRODUCTS: StoneProduct[] = [
     compressiveStrength: '115.0 MPa',
     finish: 'CNC Carved / Hand Chiseled',
     description: 'Bespoke geometric and floral lattice screens designed for natural ventilation and dramatic sunlight interplay.',
-    image: '/extra_gallery/IMG-20260823-WA0033.jpg',
+    image: '/craft/craft_06.jpeg',
     idealFor: 'Window Facades, Courtyard Screens, Room Dividers',
   },
   {
@@ -116,7 +116,7 @@ const PRODUCTS: StoneProduct[] = [
     compressiveStrength: '130.8 MPa',
     finish: 'Lathe Turned / Hand Carved',
     description: 'Classical Rajasthani architectural stambha caps with intricate bracket carvings and kalash motifs.',
-    image: '/extra_gallery/IMG-20260823-WA0064.jpg',
+    image: '/craft/craft_04.jpeg',
     idealFor: 'Temple Porticos, Palace Entrance Columns, Grand Verandahs',
   },
   {
@@ -130,7 +130,7 @@ const PRODUCTS: StoneProduct[] = [
     compressiveStrength: '138.0 MPa',
     finish: 'Silk Honed / Polished',
     description: 'Translucent pink vein structure carved into deity idols, mythological friezes, and luxury sanctuary walls.',
-    image: '/extra_gallery/IMG-20260823-WA0084.jpg',
+    image: '/craft/craft_03.jpeg',
     idealFor: 'Temple Sanctums, Sculptural Statues, Luxury Foyers',
   },
   {
@@ -144,7 +144,7 @@ const PRODUCTS: StoneProduct[] = [
     compressiveStrength: '185.0 MPa',
     finish: 'Mirror Gloss / Leathered',
     description: 'Deep obsidian black matrix peppered with golden bronze mica flakes, providing unmatched structural strength.',
-    image: '/extra_gallery/IMG-20260823-WA0109.jpg',
+    image: '/row_photos/IMG-20260823-WA0011.jpg',
     idealFor: 'Kitchen Islands, Executive Desks, Heavy Flooring',
   },
   {
@@ -172,7 +172,7 @@ const PRODUCTS: StoneProduct[] = [
     compressiveStrength: '225.0 MPa',
     finish: 'Polished Satin',
     description: 'Sparkling quartzite with near-zero porosity and intense structural rigidity, resembling natural ice crystals.',
-    image: '/extra_gallery/IMG-20260823-WA0177.jpg',
+    image: '/craft/craft_31.jpeg',
     idealFor: 'Countertops, Feature Walls, Spa Interiors',
   },
   {
@@ -186,7 +186,7 @@ const PRODUCTS: StoneProduct[] = [
     compressiveStrength: '128.0 MPa',
     finish: 'Hand Sculpted / Fitted',
     description: 'Ornate umbrella pavilions and cusped arch domes engineered with interlocking dry-stack stone joinery.',
-    image: '/extra_gallery/IMG-20260823-WA0254.jpg',
+    image: '/extra_gallery/IMG-20260823-WA0111.jpg',
     idealFor: 'Rooftop Pavilions, Garden Chhatris, Temple Spires',
   },
 ];

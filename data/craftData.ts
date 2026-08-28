@@ -28,13 +28,13 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke 3D high-relief wall panel depicting Mahatma Phule & Savitribai Phule with books, framed in an ornate deep-carved floral border.",
     "dimensions": "5.5ft x 3.5ft x 100mm monolithic slab",
     "application": "Educational Institutions, Memorial Halls, Heritage Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0064.jpg",
+    "image": "/gallery/IMG-20260823-WA0225.jpg",
     "featured": true
   },
   {
     "id": "craft-master-02",
-    "title": "Kevat Samvad & River Passage High-Relief Panel",
-    "category": "Temple & Reliefs",
+    "title": "Red Sandstone Perforated Jali Lattice Panels",
+    "category": "Jali & Screens",
     "material": "Warm Red Sandstone with Backlight",
     "description": "Sculptural masterpiece depicting Shri Ram, Sita, Lakshman, and Kevat in a carved wooden boat over lotus waters with glowing halo accents.",
     "dimensions": "6ft x 4ft x 120mm relief slab",
@@ -44,13 +44,13 @@ export const CRAFT_ITEMS: CraftItem[] = [
   },
   {
     "id": "craft-master-03",
-    "title": "Monumental OM & Deity Temple Facade Relief Jali",
-    "category": "Temple & Reliefs",
+    "title": "Monumental Sacred OM & Lattice Facade Jali",
+    "category": "Jali & Screens",
     "material": "Dholpur Red Sandstone",
     "description": "Comprehensive temple entrance relief with central radial OM medallion, micro-perforated lattice Jali backdrop, and hanging bell friezes.",
     "dimensions": "8ft width x 5ft height custom assembly",
     "application": "Temple Main Portals, Sanctum Entrances, Heritage Gates",
-    "image": "/extra_gallery/IMG-20260823-WA0033.jpg",
+    "image": "/craft/craft_16.jpeg",
     "featured": true
   },
   {
@@ -61,18 +61,18 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Complete indoor devotional sanctum with lit cusped jharokha arches, turned fluted columns, hanging brass bells, and lotus floor rosettes.",
     "dimensions": "Bespoke Architectural Installation",
     "application": "Private Villa Temples, Luxury Residential Sanctums",
-    "image": "/extra_gallery/IMG-20260823-WA0084.jpg",
+    "image": "/extra_gallery/IMG-20260823-WA0064.jpg",
     "featured": true
   },
   {
     "id": "craft-master-05",
-    "title": "Lord Murugan (Kartikeya) High-Relief Sandstone Statue",
+    "title": "Lord Ganesha & Deity High-Relief Sandstone Panel",
     "category": "Temple & Reliefs",
     "material": "Bansi Paharpur Red Sandstone",
     "description": "Iconographic relief carving of Lord Murugan holding Vel spear in an arched moulding frame, detailed down to crown ornamentations.",
     "dimensions": "4ft height x 2.2ft width",
     "application": "Temple Niches, Devotional Pillars, Sanctuary Entrance Portals",
-    "image": "/extra_gallery/IMG-20260823-WA0109.jpg",
+    "image": "/craft/craft_34.jpeg",
     "featured": true
   },
   {
@@ -83,7 +83,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Geometrically aligned geometric & floral lattice screen designed for natural ventilation and architectural shadow play.",
     "dimensions": "4ft x 2.5ft x 50mm slab",
     "application": "Window Apertures, Courtyard Screens, Villa Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0018.jpg",
+    "image": "/craft/craft_06.jpeg",
     "featured": true
   },
   {
@@ -94,7 +94,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0018.jpg"
+    "image": "/craft/craft_06.jpeg"
   },
   {
     "id": "gallery-item-002",
@@ -104,7 +104,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0019.jpg"
+    "image": "/craft/craft_03.jpeg"
   },
   {
     "id": "gallery-item-003",
@@ -114,7 +114,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0021.jpg"
+    "image": "/craft/craft_04.jpeg"
   },
   {
     "id": "gallery-item-004",
@@ -124,7 +124,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0024.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0149.jpg"
   },
   {
     "id": "gallery-item-005",
@@ -134,7 +134,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0025.jpg"
+    "image": "/craft/craft_09.jpeg"
   },
   {
     "id": "gallery-item-006",
@@ -144,7 +144,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0026.jpg"
+    "image": "/craft/craft_01.jpeg"
   },
   {
     "id": "gallery-item-007",
@@ -154,7 +154,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0028.jpg"
+    "image": "/craft/craft_07.jpeg"
   },
   {
     "id": "gallery-item-008",
@@ -164,7 +164,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0029.jpg"
+    "image": "/craft/craft_05.jpeg"
   },
   {
     "id": "gallery-item-009",
@@ -174,7 +174,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0031.jpg"
+    "image": "/craft/craft_02.jpeg"
   },
   {
     "id": "gallery-item-010",
@@ -184,7 +184,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0032.jpg"
+    "image": "/row_photos/IMG-20260823-WA0007.jpg"
   },
   {
     "id": "gallery-item-011",
@@ -194,7 +194,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0033.jpg"
+    "image": "/craft/craft_10.jpeg"
   },
   {
     "id": "gallery-item-012",
@@ -204,7 +204,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0034.jpg"
+    "image": "/craft/craft_21.jpeg"
   },
   {
     "id": "gallery-item-013",
@@ -214,7 +214,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0036.jpg"
+    "image": "/craft/craft_23.jpeg"
   },
   {
     "id": "gallery-item-014",
@@ -224,7 +224,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0037.jpg"
+    "image": "/craft/craft_41.jpeg"
   },
   {
     "id": "gallery-item-015",
@@ -234,7 +234,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0038.jpg"
+    "image": "/row_photos/IMG-20260823-WA0009.jpg"
   },
   {
     "id": "gallery-item-016",
@@ -244,7 +244,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0043.jpg"
+    "image": "/craft/craft_16.jpeg"
   },
   {
     "id": "gallery-item-017",
@@ -254,7 +254,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0046.jpg"
+    "image": "/craft/craft_25.jpeg"
   },
   {
     "id": "gallery-item-018",
@@ -264,7 +264,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0048.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0062.jpg"
   },
   {
     "id": "gallery-item-019",
@@ -274,7 +274,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0055.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0018.jpg"
   },
   {
     "id": "gallery-item-020",
@@ -284,7 +284,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0056.jpg"
+    "image": "/row_photos/IMG-20260823-WA0010.jpg"
   },
   {
     "id": "gallery-item-021",
@@ -294,7 +294,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0057.jpg"
+    "image": "/craft/craft_27.jpeg"
   },
   {
     "id": "gallery-item-022",
@@ -304,7 +304,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0060.jpg"
+    "image": "/craft/craft_30.jpeg"
   },
   {
     "id": "gallery-item-023",
@@ -314,7 +314,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0062.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0056.jpg"
   },
   {
     "id": "gallery-item-024",
@@ -324,7 +324,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0064.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0149.jpg"
   },
   {
     "id": "gallery-item-025",
@@ -334,7 +334,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0070.jpg"
+    "image": "/row_photos/IMG-20260823-WA0011.jpg"
   },
   {
     "id": "gallery-item-026",
@@ -344,7 +344,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0072.jpg"
+    "image": "/craft/craft_31.jpeg"
   },
   {
     "id": "gallery-item-027",
@@ -354,7 +354,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0078.jpg"
+    "image": "/craft/craft_34.jpeg"
   },
   {
     "id": "gallery-item-028",
@@ -364,7 +364,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0079.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0072.jpg"
   },
   {
     "id": "gallery-item-029",
@@ -374,7 +374,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0080.jpg"
+    "image": "/craft/craft_02.jpeg"
   },
   {
     "id": "gallery-item-030",
@@ -384,7 +384,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0082.jpg"
+    "image": "/row_photos/IMG-20260823-WA0015.jpg"
   },
   {
     "id": "gallery-item-031",
@@ -394,7 +394,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0083.jpg"
+    "image": "/craft/craft_38.jpeg"
   },
   {
     "id": "gallery-item-032",
@@ -404,7 +404,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0084.jpg"
+    "image": "/craft/craft_44.jpeg"
   },
   {
     "id": "gallery-item-033",
@@ -414,7 +414,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0085.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0028.jpg"
   },
   {
     "id": "gallery-item-034",
@@ -424,7 +424,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0087.jpg"
+    "image": "/craft/craft_41.jpeg"
   },
   {
     "id": "gallery-item-035",
@@ -434,7 +434,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0088.jpg"
+    "image": "/row_photos/IMG-20260823-WA0016.jpg"
   },
   {
     "id": "gallery-item-036",
@@ -444,7 +444,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0089.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0079.jpg"
   },
   {
     "id": "gallery-item-037",
@@ -454,7 +454,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0090.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0064.jpg"
   },
   {
     "id": "gallery-item-038",
@@ -464,7 +464,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0091.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0109.jpg"
   },
   {
     "id": "gallery-item-039",
@@ -474,7 +474,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0095.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0018.jpg"
   },
   {
     "id": "gallery-item-040",
@@ -484,7 +484,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0098.jpg"
+    "image": "/row_photos/IMG-20260823-WA0017.jpg"
   },
   {
     "id": "gallery-item-041",
@@ -494,7 +494,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0099.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0177.jpg"
   },
   {
     "id": "gallery-item-042",
@@ -504,7 +504,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0100.jpg"
+    "image": "/gallery/IMG-20260823-WA0252.jpg"
   },
   {
     "id": "gallery-item-043",
@@ -514,7 +514,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0101.jpg"
+    "image": "/craft/craft_04.jpeg"
   },
   {
     "id": "gallery-item-044",
@@ -524,7 +524,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0102.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0149.jpg"
   },
   {
     "id": "gallery-item-045",
@@ -534,7 +534,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0103.jpg"
+    "image": "/row_photos/IMG-20260823-WA0041.jpg"
   },
   {
     "id": "gallery-item-046",
@@ -544,7 +544,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0105.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0254.jpg"
   },
   {
     "id": "gallery-item-047",
@@ -554,7 +554,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0107.jpg"
+    "image": "/gallery/IMG-20260823-WA0225.jpg"
   },
   {
     "id": "gallery-item-048",
@@ -564,7 +564,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0109.jpg"
+    "image": "/craft/craft_05.jpeg"
   },
   {
     "id": "gallery-item-049",
@@ -574,7 +574,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0110.jpg"
+    "image": "/craft/craft_02.jpeg"
   },
   {
     "id": "gallery-item-050",
@@ -584,7 +584,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0111.jpg"
+    "image": "/row_photos/IMG-20260823-WA0061.jpg"
   },
   {
     "id": "gallery-item-051",
@@ -594,7 +594,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0112.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0111.jpg"
   },
   {
     "id": "gallery-item-052",
@@ -604,7 +604,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0113.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0084.jpg"
   },
   {
     "id": "gallery-item-053",
@@ -614,7 +614,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0114.jpg"
+    "image": "/craft/craft_23.jpeg"
   },
   {
     "id": "gallery-item-054",
@@ -624,7 +624,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0115.jpg"
+    "image": "/craft/craft_41.jpeg"
   },
   {
     "id": "gallery-item-055",
@@ -634,7 +634,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0116.jpg"
+    "image": "/craft/craft_22.jpeg"
   },
   {
     "id": "gallery-item-056",
@@ -644,7 +644,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0118.jpg"
+    "image": "/craft/craft_06.jpeg"
   },
   {
     "id": "gallery-item-057",
@@ -654,7 +654,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0121.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0082.jpg"
   },
   {
     "id": "gallery-item-058",
@@ -664,7 +664,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0123.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0062.jpg"
   },
   {
     "id": "gallery-item-059",
@@ -674,7 +674,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0124.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0018.jpg"
   },
   {
     "id": "gallery-item-060",
@@ -684,7 +684,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0126.jpg"
+    "image": "/row_photos/IMG-20260823-WA0081.jpg"
   },
   {
     "id": "gallery-item-061",
@@ -694,7 +694,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0127.jpg"
+    "image": "/craft/craft_01.jpeg"
   },
   {
     "id": "gallery-item-062",
@@ -704,7 +704,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0128.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0078.jpg"
   },
   {
     "id": "gallery-item-063",
@@ -714,7 +714,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0129.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0056.jpg"
   },
   {
     "id": "gallery-item-064",
@@ -724,7 +724,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0130.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0149.jpg"
   },
   {
     "id": "gallery-item-065",
@@ -734,7 +734,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0132.jpg"
+    "image": "/row_photos/IMG-20260823-WA0104.jpg"
   },
   {
     "id": "gallery-item-066",
@@ -744,7 +744,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0134.jpg"
+    "image": "/craft/craft_10.jpeg"
   },
   {
     "id": "gallery-item-067",
@@ -754,7 +754,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0135.jpg"
+    "image": "/craft/craft_13.jpeg"
   },
   {
     "id": "gallery-item-068",
@@ -764,7 +764,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0136.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0072.jpg"
   },
   {
     "id": "gallery-item-069",
@@ -774,7 +774,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0137.jpg"
+    "image": "/craft/craft_02.jpeg"
   },
   {
     "id": "gallery-item-070",
@@ -784,7 +784,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0138.jpg"
+    "image": "/row_photos/IMG-20260823-WA0234.jpg"
   },
   {
     "id": "gallery-item-071",
@@ -794,7 +794,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0139.jpg"
+    "image": "/craft/craft_16.jpeg"
   },
   {
     "id": "gallery-item-072",
@@ -804,7 +804,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0140.jpg"
+    "image": "/craft/craft_18.jpeg"
   },
   {
     "id": "gallery-item-073",
@@ -814,7 +814,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0141.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0028.jpg"
   },
   {
     "id": "gallery-item-074",
@@ -824,7 +824,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0142.jpg"
+    "image": "/craft/craft_41.jpeg"
   },
   {
     "id": "gallery-item-075",
@@ -834,7 +834,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0143.jpg"
+    "image": "/row_photos/IMG-20260823-WA0241.jpg"
   },
   {
     "id": "gallery-item-076",
@@ -844,7 +844,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0144.jpg"
+    "image": "/craft/craft_27.jpeg"
   },
   {
     "id": "gallery-item-077",
@@ -854,7 +854,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0145.jpg"
+    "image": "/craft/craft_03.jpeg"
   },
   {
     "id": "gallery-item-078",
@@ -864,7 +864,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0146.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0109.jpg"
   },
   {
     "id": "gallery-item-079",
@@ -874,7 +874,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0147.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0018.jpg"
   },
   {
     "id": "gallery-item-080",
@@ -884,7 +884,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0148.jpg"
+    "image": "/craft/craft_09.jpeg"
   },
   {
     "id": "gallery-item-081",
@@ -894,7 +894,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0149.jpg"
+    "image": "/craft/craft_31.jpeg"
   },
   {
     "id": "gallery-item-082",
@@ -904,7 +904,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0150.jpg"
+    "image": "/craft/craft_07.jpeg"
   },
   {
     "id": "gallery-item-083",
@@ -914,7 +914,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0151.jpg"
+    "image": "/craft/craft_04.jpeg"
   },
   {
     "id": "gallery-item-084",
@@ -924,7 +924,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0152.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0149.jpg"
   },
   {
     "id": "gallery-item-085",
@@ -934,7 +934,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0153.jpg"
+    "image": "/row_photos/IMG-20260823-WA0007.jpg"
   },
   {
     "id": "gallery-item-086",
@@ -944,7 +944,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0154.jpg"
+    "image": "/craft/craft_38.jpeg"
   },
   {
     "id": "gallery-item-087",
@@ -954,7 +954,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0155.jpg"
+    "image": "/craft/craft_21.jpeg"
   },
   {
     "id": "gallery-item-088",
@@ -964,7 +964,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0156.jpg"
+    "image": "/craft/craft_05.jpeg"
   },
   {
     "id": "gallery-item-089",
@@ -974,7 +974,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0157.jpg"
+    "image": "/craft/craft_02.jpeg"
   },
   {
     "id": "gallery-item-090",
@@ -984,7 +984,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0158.jpg"
+    "image": "/row_photos/IMG-20260823-WA0009.jpg"
   },
   {
     "id": "gallery-item-091",
@@ -994,7 +994,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0159.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0079.jpg"
   },
   {
     "id": "gallery-item-092",
@@ -1004,7 +1004,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0160.jpg"
+    "image": "/craft/craft_25.jpeg"
   },
   {
     "id": "gallery-item-093",
@@ -1014,7 +1014,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0161.jpg"
+    "image": "/craft/craft_23.jpeg"
   },
   {
     "id": "gallery-item-094",
@@ -1024,7 +1024,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0163.jpg"
+    "image": "/craft/craft_41.jpeg"
   },
   {
     "id": "gallery-item-095",
@@ -1034,7 +1034,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0164.jpg"
+    "image": "/row_photos/IMG-20260823-WA0010.jpg"
   },
   {
     "id": "gallery-item-096",
@@ -1044,7 +1044,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0165.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0177.jpg"
   },
   {
     "id": "gallery-item-097",
@@ -1054,7 +1054,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0167.jpg"
+    "image": "/craft/craft_30.jpeg"
   },
   {
     "id": "gallery-item-098",
@@ -1064,7 +1064,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0168.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0062.jpg"
   },
   {
     "id": "gallery-item-099",
@@ -1074,7 +1074,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0169.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0018.jpg"
   },
   {
     "id": "gallery-item-100",
@@ -1084,7 +1084,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0170.jpg"
+    "image": "/row_photos/IMG-20260823-WA0011.jpg"
   },
   {
     "id": "gallery-item-101",
@@ -1094,7 +1094,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0171.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0254.jpg"
   },
   {
     "id": "gallery-item-102",
@@ -1104,7 +1104,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0172.jpg"
+    "image": "/craft/craft_34.jpeg"
   },
   {
     "id": "gallery-item-103",
@@ -1114,7 +1114,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0173.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0056.jpg"
   },
   {
     "id": "gallery-item-104",
@@ -1124,7 +1124,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0174.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0149.jpg"
   },
   {
     "id": "gallery-item-105",
@@ -1134,7 +1134,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0175.jpg"
+    "image": "/row_photos/IMG-20260823-WA0015.jpg"
   },
   {
     "id": "gallery-item-106",
@@ -1144,7 +1144,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0176.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0111.jpg"
   },
   {
     "id": "gallery-item-107",
@@ -1154,7 +1154,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0177.jpg"
+    "image": "/craft/craft_44.jpeg"
   },
   {
     "id": "gallery-item-108",
@@ -1164,7 +1164,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0178.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0072.jpg"
   },
   {
     "id": "gallery-item-109",
@@ -1174,7 +1174,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0179.jpg"
+    "image": "/craft/craft_02.jpeg"
   },
   {
     "id": "gallery-item-110",
@@ -1184,7 +1184,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0180.jpg"
+    "image": "/row_photos/IMG-20260823-WA0016.jpg"
   },
   {
     "id": "gallery-item-111",
@@ -1194,7 +1194,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0181.jpg"
+    "image": "/craft/craft_06.jpeg"
   },
   {
     "id": "gallery-item-112",
@@ -1204,7 +1204,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0182.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0064.jpg"
   },
   {
     "id": "gallery-item-113",
@@ -1214,7 +1214,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0183.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0028.jpg"
   },
   {
     "id": "gallery-item-114",
@@ -1224,7 +1224,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0184.jpg"
+    "image": "/craft/craft_41.jpeg"
   },
   {
     "id": "gallery-item-115",
@@ -1234,7 +1234,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0185.jpg"
+    "image": "/row_photos/IMG-20260823-WA0017.jpg"
   },
   {
     "id": "gallery-item-116",
@@ -1244,7 +1244,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0186.jpg"
+    "image": "/craft/craft_01.jpeg"
   },
   {
     "id": "gallery-item-117",
@@ -1254,7 +1254,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0187.jpg"
+    "image": "/gallery/IMG-20260823-WA0252.jpg"
   },
   {
     "id": "gallery-item-118",
@@ -1264,7 +1264,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0188.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0109.jpg"
   },
   {
     "id": "gallery-item-119",
@@ -1274,7 +1274,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0189.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0018.jpg"
   },
   {
     "id": "gallery-item-120",
@@ -1284,7 +1284,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0190.jpg"
+    "image": "/row_photos/IMG-20260823-WA0041.jpg"
   },
   {
     "id": "gallery-item-121",
@@ -1294,7 +1294,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0191.jpg"
+    "image": "/craft/craft_10.jpeg"
   },
   {
     "id": "gallery-item-122",
@@ -1304,7 +1304,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0192.jpg"
+    "image": "/gallery/IMG-20260823-WA0225.jpg"
   },
   {
     "id": "gallery-item-123",
@@ -1314,7 +1314,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0193.jpg"
+    "image": "/craft/craft_04.jpeg"
   },
   {
     "id": "gallery-item-124",
@@ -1324,7 +1324,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0194.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0149.jpg"
   },
   {
     "id": "gallery-item-125",
@@ -1334,7 +1334,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0195.jpg"
+    "image": "/row_photos/IMG-20260823-WA0061.jpg"
   },
   {
     "id": "gallery-item-126",
@@ -1344,7 +1344,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0197.jpg"
+    "image": "/craft/craft_16.jpeg"
   },
   {
     "id": "gallery-item-127",
@@ -1354,7 +1354,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0201.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0084.jpg"
   },
   {
     "id": "gallery-item-128",
@@ -1364,7 +1364,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0202.jpg"
+    "image": "/craft/craft_05.jpeg"
   },
   {
     "id": "gallery-item-129",
@@ -1374,7 +1374,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0204.jpg"
+    "image": "/craft/craft_02.jpeg"
   },
   {
     "id": "gallery-item-130",
@@ -1384,7 +1384,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0205.jpg"
+    "image": "/craft/craft_22.jpeg"
   },
   {
     "id": "gallery-item-131",
@@ -1394,7 +1394,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0207.jpg"
+    "image": "/craft/craft_27.jpeg"
   },
   {
     "id": "gallery-item-132",
@@ -1404,7 +1404,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0208.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0082.jpg"
   },
   {
     "id": "gallery-item-133",
@@ -1414,7 +1414,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0209.jpg"
+    "image": "/craft/craft_23.jpeg"
   },
   {
     "id": "gallery-item-134",
@@ -1424,7 +1424,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0212.jpg"
+    "image": "/craft/craft_41.jpeg"
   },
   {
     "id": "gallery-item-135",
@@ -1434,7 +1434,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0213.jpg"
+    "image": "/row_photos/IMG-20260823-WA0081.jpg"
   },
   {
     "id": "gallery-item-136",
@@ -1444,7 +1444,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0214.jpg"
+    "image": "/craft/craft_31.jpeg"
   },
   {
     "id": "gallery-item-137",
@@ -1454,7 +1454,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0215.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0078.jpg"
   },
   {
     "id": "gallery-item-138",
@@ -1464,7 +1464,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0216.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0062.jpg"
   },
   {
     "id": "gallery-item-139",
@@ -1474,7 +1474,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0217.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0018.jpg"
   },
   {
     "id": "gallery-item-140",
@@ -1484,7 +1484,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0218.jpg"
+    "image": "/row_photos/IMG-20260823-WA0104.jpg"
   },
   {
     "id": "gallery-item-141",
@@ -1494,7 +1494,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0219.jpg"
+    "image": "/craft/craft_38.jpeg"
   },
   {
     "id": "gallery-item-142",
@@ -1504,7 +1504,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0220.jpg"
+    "image": "/craft/craft_13.jpeg"
   },
   {
     "id": "gallery-item-143",
@@ -1514,7 +1514,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0221.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0056.jpg"
   },
   {
     "id": "gallery-item-144",
@@ -1524,7 +1524,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0222.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0149.jpg"
   },
   {
     "id": "gallery-item-145",
@@ -1534,7 +1534,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0223.jpg"
+    "image": "/row_photos/IMG-20260823-WA0234.jpg"
   },
   {
     "id": "gallery-item-146",
@@ -1544,7 +1544,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0224.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0079.jpg"
   },
   {
     "id": "gallery-item-147",
@@ -1554,7 +1554,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0225.jpg"
+    "image": "/craft/craft_18.jpeg"
   },
   {
     "id": "gallery-item-148",
@@ -1564,7 +1564,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0226.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0072.jpg"
   },
   {
     "id": "gallery-item-149",
@@ -1574,7 +1574,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0231.jpg"
+    "image": "/craft/craft_02.jpeg"
   },
   {
     "id": "gallery-item-150",
@@ -1584,7 +1584,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0235.jpg"
+    "image": "/row_photos/IMG-20260823-WA0241.jpg"
   },
   {
     "id": "gallery-item-151",
@@ -1594,7 +1594,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0237.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0177.jpg"
   },
   {
     "id": "gallery-item-152",
@@ -1604,7 +1604,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0240.jpg"
+    "image": "/craft/craft_03.jpeg"
   },
   {
     "id": "gallery-item-153",
@@ -1614,7 +1614,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0242.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0028.jpg"
   },
   {
     "id": "gallery-item-154",
@@ -1624,7 +1624,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0244.jpg"
+    "image": "/craft/craft_41.jpeg"
   },
   {
     "id": "gallery-item-155",
@@ -1634,7 +1634,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0245.jpg"
+    "image": "/craft/craft_09.jpeg"
   },
   {
     "id": "gallery-item-156",
@@ -1644,7 +1644,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0246.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0254.jpg"
   },
   {
     "id": "gallery-item-157",
@@ -1654,7 +1654,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0247.jpg"
+    "image": "/craft/craft_07.jpeg"
   },
   {
     "id": "gallery-item-158",
@@ -1664,7 +1664,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0250.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0109.jpg"
   },
   {
     "id": "gallery-item-159",
@@ -1674,7 +1674,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0251.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0018.jpg"
   },
   {
     "id": "gallery-item-160",
@@ -1684,7 +1684,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0252.jpg"
+    "image": "/row_photos/IMG-20260823-WA0007.jpg"
   },
   {
     "id": "gallery-item-161",
@@ -1694,7 +1694,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0253.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0111.jpg"
   },
   {
     "id": "gallery-item-162",
@@ -1704,7 +1704,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0254.jpg"
+    "image": "/craft/craft_21.jpeg"
   },
   {
     "id": "gallery-item-163",
@@ -1714,7 +1714,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0255.jpg"
+    "image": "/craft/craft_04.jpeg"
   },
   {
     "id": "gallery-item-164",
@@ -1724,7 +1724,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0256.jpg"
+    "image": "/extra_gallery/IMG-20260823-WA0149.jpg"
   },
   {
     "id": "gallery-item-165",
@@ -1734,7 +1734,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0257.jpg"
+    "image": "/row_photos/IMG-20260823-WA0009.jpg"
   },
   {
     "id": "gallery-item-166",
@@ -1744,7 +1744,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Monumental Pillars & Porticos",
-    "image": "/extra_gallery/IMG-20260823-WA0258.jpg"
+    "image": "/craft/craft_06.jpeg"
   },
   {
     "id": "gallery-item-167",
@@ -1754,7 +1754,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Landscape Gardens & Pathways",
-    "image": "/extra_gallery/IMG-20260823-WA0259.jpg"
+    "image": "/craft/craft_25.jpeg"
   },
   {
     "id": "gallery-item-168",
@@ -1764,7 +1764,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Quarry Stock & Slab Yards",
-    "image": "/extra_gallery/IMG-20260823-WA0260.jpg"
+    "image": "/craft/craft_05.jpeg"
   },
   {
     "id": "gallery-item-169",
@@ -1774,7 +1774,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Temple Sanctums & Facades",
-    "image": "/extra_gallery/IMG-20260823-WA0261.jpg"
+    "image": "/craft/craft_02.jpeg"
   },
   {
     "id": "gallery-item-170",
@@ -1784,7 +1784,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Terrace Railings & Boundary Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0262.jpg"
+    "image": "/row_photos/IMG-20260823-WA0010.jpg"
   },
   {
     "id": "gallery-item-171",
@@ -1794,7 +1794,7 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Heritage Courtyard Entryways",
-    "image": "/extra_gallery/IMG-20260823-WA0263.jpg"
+    "image": "/craft/craft_01.jpeg"
   },
   {
     "id": "gallery-item-172",
@@ -1804,6 +1804,6 @@ export const CRAFT_ITEMS: CraftItem[] = [
     "description": "Bespoke natural stone fabrication crafted at our Bayana quarry facility. Micro-calibrated thickness and custom hand-finished texture.",
     "dimensions": "Custom Sizing (Standard 3ft x 5ft / Slabs up to 3m)",
     "application": "Luxury Residential Feature Walls",
-    "image": "/extra_gallery/IMG-20260823-WA0264.jpg"
+    "image": "/craft/craft_30.jpeg"
   }
 ];
