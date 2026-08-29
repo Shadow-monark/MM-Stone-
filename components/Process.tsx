@@ -12,10 +12,10 @@ const PROCESS_STEPS = [
     subtitle: 'Selective Bayana Ore Extraction',
     description: 'Diamond wire saws and heavy excavators extract monolithic red sandstone boulders from 420m stratum beds in Bayana, Rajasthan (ML No. 13/2022).',
     images: [
-      '/craft/craft_09.jpeg',
       '/row_photos/IMG-20260823-WA0009.jpg',
       '/row_photos/IMG-20260823-WA0010.jpg',
       '/row_photos/IMG-20260823-WA0015.jpg',
+      '/row_photos/IMG-20260823-WA0011.jpg',
     ],
   },
   {
@@ -26,7 +26,7 @@ const PROCESS_STEPS = [
     images: [
       '/row_photos/IMG-20260823-WA0007.jpg',
       '/row_photos/IMG-20260823-WA0016.jpg',
-      '/row_photos/IMG-20260823-WA0011.jpg',
+      '/craft/craft_09.jpeg',
       '/row_photos/IMG-20260823-WA0017.jpg',
     ],
   },
@@ -36,10 +36,10 @@ const PROCESS_STEPS = [
     subtitle: 'Jali, Relief & Temple Sculpting',
     description: 'Master craftsmen combine generational hand chiseling with high-speed multi-axis 3D CNC routers to carve delicate Jalis, idols, and friezes.',
     images: [
-      '/row_photos/IMG-20260823-WA0041.jpg',
-      '/row_photos/IMG-20260823-WA0061.jpg',
-      '/craft/craft_22.jpeg',
+      '/row_photos/IMG-20260823-WA0104.jpg',
+      '/row_photos/IMG-20260823-WA0241.jpg',
       '/row_photos/IMG-20260823-WA0234.jpg',
+      '/row_photos/IMG-20260823-WA0061.jpg',
     ],
   },
   {
@@ -49,9 +49,9 @@ const PROCESS_STEPS = [
     description: 'Finished slabs and intricate carvings are packed into climate-sealed, heavy-duty ISPM-15 wooden crates for damage-free ocean delivery.',
     images: [
       '/row_photos/IMG-20260823-WA0081.jpg',
-      '/extra_gallery/IMG-20260823-WA0111.jpg',
-      '/row_photos/IMG-20260823-WA0017.jpg',
-      '/row_photos/IMG-20260823-WA0081.jpg',
+      '/extra_gallery/IMG-20260823-WA0127.jpg',
+      '/extra_gallery/IMG-20260823-WA0254.jpg',
+      '/row_photos/IMG-20260823-WA0080.jpg',
     ],
   },
 ];
