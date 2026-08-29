@@ -71,7 +71,7 @@ export default function Hero() {
           Direct mine extraction, CNC 3D stone carving, and heritage hand-sculpting of Bansi Paharpur Red Stone, Dholpur Sandstone, Temple Jalis, Pillars, Domes & Monumental Cladding.
         </AnimatedParagraph>
 
-        {/* Action Buttons */}
+        {/* Action Buttons with Smooth Corners */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -80,7 +80,7 @@ export default function Hero() {
         >
           <Link
             href="#craftsmanship"
-            className="inline-flex items-center justify-center gap-3 bg-amber-100 hover:bg-white text-stone-950 font-bold px-8 py-3.5 text-xs uppercase tracking-[0.2em] rounded-sm shadow-xl transition-all group"
+            className="inline-flex items-center justify-center gap-3 bg-amber-100 hover:bg-white text-stone-950 font-bold px-8 py-3.5 text-xs uppercase tracking-[0.2em] rounded-xl shadow-xl transition-all group"
           >
             <span>Explore Carving Gallery</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -88,7 +88,7 @@ export default function Hero() {
 
           <Link
             href="#contact"
-            className="inline-flex items-center justify-center px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-stone-200 hover:text-white bg-stone-900/90 hover:bg-stone-900 border border-stone-700 rounded-sm backdrop-blur-md transition-all shadow-md"
+            className="inline-flex items-center justify-center px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-stone-200 hover:text-white bg-stone-900/90 hover:bg-stone-900 border border-stone-700 rounded-xl backdrop-blur-md transition-all shadow-md"
           >
             Submit Specification
           </Link>

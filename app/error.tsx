@@ -21,7 +21,7 @@ export default function Error({
           Notice — Application Recovered
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl font-normal text-stone-900 leading-tight">
-          MM STONE INDUSTRIES
+          M.M STONE
         </h1>
         <p className="text-stone-600 text-sm font-light leading-relaxed">
           The page encountered a temporary state reset. Click below to continue browsing our architectural stone collection.

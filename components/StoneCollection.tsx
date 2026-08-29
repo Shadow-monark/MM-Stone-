@@ -293,7 +293,7 @@ export default function StoneCollection() {
                 transition={{ duration: 0.3 }}
                 whileHover={{ y: -6 }}
                 onClick={() => setSelectedProduct(product)}
-                className="cursor-pointer bg-[#faf9f5] border border-[#dcd8cd] hover:border-[#a8a29e] rounded-sm overflow-hidden transition-colors duration-300 flex flex-col justify-between group shadow-2xs hover:shadow-md"
+                className="cursor-pointer bg-[#faf9f5] border border-[#dcd8cd] hover:border-[#a8a29e] rounded-2xl overflow-hidden transition-colors duration-300 flex flex-col justify-between group shadow-2xs hover:shadow-md"
               >
                 {/* Image */}
                 <div className="relative aspect-square overflow-hidden bg-stone-100">
@@ -302,10 +302,10 @@ export default function StoneCollection() {
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95"
                   />
-                  <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-sm text-[10px] uppercase font-semibold tracking-wider text-[#1c1917] border border-[#dcd8cd] shadow-2xs">
+                  <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] uppercase font-semibold tracking-wider text-[#1c1917] border border-[#dcd8cd] shadow-2xs">
                     {product.category}
                   </div>
-                  <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-sm text-[10px] uppercase font-medium text-[#57534e] border border-[#dcd8cd] shadow-2xs">
+                  <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] uppercase font-medium text-[#57534e] border border-[#dcd8cd] shadow-2xs">
                     Depth: {product.depth}
                   </div>
                 </div>

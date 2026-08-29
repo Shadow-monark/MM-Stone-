@@ -1,9 +1,9 @@
 @echo off
-title MM STONES — Next.js Server
+title MM STONE — Next.js Server
 color 0A
 
 echo ======================================================
-echo          MM STONES — NEXT.JS APP LAUNCHER
+echo          MM STONE — NEXT.JS APP LAUNCHER
 echo ======================================================
 echo.
 echo Starting local Next.js development server...

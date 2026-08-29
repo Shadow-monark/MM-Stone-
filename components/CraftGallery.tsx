@@ -114,7 +114,7 @@ export default function CraftGallery() {
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 0.3, delay: Math.min(idx * 0.04, 0.2) }}
                 onClick={() => setSelectedItem(item)}
-                className="group cursor-pointer bg-white border border-stone-200 hover:border-stone-400 rounded-sm overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 transform-gpu hover:-translate-y-1.5 flex flex-col justify-between"
+                className="group cursor-pointer bg-white border border-stone-200 hover:border-stone-400 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 transform-gpu hover:-translate-y-1.5 flex flex-col justify-between"
               >
                 {/* Image Container with Luxury Overlay */}
                 <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
@@ -309,10 +309,10 @@ export default function CraftGallery() {
                   {/* Actions */}
                   <div className="space-y-2 pt-4 border-t border-stone-200">
                     <a
-                      href={`https://wa.me/?text=${encodeURIComponent(`Hello MM STONES, I am interested in technical specs for "${selectedItem.title}" (${selectedItem.material}).`)}`}
+                      href={`https://wa.me/?text=${encodeURIComponent(`Hello M.M STONE, I am interested in technical specs for "${selectedItem.title}" (${selectedItem.material}).`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full text-center inline-flex items-center justify-center gap-2 bg-stone-800 hover:bg-stone-900 text-white font-semibold text-xs uppercase tracking-wider py-3.5 rounded-sm transition-colors shadow-sm"
+                      className="w-full text-center inline-flex items-center justify-center gap-2 bg-stone-800 hover:bg-stone-900 text-white font-semibold text-xs uppercase tracking-wider py-3.5 rounded-xl transition-colors shadow-sm"
                     >
                       <MessageSquare className="w-4 h-4" />
                       <span>Inquire for Technical Details</span>

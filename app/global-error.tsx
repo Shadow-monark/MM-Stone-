@@ -18,7 +18,7 @@ export default function GlobalError({
       <body className="bg-[#faf9f6] text-stone-900 font-sans min-h-screen flex flex-col items-center justify-center text-center px-4 py-16">
         <div className="max-w-md space-y-6">
           <span className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-800 block">
-            MM STONE INDUSTRIES
+            M.M STONE
           </span>
           <h1 className="font-serif text-3xl font-normal leading-tight">
             Architectural Portal Recovered

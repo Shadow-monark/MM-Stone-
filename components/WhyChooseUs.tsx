@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
         {/* Header with Animated Text */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#705432] block mb-3">
-            Why Choose M.M. STONE INDUSTRIES
+            Why Choose M.M STONE INDUSTRIES
           </span>
           <div className="flex justify-center">
             <AnimatedHeading

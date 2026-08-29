@@ -238,13 +238,13 @@ export default function Contact() {
             </button>
 
             <h3 className="text-sm uppercase font-bold tracking-wider text-stone-900 mb-3">
-              Official M.M. STONE INDUSTRIES Credentials & Card
+              Official M.M STONE INDUSTRIES Credentials & Card
             </h3>
             
-            <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-stone-200 bg-stone-100">
+            <div className="relative aspect-[16/10] overflow-hidden rounded-xl border border-stone-200 bg-stone-100">
               <img
                 src="/images/mm_stone_card.png"
-                alt="M.M. STONE INDUSTRIES Official Card"
+                alt="M.M STONE INDUSTRIES Official Card"
                 className="w-full h-full object-contain"
               />
             </div>

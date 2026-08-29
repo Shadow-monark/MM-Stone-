@@ -108,10 +108,10 @@ export default function About() {
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm bg-[#5c1818] text-amber-100 text-xs uppercase tracking-[0.25em] shadow-xs font-semibold"
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5c1818] text-amber-100 text-xs uppercase tracking-[0.25em] shadow-xs font-semibold"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-300" />
-                M.M. STONE INDUSTRIES • Bayana Quarries
+                M.M STONE INDUSTRIES • Bayana Quarries
               </motion.div>
 
               {/* Animated Headline */}
@@ -122,7 +122,7 @@ export default function About() {
               />
 
               <AnimatedParagraph delay={0.2} className="text-stone-800 text-sm sm:text-base leading-relaxed font-light">
-                M.M. STONE INDUSTRIES operates primary mine reserves in Bayana, District Bharatpur, Rajasthan under ML No. 13/2022. We specialize in Bansi Paharpur Red Sandstone, Dholpur Sandstone, and bespoke architectural carvings.
+                M.M STONE INDUSTRIES operates primary mine reserves in Bayana, District Bharatpur, Rajasthan under ML No. 13/2022. We specialize in Bansi Paharpur Red Sandstone, Dholpur Sandstone, and bespoke architectural carvings.
               </AnimatedParagraph>
 
               <AnimatedParagraph delay={0.3} className="text-stone-700 text-xs sm:text-sm leading-relaxed font-light">

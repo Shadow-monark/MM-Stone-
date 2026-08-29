@@ -104,7 +104,7 @@ export default function Process() {
         
         {/* Header with Animated Text */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-[#5c1818] text-amber-200 text-xs uppercase tracking-[0.25em] font-semibold mb-3 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5c1818] text-amber-200 text-xs uppercase tracking-[0.25em] font-semibold mb-3 shadow-sm">
             <Pickaxe className="w-4 h-4 text-amber-300" />
             <span>Mines Operations & Milling Sequence</span>
           </div>
@@ -133,7 +133,7 @@ export default function Process() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="bg-white rounded-sm overflow-hidden border border-stone-300 hover:border-amber-700/50 transition-all duration-300 flex flex-col group shadow-md hover:shadow-xl relative"
+                className="bg-white rounded-2xl overflow-hidden border border-stone-300 hover:border-amber-700/50 transition-all duration-300 flex flex-col group shadow-md hover:shadow-xl relative"
               >
                 {/* Image Stack with Dynamic Carousel */}
                 <div className="relative aspect-[4/3] overflow-hidden bg-stone-900">
@@ -151,12 +151,12 @@ export default function Process() {
                   </AnimatePresence>
 
                   {/* Top Badge */}
-                  <div className="absolute top-3 left-3 bg-stone-950/90 text-amber-200 px-3 py-1 rounded-sm text-[11px] font-bold uppercase tracking-wider border border-amber-500/30 backdrop-blur-md shadow-md">
+                  <div className="absolute top-3 left-3 bg-stone-950/90 text-amber-200 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider border border-amber-500/30 backdrop-blur-md shadow-md">
                     STAGE {step.step}
                   </div>
 
                   {/* Live Photo Counter Indicator */}
-                  <div className="absolute top-3 right-3 bg-stone-950/80 text-white px-2 py-0.5 rounded-sm text-[10px] font-mono tracking-wider backdrop-blur-md flex items-center gap-1 border border-stone-700">
+                  <div className="absolute top-3 right-3 bg-stone-950/80 text-white px-2.5 py-0.5 rounded-full text-[10px] font-mono tracking-wider backdrop-blur-md flex items-center gap-1 border border-stone-700">
                     <Layers className="w-3 h-3 text-amber-400" />
                     <span>{currentImgIdx + 1}/{step.images.length}</span>
                   </div>

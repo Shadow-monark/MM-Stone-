@@ -1,8 +1,8 @@
 @echo off
-title MM STONES - Local Server
+title MM STONE - Local Server
 color 0A
 echo ======================================================
-echo             MM STONES - WEBSITE LAUNCHER
+echo             MM STONE - WEBSITE LAUNCHER
 echo ======================================================
 echo.
 echo Starting local development server...

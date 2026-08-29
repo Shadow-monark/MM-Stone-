@@ -92,13 +92,13 @@ export default function MasterCarvingsBanner() {
         
         {/* Top Header Tag */}
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-sm bg-stone-900/90 border border-amber-500/40 text-amber-200 text-xs uppercase tracking-[0.25em] font-semibold backdrop-blur-md shadow-xl">
+          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-stone-900/90 border border-amber-500/40 text-amber-200 text-xs uppercase tracking-[0.25em] font-semibold backdrop-blur-md shadow-xl">
             <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
-            <span>M.M. STONE Master Carvings & Reliefs</span>
+            <span>M.M STONE Master Carvings & Reliefs</span>
           </div>
 
           {/* Slide Indicator Counter */}
-          <div className="px-4 py-1.5 rounded-sm bg-stone-900/80 border border-stone-700 text-stone-300 font-mono text-xs tracking-wider backdrop-blur-md shadow-md">
+          <div className="px-4 py-1.5 rounded-full bg-stone-900/80 border border-stone-700 text-stone-300 font-mono text-xs tracking-wider backdrop-blur-md shadow-md">
             MASTERPIECE {currentIndex + 1} OF {MASTER_BANNERS.length}
           </div>
         </div>

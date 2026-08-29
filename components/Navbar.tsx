@@ -71,13 +71,13 @@ export default function Navbar() {
     >
       <div className="w-full max-w-[95%] xl:max-w-[96%] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
-        {/* Clean Brand Logo Without Subtitle */}
+        {/* Brand Logo & Name */}
         <Link href="/" className="flex items-center gap-3 group shrink-0">
-          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-sm bg-[#5c1818] border border-amber-500/40 flex items-center justify-center shadow-md group-hover:bg-[#7a1f1f] transition-colors shrink-0">
-            <span className="font-bold text-xs tracking-widest text-amber-100">MM</span>
+          <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#5c1818] border border-amber-500/50 flex items-center justify-center shadow-lg group-hover:bg-[#7a1f1f] group-hover:scale-105 transition-all shrink-0">
+            <span className="font-bold text-xs sm:text-sm tracking-widest text-amber-100">MM</span>
           </div>
           <span className={`text-base sm:text-lg font-bold tracking-[0.16em] transition-colors block leading-none whitespace-nowrap ${isScrolled ? 'text-[#1c1917]' : 'text-white'}`}>
-            M.M. STONE INDUSTRIES
+            M.M STONE
           </span>
         </Link>
 
@@ -112,7 +112,7 @@ export default function Navbar() {
         {/* Animated Hamburger-to-Cross Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className={`lg:hidden relative p-2.5 transition-all rounded-sm flex items-center justify-center ${
+          className={`lg:hidden relative p-2.5 transition-all rounded-xl flex items-center justify-center ${
             isScrolled ? 'bg-stone-200/80 border border-stone-300' : 'bg-stone-900/80 border border-stone-700'
           }`}
           aria-label="Toggle Navigation Menu"
@@ -214,7 +214,7 @@ export default function Navbar() {
                     <h3 className="font-bold text-xs uppercase tracking-wider text-amber-100">
                       Direct Call & WhatsApp
                     </h3>
-                    <p className="text-[10px] text-amber-200/80">M.M. STONE • Bayana Desk</p>
+                    <p className="text-[10px] text-amber-200/80">M.M STONE • Bayana Desk</p>
                   </div>
                 </div>
                 <button

@@ -96,7 +96,7 @@ export default function FinishSelector() {
           
           {/* Left: Preview Canvas */}
           <div className="lg:col-span-7">
-            <div className="relative aspect-[16/10] rounded-sm overflow-hidden border border-stone-300 shadow-xl bg-stone-100 group">
+            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-stone-300 shadow-xl bg-stone-100 group">
               <AnimatePresence initial={false}>
                 <motion.div
                   key={selectedFinish.id}
@@ -117,7 +117,7 @@ export default function FinishSelector() {
               </AnimatePresence>
 
               {/* Floating Spec Label */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md border border-stone-200 p-4 rounded-sm flex items-center justify-between z-10 shadow-sm">
+              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md border border-stone-200 p-4 rounded-xl flex items-center justify-between z-10 shadow-sm">
                 <div>
                   <span className="text-[10px] uppercase font-semibold tracking-widest text-stone-500 block">
                     Surface Profile

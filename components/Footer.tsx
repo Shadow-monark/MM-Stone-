@@ -13,11 +13,11 @@ export default function Footer() {
           
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-3 group shrink-0">
-            <div className="w-10 h-10 rounded-sm bg-[#5c1818] border border-amber-500/40 flex items-center justify-center shadow-md group-hover:bg-[#7a1f1f] transition-colors">
+            <div className="w-10 h-10 rounded-xl bg-[#5c1818] border border-amber-500/50 flex items-center justify-center shadow-lg group-hover:bg-[#7a1f1f] group-hover:scale-105 transition-all shrink-0">
               <span className="font-bold text-xs tracking-widest text-amber-100">MM</span>
             </div>
             <span className="text-lg font-bold tracking-[0.18em] text-white transition-colors">
-              M.M. STONE
+              M.M STONE
             </span>
           </Link>
 
@@ -74,16 +74,16 @@ export default function Footer() {
 
         </div>
 
-        {/* Watermark Background Text: Massive M.M. STONE Fill */}
+        {/* Watermark Background Text: Luminous Bright Cream Gradient Fill */}
         <div className="py-6 sm:py-10 flex items-center justify-center select-none overflow-hidden pointer-events-none w-full">
-          <h2 className="text-[clamp(3.5rem,13vw,17.5rem)] font-black uppercase tracking-tighter font-serif text-stone-800/80 leading-none whitespace-nowrap text-center drop-shadow-sm w-full block">
-            M.M. STONE
+          <h2 className="text-[clamp(3.5rem,13vw,17.5rem)] font-black uppercase tracking-tighter font-serif bg-gradient-to-b from-white via-[#fef3c7] to-[#d97706]/70 bg-clip-text text-transparent leading-none whitespace-nowrap text-center w-full block drop-shadow-[0_4px_25px_rgba(251,191,36,0.12)] opacity-95">
+            M.M STONE
           </h2>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-stone-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400 font-mono">
-          <p>© {new Date().getFullYear()} M.M. STONE INDUSTRIES. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} M.M STONE INDUSTRIES. All rights reserved.</p>
           <p className="text-stone-400">
             Made with 🔥 by{' '}
             <a

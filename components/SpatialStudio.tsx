@@ -149,7 +149,7 @@ export default function SpatialStudio() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             {/* Visual Preview Canvas */}
-            <div className="lg:col-span-7 relative aspect-[16/10] rounded-sm overflow-hidden border border-[#dcd8cd] shadow-md bg-stone-100">
+            <div className="lg:col-span-7 relative aspect-[16/10] rounded-2xl overflow-hidden border border-[#dcd8cd] shadow-md bg-stone-100">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeApp.id}
@@ -174,7 +174,7 @@ export default function SpatialStudio() {
               </AnimatePresence>
 
               {/* Material Pill */}
-              <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white/95 backdrop-blur-md border border-[#dcd8cd] px-3 py-1.5 sm:px-4 sm:py-2 rounded-sm z-10 shadow-sm">
+              <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white/95 backdrop-blur-md border border-[#dcd8cd] px-3 py-1.5 sm:px-4 sm:py-2 rounded-full z-10 shadow-sm">
                 <span className="text-[9px] sm:text-[10px] uppercase font-bold tracking-[0.2em] text-[#78716c] block leading-none mb-0.5">
                   Material
                 </span>
@@ -184,7 +184,7 @@ export default function SpatialStudio() {
               </div>
 
               {/* Bottom Details Pill */}
-              <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-white/95 backdrop-blur-md border border-[#dcd8cd] p-3 sm:p-4 rounded-sm flex items-center justify-between z-10 shadow-sm">
+              <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-white/95 backdrop-blur-md border border-[#dcd8cd] p-3 sm:p-4 rounded-xl flex items-center justify-between z-10 shadow-sm">
                 <div>
                   <span className="text-[9px] sm:text-[10px] uppercase tracking-wider text-[#78716c] block font-medium leading-none mb-0.5">Finish</span>
                   <span className="text-xs font-semibold text-[#1c1917]">{activeApp.finish}</span>

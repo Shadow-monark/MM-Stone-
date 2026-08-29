@@ -34,11 +34,11 @@ export default function GalleryPage() {
 
           {/* Center Brand Title */}
           <Link href="/" className="hidden sm:flex items-center gap-3 shrink-0">
-            <div className="w-8 h-8 rounded-sm bg-[#5c1818] border border-amber-500/40 flex items-center justify-center shadow-xs">
+            <div className="w-8 h-8 rounded-xl bg-[#5c1818] border border-amber-500/40 flex items-center justify-center shadow-xs">
               <span className="font-bold text-xs tracking-widest text-amber-100">MM</span>
             </div>
             <span className="text-sm font-bold tracking-[0.16em] text-stone-900 uppercase">
-              M.M. STONE GALLERY
+              M.M STONE GALLERY
             </span>
           </Link>
 
@@ -282,10 +282,10 @@ export default function GalleryPage() {
                   {/* Actions */}
                   <div className="space-y-2 pt-4 border-t border-stone-200">
                     <a
-                      href={`https://wa.me/919001100731?text=${encodeURIComponent(`Hello M.M. STONE, I am interested in technical specs for "${selectedItem.title}" (${selectedItem.material}).`)}`}
+                      href={`https://wa.me/919001100731?text=${encodeURIComponent(`Hello M.M STONE, I am interested in technical specs for "${selectedItem.title}" (${selectedItem.material}).`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full text-center inline-flex items-center justify-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs uppercase tracking-wider py-3 rounded-md transition-colors shadow-sm"
+                      className="w-full text-center inline-flex items-center justify-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs uppercase tracking-wider py-3 rounded-xl transition-colors shadow-sm"
                     >
                       <MessageSquare className="w-4 h-4" />
                       <span>WhatsApp Inquiry</span>
