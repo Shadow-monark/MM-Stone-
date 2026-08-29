@@ -39,42 +39,47 @@ export default function Footer() {
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </nav>
 
-          {/* Social Icons */}
-          <div className="flex items-center gap-2.5 shrink-0">
+          {/* Social Icons with Official Brand Colors */}
+          <div className="flex items-center gap-3 shrink-0">
             <a
               href="https://wa.me/919001100731"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white transition-all shadow-sm"
+              className="p-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white transition-all shadow-md hover:scale-110"
               aria-label="WhatsApp"
+              title="WhatsApp"
             >
               <WhatsAppIcon className="w-4 h-4 fill-current" />
             </a>
             <a
               href="mailto:mmstone@rediffmail.com"
-              className="p-2.5 rounded-md bg-stone-900 border border-stone-800 text-stone-400 hover:text-white hover:border-stone-600 transition-all"
+              className="p-2.5 rounded-xl bg-[#EA4335] hover:bg-[#d93025] text-white transition-all shadow-md hover:scale-110"
               aria-label="Email"
+              title="Email"
             >
               <Mail className="w-4 h-4" />
             </a>
             <a
               href="#"
-              className="p-2.5 rounded-md bg-stone-900 border border-stone-800 text-stone-400 hover:text-white hover:border-stone-600 transition-all"
+              className="p-2.5 rounded-xl bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white transition-all shadow-md hover:scale-110 hover:opacity-95"
               aria-label="Instagram"
+              title="Instagram"
             >
               <Instagram className="w-4 h-4" />
             </a>
             <a
               href="#"
-              className="p-2.5 rounded-md bg-stone-900 border border-stone-800 text-stone-400 hover:text-white hover:border-stone-600 transition-all"
+              className="p-2.5 rounded-xl bg-[#1DA1F2] hover:bg-[#0c85d0] text-white transition-all shadow-md hover:scale-110"
               aria-label="Twitter"
+              title="Twitter"
             >
               <Twitter className="w-4 h-4" />
             </a>
             <a
               href="#"
-              className="p-2.5 rounded-md bg-stone-900 border border-stone-800 text-stone-400 hover:text-white hover:border-stone-600 transition-all"
+              className="p-2.5 rounded-xl bg-[#0A66C2] hover:bg-[#084e96] text-white transition-all shadow-md hover:scale-110"
               aria-label="LinkedIn"
+              title="LinkedIn"
             >
               <Linkedin className="w-4 h-4" />
             </a>
