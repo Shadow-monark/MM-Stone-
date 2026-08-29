@@ -51,7 +51,7 @@ const PROCESS_STEPS = [
       '/row_photos/IMG-20260823-WA0081.jpg',
       '/extra_gallery/IMG-20260823-WA0127.jpg',
       '/extra_gallery/IMG-20260823-WA0254.jpg',
-      '/row_photos/IMG-20260823-WA0080.jpg',
+      '/extra_gallery/IMG-20260823-WA0080.jpg',
     ],
   },
 ];
