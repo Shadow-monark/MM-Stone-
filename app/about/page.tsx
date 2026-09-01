@@ -110,21 +110,21 @@ export default function ElaborateAboutPage() {
   return (
     <div className="min-h-screen bg-[#faf9f5] text-[#1c1917] flex flex-col font-sans">
       {/* Top Navigation Header */}
-      <header className="sticky top-0 z-50 bg-[#faf9f5]/95 backdrop-blur-md border-b border-stone-300 py-4 shadow-sm">
+      <header className="sticky top-0 z-50 bg-[#faf9f5]/95 backdrop-blur-md border-b border-stone-300 py-2 shadow-sm">
         <div className="w-full max-w-[95%] xl:max-w-[96%] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
           <Link
             href="/"
-            className="group inline-flex items-center gap-2.5 bg-white hover:bg-stone-900 text-stone-900 hover:text-white border border-stone-300 font-bold text-xs uppercase tracking-[0.16em] px-4 sm:px-5 py-2.5 rounded-full transition-all shadow-sm shrink-0"
+            className="group inline-flex items-center gap-2 bg-white hover:bg-stone-900 text-stone-900 hover:text-white border border-stone-300 font-bold text-xs uppercase tracking-[0.16em] px-3.5 sm:px-4 py-1.5 rounded-full transition-all shadow-sm shrink-0"
           >
-            <ArrowLeft className="w-4 h-4 text-amber-700 group-hover:text-amber-300 group-hover:-translate-x-1 transition-transform" />
+            <ArrowLeft className="w-3.5 h-3.5 text-amber-700 group-hover:text-amber-300 group-hover:-translate-x-1 transition-transform" />
             <span>Return to Main Studio</span>
           </Link>
 
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <div className="w-9 h-9 rounded-xl bg-[#5c1818] border border-amber-500/40 flex items-center justify-center shadow-xs">
+          <Link href="/" className="flex items-center gap-2.5 shrink-0">
+            <div className="w-8 h-8 rounded-lg bg-[#5c1818] border border-amber-500/40 flex items-center justify-center shadow-xs">
               <span className="font-bold text-xs tracking-widest text-amber-100">MM</span>
             </div>
-            <span className="text-sm sm:text-base font-bold tracking-[0.18em] text-stone-900 uppercase">
+            <span className="text-xs sm:text-sm font-bold tracking-[0.18em] text-stone-900 uppercase">
               M.M STONE INDUSTRIES
             </span>
           </Link>
@@ -132,19 +132,19 @@ export default function ElaborateAboutPage() {
           <div className="flex items-center gap-3 shrink-0">
             <Link
               href="/services"
-              className="hidden md:inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-stone-700 hover:text-[#5c1818] px-3 py-2"
+              className="hidden md:inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-stone-700 hover:text-[#5c1818] px-3 py-1.5"
             >
               <span>Services</span>
             </Link>
             <Link
               href="/gallery"
-              className="hidden md:inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-stone-700 hover:text-[#5c1818] px-3 py-2"
+              className="hidden md:inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-stone-700 hover:text-[#5c1818] px-3 py-1.5"
             >
               <span>Gallery</span>
             </Link>
             <a
               href="tel:+919414024097"
-              className="inline-flex items-center gap-2 bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.14em] px-4 py-2.5 rounded-full transition-all shadow-sm"
+              className="inline-flex items-center gap-2 bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.14em] px-3.5 py-1.5 rounded-full transition-all shadow-sm"
             >
               <Phone className="w-3.5 h-3.5 text-amber-300" />
               <span className="hidden sm:inline">Call: +91 9414024097</span>

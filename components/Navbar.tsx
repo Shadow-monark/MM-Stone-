@@ -74,18 +74,18 @@ export default function Navbar() {
         isModalOpen ? 'opacity-0 pointer-events-none -translate-y-full' : 'opacity-100 translate-y-0'
       } ${
         isScrolled
-          ? 'bg-[#faf9f5]/95 backdrop-blur-md border-b border-stone-300 py-3.5 shadow-md'
-          : 'bg-gradient-to-b from-stone-950/85 via-stone-950/30 to-transparent py-5'
+          ? 'bg-[#faf9f5]/95 backdrop-blur-md border-b border-stone-300 py-2 shadow-sm'
+          : 'bg-gradient-to-b from-stone-950/85 via-stone-950/30 to-transparent py-2.5 sm:py-3'
       }`}
     >
       <div className="w-full max-w-[95%] xl:max-w-[96%] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
         {/* Brand Logo & Name */}
-        <Link href="/" className="flex items-center gap-3 group shrink-0">
-          <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#5c1818] border border-amber-500/50 flex items-center justify-center shadow-lg group-hover:bg-[#7a1f1f] group-hover:scale-105 transition-all shrink-0">
-            <span className="font-bold text-xs sm:text-sm tracking-widest text-amber-100">MM</span>
+        <Link href="/" className="flex items-center gap-2.5 group shrink-0">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-[#5c1818] border border-amber-500/50 flex items-center justify-center shadow-md group-hover:bg-[#7a1f1f] group-hover:scale-105 transition-all shrink-0">
+            <span className="font-bold text-xs tracking-widest text-amber-100">MM</span>
           </div>
-          <span className={`text-base sm:text-lg font-bold tracking-[0.16em] transition-colors block leading-none whitespace-nowrap ${isScrolled ? 'text-[#1c1917]' : 'text-white'}`}>
+          <span className={`text-sm sm:text-base font-bold tracking-[0.16em] transition-colors block leading-none whitespace-nowrap ${isScrolled ? 'text-[#1c1917]' : 'text-white'}`}>
             M.M STONE
           </span>
         </Link>
@@ -96,7 +96,7 @@ export default function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className={`text-xs uppercase tracking-[0.18em] font-bold transition-all py-1.5 px-1 whitespace-nowrap ${
+              className={`text-xs uppercase tracking-[0.18em] font-bold transition-all py-1 px-1 whitespace-nowrap ${
                 isScrolled
                   ? 'text-stone-800 hover:text-[#5c1818]'
                   : 'text-white hover:text-amber-300 drop-shadow-md'
@@ -111,9 +111,9 @@ export default function Navbar() {
         <div className="hidden sm:flex items-center gap-3 shrink-0">
           <button
             onClick={() => setShowCallMenu(!showCallMenu)}
-            className="inline-flex items-center gap-2 bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.18em] px-5 py-2.5 rounded-full transition-all shadow-md border border-amber-500/40 shrink-0 whitespace-nowrap cursor-pointer group"
+            className="inline-flex items-center gap-2 bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.18em] px-4 py-1.5 rounded-full transition-all shadow-md border border-amber-500/40 shrink-0 whitespace-nowrap cursor-pointer group"
           >
-            <Phone className="w-4 h-4 text-amber-300 group-hover:scale-110 transition-transform" />
+            <Phone className="w-3.5 h-3.5 text-amber-300 group-hover:scale-110 transition-transform" />
             <span>Call</span>
           </button>
         </div>
@@ -121,7 +121,7 @@ export default function Navbar() {
         {/* Animated Hamburger-to-Cross Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className={`lg:hidden relative p-2.5 transition-all rounded-xl flex items-center justify-center ${
+          className={`lg:hidden relative p-1.5 transition-all rounded-lg flex items-center justify-center ${
             isScrolled ? 'bg-stone-200/80 border border-stone-300' : 'bg-stone-900/80 border border-stone-700'
           }`}
           aria-label="Toggle Navigation Menu"
