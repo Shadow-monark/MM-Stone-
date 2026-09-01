@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import About from '@/components/About';
+import AboutPreview from '@/components/AboutPreview';
 import CraftGallery from '@/components/CraftGallery';
 import StoneCollection from '@/components/StoneCollection';
 import FinishSelector from '@/components/FinishSelector';
@@ -17,7 +17,7 @@ export default function HomePage() {
       <Navbar />
       <main className="flex-1 relative z-10">
         <Hero />
-        <About />
+        <AboutPreview />
         <CraftGallery />
         <StoneCollection />
         <FinishSelector />

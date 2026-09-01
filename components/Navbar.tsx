@@ -14,12 +14,13 @@ function WhatsAppIcon({ className = "w-4 h-4" }: { className?: string }) {
 }
 
 const NAV_ITEMS = [
-  { name: 'About', href: '#about' },
-  { name: 'Gallery', href: '#craftsmanship' },
-  { name: 'Collection', href: '#collection' },
-  { name: 'Finishes', href: '#finishes' },
-  { name: 'Process', href: '#process' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Gallery', href: '/gallery' },
+  { name: 'Collection', href: '/#collection' },
+  { name: 'Finishes', href: '/#finishes' },
+  { name: 'Process', href: '/#process' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 export default function Navbar() {
@@ -92,7 +93,7 @@ export default function Navbar() {
         {/* Single-Line Compact Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-2.5 lg:gap-4 xl:gap-5">
           {NAV_ITEMS.map((item) => (
-            <a
+            <Link
               key={item.name}
               href={item.href}
               className={`text-xs uppercase tracking-[0.18em] font-bold transition-all py-1.5 px-1 whitespace-nowrap ${
@@ -102,7 +103,7 @@ export default function Navbar() {
               }`}
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -165,13 +166,13 @@ export default function Navbar() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.25, delay: idx * 0.05 }}
               >
-                <a
+                <Link
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className="block text-xs uppercase tracking-[0.18em] font-bold text-stone-800 hover:text-[#5c1818] py-3 border-b border-stone-200"
                 >
                   {item.name}
-                </a>
+                </Link>
               </motion.div>
             ))}
             <motion.div

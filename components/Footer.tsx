@@ -31,12 +31,13 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <nav className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-xs font-semibold uppercase tracking-[0.18em]">
-            <a href="#about" className="hover:text-white transition-colors">About Us</a>
-            <a href="#craftsmanship" className="hover:text-white transition-colors">Works Gallery</a>
-            <a href="#collection" className="hover:text-white transition-colors">Stone Varieties</a>
-            <a href="#finishes" className="hover:text-white transition-colors">Finishes</a>
-            <a href="#process" className="hover:text-white transition-colors">Process</a>
-            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+            <Link href="/about" className="hover:text-white transition-colors">About Us</Link>
+            <Link href="/services" className="hover:text-white transition-colors">Our Services</Link>
+            <Link href="/gallery" className="hover:text-white transition-colors">Works Gallery</Link>
+            <Link href="/#collection" className="hover:text-white transition-colors">Stone Varieties</Link>
+            <Link href="/#finishes" className="hover:text-white transition-colors">Finishes</Link>
+            <Link href="/#process" className="hover:text-white transition-colors">Process</Link>
+            <Link href="/#contact" className="hover:text-white transition-colors">Contact</Link>
           </nav>
 
           {/* Social Icons with Official Brand Colors */}
