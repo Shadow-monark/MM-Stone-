@@ -144,11 +144,10 @@ export default function ElaborateAboutPage() {
             </Link>
             <a
               href="tel:+919414024097"
-              className="inline-flex items-center gap-2 bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.14em] px-3.5 py-1.5 rounded-full transition-all shadow-sm"
+              className="inline-flex items-center gap-2 bg-[#5c1818] hover:bg-[#7a1f1f] text-white font-bold text-xs uppercase tracking-[0.14em] px-4 py-1.5 rounded-full transition-all shadow-sm"
             >
               <Phone className="w-3.5 h-3.5 text-amber-300" />
-              <span className="hidden sm:inline">Call: +91 9414024097</span>
-              <span className="sm:hidden">Call</span>
+              <span>Call</span>
             </a>
           </div>
         </div>
