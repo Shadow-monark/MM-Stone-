@@ -226,28 +226,62 @@ export default function ElaborateAboutPage() {
                 transition={{ duration: 0.6 }}
                 className="lg:col-span-6 space-y-6"
               >
-                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 text-[#5c1818] text-xs uppercase tracking-[0.2em] font-semibold">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5c1818]/10 border border-[#5c1818]/20 text-[#5c1818] text-xs uppercase tracking-[0.2em] font-semibold">
                   <Compass className="w-3.5 h-3.5 text-amber-800" />
-                  <span>Quarry Heritage & Mine Legacy</span>
+                  <span>Quarry Heritage &amp; Mine Legacy</span>
                 </div>
 
                 <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 leading-tight">
                   Direct From the Mines of Bayana to India&apos;s Most Sacred Monuments
                 </h2>
 
-                <p className="text-stone-700 text-sm sm:text-base leading-relaxed font-light">
-                  Bansi Paharpur Red Sandstone is globally renowned for its regal terracotta red tint, ultra-dense fine grain, and exceptional resistance to environmental degradation. Used historically in monumental forts, palaces, and sacred temples across Northern India, this stone represents the pinnacle of Indian architectural heritage.
-                </p>
+                {/* Feature Highlights Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div className="p-4 bg-[#faf9f5] border border-stone-300 rounded-xl space-y-2">
+                    <div className="flex items-center gap-2 text-[#5c1818] font-bold text-xs uppercase tracking-wider">
+                      <ShieldCheck className="w-4 h-4 text-amber-700" />
+                      <span>Imperial Red Sandstone</span>
+                    </div>
+                    <p className="text-stone-700 text-xs sm:text-sm leading-relaxed font-light">
+                      Renowned worldwide for its rich terracotta tint, high compressive strength, and centuries-long resistance to weather degradation in Northern India&apos;s grandest temples and palaces.
+                    </p>
+                  </div>
 
-                <p className="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
-                  Operating directly under Mining License ML No. 13/2022 in Village Murrki, District Bharatpur, Rajasthan, M.M STONE INDUSTRIES controls every single stage of extraction. Because we eliminate third-party intermediaries, our clients receive uncompromised single-vein color consistency, rapid block sizing, and direct factory pricing.
-                </p>
+                  <div className="p-4 bg-[#faf9f5] border border-stone-300 rounded-xl space-y-2">
+                    <div className="flex items-center gap-2 text-[#5c1818] font-bold text-xs uppercase tracking-wider">
+                      <Award className="w-4 h-4 text-amber-700" />
+                      <span>Direct Quarry Supply</span>
+                    </div>
+                    <p className="text-stone-700 text-xs sm:text-sm leading-relaxed font-light">
+                      Operating straight from our Bayana quarry bed (ML 13/2022), eliminating middlemen to guarantee single-vein color consistency, custom block slicing, and factory pricing.
+                    </p>
+                  </div>
+                </div>
 
-                <div className="p-4 bg-[#faf9f5] border-l-4 border-[#5c1818] rounded-r-xl space-y-1">
-                  <h4 className="font-bold text-stone-900 text-sm">Official Mining Register Details</h4>
-                  <p className="text-stone-600 text-xs font-mono">
-                    Mining License: ML 13/2022 | Location: Bayana, Dist. Bharatpur, Rajasthan | Reserve Grade: Bansi Paharpur Red & Dholpur Sandstone
-                  </p>
+                {/* Official Mining Register Badge */}
+                <div className="p-4 bg-stone-900 text-white rounded-xl border border-amber-500/30 space-y-2.5 shadow-sm">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-amber-400">
+                      Official Mining License Register
+                    </span>
+                    <span className="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/40 px-2 py-0.5 rounded font-mono">
+                      GOVT APPROVED
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+                    <div>
+                      <span className="text-stone-400 text-[10px] block uppercase">License No.</span>
+                      <span className="font-bold text-white">ML 13/2022</span>
+                    </div>
+                    <div>
+                      <span className="text-stone-400 text-[10px] block uppercase">Mine Site</span>
+                      <span className="font-bold text-white">Bayana, Bharatpur</span>
+                    </div>
+                    <div>
+                      <span className="text-stone-400 text-[10px] block uppercase">Reserve Grade</span>
+                      <span className="font-bold text-white">Bansi Paharpur Red</span>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
 
@@ -492,17 +526,6 @@ export default function ElaborateAboutPage() {
           </div>
         </section>
       </main>
-
-      {/* Floating Bottom Return Button */}
-      <div className="sticky bottom-6 left-0 right-0 z-40 flex justify-center pointer-events-none px-4">
-        <Link
-          href="/"
-          className="pointer-events-auto group inline-flex items-center gap-3 bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-[0.2em] px-7 py-3.5 rounded-full shadow-2xl transition-all border border-amber-500/40 hover:scale-105"
-        >
-          <ArrowLeft className="w-4 h-4 text-amber-300 group-hover:-translate-x-1 transition-transform" />
-          <span>Return to Main Website</span>
-        </Link>
-      </div>
 
       <Footer />
     </div>

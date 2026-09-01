@@ -196,17 +196,6 @@ export default function ServicesPage() {
         </section>
       </main>
 
-      {/* Floating Bottom Return Button */}
-      <div className="sticky bottom-6 left-0 right-0 z-40 flex justify-center pointer-events-none px-4">
-        <Link
-          href="/"
-          className="pointer-events-auto group inline-flex items-center gap-3 bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-[0.2em] px-7 py-3.5 rounded-full shadow-2xl transition-all border border-amber-500/40 hover:scale-105"
-        >
-          <ArrowLeft className="w-4 h-4 text-amber-300 group-hover:-translate-x-1 transition-transform" />
-          <span>Return to Main Website</span>
-        </Link>
-      </div>
-
       <Footer />
     </div>
   );
