@@ -236,50 +236,50 @@ export default function ElaborateAboutPage() {
                 </h2>
 
                 {/* Feature Highlights Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                  <div className="p-4 bg-[#faf9f5] border border-stone-300 rounded-xl space-y-2">
-                    <div className="flex items-center gap-2 text-[#5c1818] font-bold text-xs uppercase tracking-wider">
-                      <ShieldCheck className="w-4 h-4 text-amber-700" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2">
+                  <div className="p-5 sm:p-6 bg-[#faf9f5] border border-stone-300 rounded-xl space-y-2.5 shadow-xs">
+                    <div className="flex items-center gap-2.5 text-[#5c1818] font-bold text-sm sm:text-base uppercase tracking-wider">
+                      <ShieldCheck className="w-5 h-5 text-amber-700 shrink-0" />
                       <span>Imperial Red Sandstone</span>
                     </div>
-                    <p className="text-stone-700 text-xs sm:text-sm leading-relaxed font-light">
+                    <p className="text-stone-800 text-sm sm:text-base leading-relaxed font-normal">
                       Renowned worldwide for its rich terracotta tint, high compressive strength, and centuries-long resistance to weather degradation in Northern India&apos;s grandest temples and palaces.
                     </p>
                   </div>
 
-                  <div className="p-4 bg-[#faf9f5] border border-stone-300 rounded-xl space-y-2">
-                    <div className="flex items-center gap-2 text-[#5c1818] font-bold text-xs uppercase tracking-wider">
-                      <Award className="w-4 h-4 text-amber-700" />
+                  <div className="p-5 sm:p-6 bg-[#faf9f5] border border-stone-300 rounded-xl space-y-2.5 shadow-xs">
+                    <div className="flex items-center gap-2.5 text-[#5c1818] font-bold text-sm sm:text-base uppercase tracking-wider">
+                      <Award className="w-5 h-5 text-amber-700 shrink-0" />
                       <span>Direct Quarry Supply</span>
                     </div>
-                    <p className="text-stone-700 text-xs sm:text-sm leading-relaxed font-light">
+                    <p className="text-stone-800 text-sm sm:text-base leading-relaxed font-normal">
                       Operating straight from our Bayana quarry bed (ML 13/2022), eliminating middlemen to guarantee single-vein color consistency, custom block slicing, and factory pricing.
                     </p>
                   </div>
                 </div>
 
                 {/* Official Mining Register Badge */}
-                <div className="p-4 bg-stone-900 text-white rounded-xl border border-amber-500/30 space-y-2.5 shadow-sm">
+                <div className="p-5 sm:p-6 bg-stone-900 text-white rounded-xl border border-amber-500/40 space-y-3.5 shadow-md">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-amber-400">
+                    <span className="text-xs sm:text-sm uppercase font-bold tracking-[0.2em] text-amber-400">
                       Official Mining License Register
                     </span>
-                    <span className="text-[10px] bg-amber-500/20 text-amber-300 border border-amber-500/40 px-2 py-0.5 rounded font-mono">
+                    <span className="text-xs bg-amber-500/20 text-amber-300 border border-amber-500/40 px-2.5 py-1 rounded font-mono font-semibold">
                       GOVT APPROVED
                     </span>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     <div>
-                      <span className="text-stone-400 text-[10px] block uppercase">License No.</span>
-                      <span className="font-bold text-white">ML 13/2022</span>
+                      <span className="text-stone-400 text-xs block uppercase font-medium">License No.</span>
+                      <span className="font-bold text-white text-sm sm:text-base">ML 13/2022</span>
                     </div>
                     <div>
-                      <span className="text-stone-400 text-[10px] block uppercase">Mine Site</span>
-                      <span className="font-bold text-white">Bayana, Bharatpur</span>
+                      <span className="text-stone-400 text-xs block uppercase font-medium">Mine Site</span>
+                      <span className="font-bold text-white text-sm sm:text-base">Bayana, Bharatpur</span>
                     </div>
                     <div>
-                      <span className="text-stone-400 text-[10px] block uppercase">Reserve Grade</span>
-                      <span className="font-bold text-white">Bansi Paharpur Red</span>
+                      <span className="text-stone-400 text-xs block uppercase font-medium">Reserve Grade</span>
+                      <span className="font-bold text-white text-sm sm:text-base">Bansi Paharpur Red</span>
                     </div>
                   </div>
                 </div>
